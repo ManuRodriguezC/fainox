@@ -1,0 +1,23 @@
+---
+const links = ["Industrias", "Productos", "Oportunidades", "Novedades"];
+---
+
+<nav class="w-full flex flex-row justify-between items-center px-10">
+  <a href="/">
+    <img class="h-40" src="/images/icono.jpg" alt="Icono Fainox" />
+  </a>
+
+  <ul class="flex flex-row gap-x-20">
+    {
+      links.map(link => (
+        <a href={`/${link.toLowerCase()}`}>
+          <li class="text-3xl text-colorBlue font-bold" aria-keyshortcuts={link}>{link}</li>
+        </a>
+      ))
+    }
+  </ul>
+
+  <div>
+    Contacto y Cotiza
+  </div>
+</nav>

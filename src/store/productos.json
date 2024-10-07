@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tanques",
+        "industry": ["Agricola", "Alimentos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["images1.png", "images2.png"]
+    },
+    {
+        "name": "Tanques",
+        "industry": ["Agricola", "Alimentos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["images1.png", "images2.png"]
+    },
+    {
+        "name": "Tanques",
+        "industry": ["Agricola", "Alimentos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["images1.png", "images2.png"]
+    },
+    {
+        "name": "Tanques",
+        "industry": ["Agricola", "Alimentos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["images1.png", "images2.png"]
+    }
+]

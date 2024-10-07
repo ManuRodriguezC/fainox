@@ -1,0 +1,15 @@
+---
+import LayoutPage from '../../layouts/LayoutPage.astro';
+
+export function getStaticPaths() {
+  return [
+    {params: {industry: 'otrosalimentos'}},
+    {params: {industry: 'frutaspulpasyjugos'}},
+    {params: {industry: 'lacteos'}},
+  ];
+}
+const { industry } = Astro.params
+---
+<LayoutPage title="Welcome to Astro.">
+  <p>Productos de {industry}</p>
+</LayoutPage>
