@@ -1,23 +1,45 @@
 ---
+import Link from "./link.astro";
+
 const links = ["Industrias", "Productos", "Oportunidades", "Novedades"];
 ---
 
-<nav class="w-full flex flex-row justify-between items-center px-10">
+<header class="fixed  top-0 bg-white z-50 w-full flex flex-row justify-between items-center px-10 transition-all duration-150">
   <a href="/">
-    <img class="h-40" src="/images/icono.jpg" alt="Icono Fainox" />
+    <img id="header-image" class="h-20 lg:h-40 transition-all duration-150" src="/images/icono.jpg" alt="Icono Fainox" />
   </a>
 
-  <ul class="flex flex-row gap-x-20">
-    {
-      links.map(link => (
-        <a href={`/${link.toLowerCase()}`}>
-          <li class="text-3xl text-colorBlue font-bold" aria-keyshortcuts={link}>{link}</li>
-        </a>
+  <nav class="hidden lg:block">
+
+    <ul class="flex flex-row gap-x-6 xl:gap-x-20">
+      {
+        links.map(link => (
+          <Link link={link}/>
       ))
     }
-  </ul>
+    </ul>
+  </nav>
 
-  <div>
+  <div class="hidden lg:block">
     Contacto y Cotiza
   </div>
-</nav>
+
+  <div class="block lg:hidden">Menu</div>
+
+</header>
+
+<script>
+  const headerImage = document.getElementById('header-image')
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = document.documentElement.scrollTop
+    console.log(scrollTop)
+    if (headerImage) {
+      if (scrollTop > 10 && headerImage) {
+        headerImage.style.height = "80px";
+      } else {
+        headerImage.style.height = "160px"
+      }
+    }
+  })
+</script>
