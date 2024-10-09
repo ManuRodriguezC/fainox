@@ -1,0 +1,23 @@
+---
+import { productos } from "../store/typeProductos";
+
+function capitalize(str: string) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+---
+
+<div
+  class="hidden group-hover:grid absolute grid-cols-4 gap-1 w-[800px] border-gray-300 rounded-lg
+    p-5 bg-white gap-y-1-6 font-medium shadow-box-black text-xl"
+>
+  {
+    productos.map((producto) => (
+      <a
+        class="decoration-slice hover:bg-gray-100 p-2 rounded-xl"
+        href={`/productos/${producto}`}
+      >
+        {capitalize(producto)}
+      </a>
+    ))
+  }
+</div>

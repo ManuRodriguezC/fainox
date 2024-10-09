@@ -8,6 +8,9 @@ export function getStaticPaths() {
     {params: {industry: 'lacteos'}},
     {params: {industry: 'farmaceuticos'}},
   ];
+  // return industrias.map(industria => ({
+  //   params: {industry: industria}
+  // }))
 }
 const { industry } = Astro.params
 ---

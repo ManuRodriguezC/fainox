@@ -1,5 +1,6 @@
 ---
 import HoverLinkIndustrias from "./hoverLinkIndustrias.astro";
+import HoverLinkProductos from "./hoverLinkProductos.astro";
 
 const { link } = Astro.props;
 ---
@@ -13,11 +14,20 @@ const { link } = Astro.props;
     <p>
       {link}
     </p>
-    <span class="arrow group-hover:rotate-195 group-hover:left-6 group-hover:top-1"></span>
+    {
+      (link.toLowerCase() == "industrias" || link.toLowerCase() == "productos")
+      &&
+      <span class="arrow group-hover:rotate-195 group-hover:left-6 group-hover:top-1"></span>
+    }
   </a>
   {
     link.toLowerCase() == "industrias"
     &&
     <HoverLinkIndustrias />
   }
+    {
+      link.toLowerCase() == "productos"
+      &&
+      <HoverLinkProductos />
+    }
 </li>

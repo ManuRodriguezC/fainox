@@ -1,13 +1,12 @@
 ---
 import LayoutPage from '../../layouts/LayoutPage.astro';
+import { productos } from '../../store/typeProductos';
 
 
 export function getStaticPaths() {
-  return [
-    {params: {category: 'Tanques'}},
-    {params: {category: 'Pasteurizadores'}},
-    {params: {category: 'Evaporadores'}},
-  ];
+  return productos.map(producto => ({
+    params: {category: producto}
+  }))
 }
 const { category } = Astro.params
 ---
