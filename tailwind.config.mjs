@@ -13,6 +13,12 @@ export default {
 		},
 		screens: {
       'custom': '1555px'
+		},
+		boxShadow: {
+			'box-black': 'rgba(0, 0, 0, 0.35) 0px 5px 15px;'
+		},
+		rotate: {
+			'195': '210deg'
 		}
 	  },
 	},

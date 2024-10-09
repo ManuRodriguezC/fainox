@@ -1,6 +1,6 @@
 ---
-import Footer from '../components/footer.astro';
-import Navbar from '../components/navbar.astro';
+import Footer from "../components/footer.astro";
+import Navbar from "../components/navbar.astro";
 
 interface Props {
   title: string;
@@ -35,4 +35,49 @@ const { title } = Astro.props;
   body {
     width: 100%;
   }
+  .arrow {
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    position: relative;
+    transform: rotate(
+      30deg
+    );
+  }
+
+  .arrow::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(15deg);
+  }
+  .arrow-top {
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    position: relative;
+    transform: rotate(
+      30deg
+    );
+    transition: all 0.3s ease-in-out;
+  }
+
+  .arrow-top::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(195deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
 </style>
