@@ -1,0 +1,51 @@
+---
+import IconAutomatization from '../icons/iconAutomatization.astro'
+import IconCap from '../icons/iconCap.astro'
+import IconFactory from '../icons/iconFactory.astro'
+import IconProyect from '../icons/iconProyect.astro'
+import IconPuzzle from '../icons/iconPuzzle.astro'
+import IconSuport from '../icons/iconSuport.astro'
+
+const services = [
+    {
+        icon: IconProyect,
+        title: "Proyectos",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconFactory,
+        title: "Fabricación",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconPuzzle,
+        title: "Montajes",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconAutomatization,
+        title: "Automatización y Control",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconCap,
+        title: "Capacitación",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconSuport,
+        title: "Soporte y Mantenimiento",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+]
+---
+
+<div class="grid grid-cols-3 gap-10 px-20">
+    {services.map(({ icon: Icon, title, subtitle }) => (
+        <div class="flex flex-col gap-3 px-10">
+            <Icon size={50} />
+            <h3 class="text-xl text-gray-800 font-semibold">{title}</h3>
+            <p class="text-gray-600">{subtitle}</p>
+        </div>
+    ))}
+</div>
