@@ -3,11 +3,14 @@ import { Image } from "astro:assets";
 import Services from "./services.astro";
 ---
 
-<section class="flex flex-col w-full px-10">
-  <div class="flex flex-row justify-center items-center gap-5">
-    <div class="flex flex-col gap-8 p-20 mb-10">
-      <h1 class="text-5xl text-colorBlue font-semibold"><span class="font-bold">Fainox Group</span> Soluciones para mejores procesos</h1>
-      <p class="text-xl">
+<section class="flex flex-col w-full px-2 md:px-10">
+  <div class="flex flex-col md:flex-row justify-center items-center gap-5 md:pb-10">
+    <div class="flex flex-col gap-8 p-5 md:p-20 md:mb-10">
+      <div>
+        <h1 class="text-3xl lg:text-4xl xl:text-6xl text-colorBlue font-bold">Fainox Group S.A.S</h1>
+        <h1 class="text-xl lg:text-3xl xl:text-3xl text-colorBlue font-semibold">Soluciones para mejores procesos</h1>
+      </div>
+      <p class="text-sm md:text-md lg:text-2xl">
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -17,11 +20,15 @@ import Services from "./services.astro";
         mollit anim id est laborum."
       </p>
     </div>
-    <Image
+    <div class="w-[300px] md:w-[2500px]">
+      <Image
       src="/images/helpers.png"
       width={500}
       height={500}
-      alt="Procesos brindados y apoyados por fainox" />
+      alt="Procesos brindados y apoyados por fainox"
+      class="w-full h-auto object-cover mb-6 md:mb-0"
+      />
+    </div>
   </div>
 
   <Services />

@@ -40,12 +40,12 @@ const services = [
 ]
 ---
 
-<div class="grid grid-cols-3 gap-10 px-20">
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-10 mb-10 px-2 md:px-10 lg:px-20">
     {services.map(({ icon: Icon, title, subtitle }) => (
-        <div class="flex flex-col gap-3 px-10">
-            <Icon size={50} />
-            <h3 class="text-xl text-gray-800 font-semibold">{title}</h3>
-            <p class="text-gray-600">{subtitle}</p>
+        <div class="flex flex-col gap-3 px-2 md:px-10">
+            <Icon size={70} />
+            <h3 class="text-3xl text-colorBlue font-semibold">{title}</h3>
+            <p class="text-xl text-gray-600 text-balance">{subtitle}</p>
         </div>
     ))}
 </div>
