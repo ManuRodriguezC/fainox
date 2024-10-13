@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets"
+
+const { name, description, images} = Astro.props
+---
+
+<a href={`/producto/${name}`} class="relative w-auto h-[350px] flex flex-row group">
+
+    <div class="w-[350px] h-full z-10 transition-transform duration-500">
+      <Image
+        src={images[0]}
+        alt={name}
+        width="350"
+        height="350"
+        class="w-full h-full object-cover rounded-md group-hover:rounded-left brightness-50 group-hover:brightness-75"
+        />
+      <p class="absolute bottom-5 left-5 text-2xl text-white font-semibold">{name}</p>
+    </div>
+
+    <div class="w-0 h-full -translate-x-full group-hover:translate-x-0 group-hover:w-[350px] overflow-hidden transition-all">
+      <div class="text-white opacity-0 h-full group-hover:opacity-100 transition-opacity duration-300 group-hover:rounded-rigth p-4 bg-blue-950 border-1 border-gray-500">
+        <h3 class="text-white font-bold text-2xl py-2">{name}</h3>
+        <p class="text-white text-xl font-extralight">{description}</p>
+      </div>
+    </div>
+  </a>

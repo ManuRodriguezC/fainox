@@ -1,26 +1,128 @@
 [
     {
-        "name": "Tanques",
-        "industry": ["Agricola", "Alimentos"],
+        "name": "Tanque de 1400 Litros",
+        "industry": ["Lacteos y Derivados", "Frutas, Pulpa y Jugos"],
         "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
-        "images": ["images1.png", "images2.png"]
+        "images": ["/products/producto1.jpg"]
     },
     {
-        "name": "Tanques",
-        "industry": ["Agricola", "Alimentos"],
+        "name": "Triturador de Alimentos",
+        "industry": ["Alimentos Secos"],
         "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
-        "images": ["images1.png", "images2.png"]
+        "images": ["/products/producto2.jpg"]
     },
     {
-        "name": "Tanques",
-        "industry": ["Agricola", "Alimentos"],
+        "name": "Despulpador",
+        "industry": ["Frutas, Pulpa y Jugos", "Farmaceuticos"],
         "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
-        "images": ["images1.png", "images2.png"]
+        "images": ["/products/producto3.jpg"]
     },
     {
-        "name": "Tanques",
-        "industry": ["Agricola", "Alimentos"],
+        "name": "Combinador Aluminio 800SD",
+        "industry": ["Farmaceuticos", "Alimentos Secos"],
         "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
-        "images": ["images1.png", "images2.png"]
+        "images": ["/products/producto4.jpg"]
+    },
+    {
+        "name": "Pulverizador 5000-G8",
+        "industry": ["Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto5.jpg"]
+    },
+    {
+        "name": "Descremador 2500l",
+        "industry": ["Frutas, Pulpa y Jugos", "Farmaceuticos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto6.jpg"]
+    },
+    {
+        "name": "Sistema de Mantequilla",
+        "industry": ["Farmaceuticos", "Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto7.jpg"]
+    },
+    {
+        "name": "Tanque de 1400 Litros",
+        "industry": ["Lacteos y Derivados", "Frutas, Pulpa y Jugos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto1.jpg"]
+    },
+    {
+        "name": "Triturador de Alimentos",
+        "industry": ["Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto2.jpg"]
+    },
+    {
+        "name": "Despulpador",
+        "industry": ["Frutas, Pulpa y Jugos", "Farmaceuticos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto3.jpg"]
+    },
+    {
+        "name": "Combinador Aluminio 800SD",
+        "industry": ["Farmaceuticos", "Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto4.jpg"]
+    },
+    {
+        "name": "Pulverizador 5000-G8",
+        "industry": ["Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto5.jpg"]
+    },
+    {
+        "name": "Descremador 2500l",
+        "industry": ["Frutas, Pulpa y Jugos", "Farmaceuticos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto6.jpg"]
+    },
+    {
+        "name": "Sistema de Mantequilla",
+        "industry": ["Farmaceuticos", "Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto7.jpg"]
+    },
+    {
+        "name": "Tanque de 1400 Litros",
+        "industry": ["Lacteos y Derivados", "Frutas, Pulpa y Jugos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto1.jpg"]
+    },
+    {
+        "name": "Triturador de Alimentos",
+        "industry": ["Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto2.jpg"]
+    },
+    {
+        "name": "Despulpador",
+        "industry": ["Frutas, Pulpa y Jugos", "Farmaceuticos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto3.jpg"]
+    },
+    {
+        "name": "Combinador Aluminio 800SD",
+        "industry": ["Farmaceuticos", "Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto4.jpg"]
+    },
+    {
+        "name": "Pulverizador 5000-G8",
+        "industry": ["Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto5.jpg"]
+    },
+    {
+        "name": "Descremador 2500l",
+        "industry": ["Frutas, Pulpa y Jugos", "Farmaceuticos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto6.jpg"]
+    },
+    {
+        "name": "Sistema de Mantequilla",
+        "industry": ["Farmaceuticos", "Alimentos Secos"],
+        "description": "Este es un tanque para que puedas transportar tu leche a todos los rincones del mundo",
+        "images": ["/products/producto7.jpg"]
     }
 ]
