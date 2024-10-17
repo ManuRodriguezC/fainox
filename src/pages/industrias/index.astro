@@ -108,7 +108,7 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
         scrollInterval = setInterval(() => {
           if (productContainer) {
 
-            const { scrollLeft, scrollWidth, clientWidth } = productContainer
+            const { scrollLeft } = productContainer
             const curButtonLeft = document.getElementById(`left-${index}`)
             const curButtonRight = document.getElementById(`right-${index}`)
 

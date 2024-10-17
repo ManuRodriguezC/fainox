@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import LayoutPage from '../layouts/LayoutPage.astro';
 import Offices from '../components/tsx/Ofices';
 ---
@@ -7,41 +6,3 @@ import Offices from '../components/tsx/Ofices';
 <LayoutPage title="Cotizacion y Contacto">
     <Offices client:load />
 </LayoutPage>
-
-
-   <!-- <section class="w-full flex flex-row justify-around items-center">
-        <div class="w-[45%] flex flex-col justify-center items-center gap-10">
-            <div class="w-[70%] h- bg-gray-500">
-                <Image
-                    src="/images/helpers.png"
-                    alt="Ofice image"
-                    width={500}
-                    height={500}
-                />
-            </div>
-
-            <div class="flex flex-wrap justify-center items-center gap-5" >
-                <div class="flex flex-col justify-center items-center text-center">
-                    <h3 class="text-lg md:text-2xl font-bold">Oficina Principal</h3>
-                    <p class="text-md md:text-xl font-semibold">Cundinamarca - Zipaquira</p>
-                    <p class="text-sm md:text-md">Telefono: +57 319 488546</p>
-                    <p class="text-sm md:text-md">Direccion: Calle 34 # 12 - 12 </p>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center">
-                    <h3 class="text-lg md:text-2xl font-bold">Oficina Principal</h3>
-                    <p class="text-md md:text-xl font-semibold">Cundinamarca - Zipaquira</p>
-                    <p class="text-sm md:text-md">Telefono: +57 319 488546</p>
-                    <p class="text-sm md:text-md">Direccion: Calle 34 # 12 - 12 </p>
-                </div>
-
-                <div class="flex flex-col justify-center items-center text-center">
-                    <h3 class="text-lg md:text-2xl font-bold">Oficina Principal</h3>
-                    <p class="text-md md:text-xl font-semibold">Cundinamarca - Zipaquira</p>
-                    <p class="text-sm md:text-md">Telefono: +57 319 488546</p>
-                    <p class="text-sm md:text-md">Direccion: Calle 34 # 12 - 12 </p>
-                </div>
-            </div>
-        </div>
-        <div class="w-[45%] h-[500px]"></div>
-    </section> -->
