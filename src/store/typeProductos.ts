@@ -21,7 +21,7 @@ export const productos = [
     'cabina para lavado',
     'formadoras de queso',
     'marmitas de proceso',
-    'mixer / Emulsificadores',
+    'mixer - Emulsificadores',
     'intercambiadores de calor',
     'soluciones para lavado CIP',
     'equipos para procesar frutas',
