@@ -2,20 +2,22 @@
 import ProductoForList from '../../components/industrias/productoForList.astro';
 import LayoutPage from '../../layouts/LayoutPage.astro';
 import { industrias } from '../../store/industrias';
-import listProducts from '../../store/productos.json'
+import { productos } from "../../store/productos"
 
 export function getStaticPaths() {
   return industrias.map(industria => ({
     params: {industry: industria}
   }))
 }
+
 const { industry } = Astro.params
-const filterProducts = listProducts.filter(product => product.industry.includes(industry))
+const filterProducts = productos.filter(product => product.industry.includes(industry))
 ---
 <LayoutPage title={`Sector ${industry}`}>
-  <section class="flex flex-col w-full h-auto px-40">
+  <section class="flex flex-col w-full h-auto px-10">
     <p class="text-center text-colorBlue text-5xl font-bold">Productos de {industry}</p>
-    <div class="flex flex-wrap gap-10 justify-center items-center p-20">
+    <p class="text-right mr-10 mt-5 text-lg">Productos encontrados: {filterProducts.length}</p>
+    <div class="flex flex-wrap gap-10 justify-center items-center py-10 px-20">
       {
         filterProducts.map(product => (
           <ProductoForList {...product}/>

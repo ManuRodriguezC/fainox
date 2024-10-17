@@ -1,16 +1,52 @@
 ---
-import LayoutPage from '../../layouts/LayoutPage.astro';
-import { productos } from '../../store/typeProductos';
-
+import LayoutPage from "../../layouts/LayoutPage.astro";
+import { productos } from "../../store/typeProductos";
+import { productos as listProducts } from "../../store/productos";
+import { capitalize } from "../../utils/capitalize";
+import ProductoForList from "../../components/industrias/productoForList.astro";
 
 export function getStaticPaths() {
-  return productos.map(producto => ({
-    params: {category: producto}
-  }))
+  return productos.map((producto) => ({
+    params: { category: producto },
+  }));
 }
-const { category } = Astro.params
+const { category } = Astro.params;
+
+const filterProductsCategory = listProducts.filter(
+  (product) => product.linea === category
+);
 ---
 
-<LayoutPage title="Welcome to Astro.">
-  <p>Productos de {category}</p>
+<LayoutPage title={`${capitalize(category)} - Fainox Group`}>
+  <section class="relative grid grid-cols-4 gap-4 px-20">
+    <aside
+      class="sticky top-24 left-0 w-[350px] h-[70vh] border-2 border-blue-300 rounded-xl overflow-auto"
+    >
+      <ul class="px-2 py-2 flex flex-col gap-2">
+        {
+          productos.map(product => (
+            <li class={`w-full bg-blue-100/30 rounded-lg hover:bg-blue-300 ${product === category && "bg-blue-800 text-white"}`}>
+              <a class="block w-full px-5" href={`/productos/${product}`}>{capitalize(product)}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </aside>
+
+    <div
+      class="col-span-3 flex flex-col justify-around items-center overflow-y-auto h-[70vh] scroll-hidden"
+    >
+      <h1 class="text-4xl text-colorBlue font-bold">{capitalize(category)}</h1>
+      <p class="text-right text-lg font-semibold mb-6">
+        Productos encontrados: {filterProductsCategory.length}
+      </p>
+      <div class="flex flex-wrap gap-10 justify-center items-center">
+        {
+          filterProductsCategory.map((product) => (
+            <ProductoForList {...product} />
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </LayoutPage>

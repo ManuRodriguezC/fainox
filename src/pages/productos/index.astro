@@ -1,7 +1,83 @@
 ---
-import LayoutPage from '../../layouts/LayoutPage.astro';
+import LayoutPage from "../../layouts/LayoutPage.astro";
+import { productos } from "../../store/typeProductos";
+import { capitalize } from "../../utils/capitalize";
+import { Image } from "astro:assets";
+
+let currentIndex = 0;
+
+const imagesProducts = [
+  "/products/producto1.jpg",
+  "/products/producto2.jpg",
+  "/products/producto3.jpg",
+  "/products/producto4.jpg",
+  "/products/producto5.jpg",
+  "/products/producto6.jpg",
+  "/products/producto7.jpg",
+];
 ---
 
-<LayoutPage title="Welcome to Astro.">
-    <h1>Todos los prodcutos</h1>
+<LayoutPage title="Productos Fainox Group SAS">
+  <div class="px-20">
+    <h1 class="text-colorBlue text-xl mb-4">
+      <span class="font-bold">Fainox Grupo SAS</span> cuenta con una amplia categoria
+      de productos
+    </h1>
+    <div class="flex flex-row w-full items-center justify-between">
+      <ul class="w-[60%] h-auto grid grid-cols-3 gap-5">
+        {
+          productos.map((producto) => (
+            <li>
+              <a
+                class="relative before:content-[''] before:absolute before:-left-4 before:top-[4px] before:w-4 before:h-4 hover:before:h-6
+                  before:rounded-full before:bg-blue-200 before:transition-all before:duration-300 hover:before:w-[calc(100%+15px)] before:z-[-1] hover:before:-left-2 hover:before:top-0"
+                href={`/productos/${producto}`}
+              >
+                {capitalize(producto)}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="w-[450px] h-[450px] overflow-hidden">
+        {
+          imagesProducts.map((image, index) => (
+            <Image
+              class={`rounded-md shadow-box-black object-cover w-full h-full image images brightness-75`}
+              id="mixImage"
+              width="450"
+              height="450"
+              src={image}
+              alt={`imageProduct${index}`}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
 </LayoutPage>
+
+<script>
+  const images = document.querySelectorAll(".image");
+  let currentIndex = 0;
+
+  const changeImageVisibility = () => {
+    images.forEach((image, index) => {
+      if (index === currentIndex) {
+        image.classList.remove("hidden");
+        image.classList.add("fade-in");
+      } else {
+        image.classList.remove("fade-in");
+        image.classList.add("hidden");
+      }
+    });
+
+    currentIndex = (currentIndex + 1) % images.length;
+  };
+
+  changeImageVisibility();
+
+  setInterval(() => {
+    changeImageVisibility();
+  }, 5000);
+</script>

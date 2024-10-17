@@ -1,33 +1,23 @@
 ---
 
 import { Image } from "astro:assets";
+import ButtonCotizacion from "../../components/tsx/ButtonCotizacion"
 
 const { name, description, images } = Astro.props;
 ---
-
-<div class="w-full h-auto flex flex-row">
-  <div class="w-[500px] h-[400px] overflow-hidden">
-    <Image
-      src={images[0]}
-      alt={name}
-      class="w-full h-full rounded-2xl object-cover"
-      width="500"
-      height="400"
-    />
-  </div>
-  <div class="relative flex flex-col p-10 justify-around items-start">
-    <div>
-      <h1 class="text-colorBlue text-4xl font-bold">{name}</h1>
-      <p class="mt-4 text-2xl">{description}</p>
+<div class={`w-[350px] min-h-[500px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md seeContent`}>
+  <Image
+    class="w-full h-[350px] rounded-md object-cover"
+    height="350"
+    width="350"
+    src={images[0]}
+    alt={name}
+  />
+  <div class="w-full flex flex-col gap-5 mb-5">
+    <div class="flex flex-row justify-between gap-4">
+      <h1 class="w-[220px] text-xl text-left font-bold text-colorBlue">{name}</h1>
+      <ButtonCotizacion />
     </div>
-    <button class="mt-10 border shadow-box-black hover:scale-95 duration-300 relative group cursor-pointer text-sky-50  overflow-hidden h-16 w-64 rounded-xl bg-sky-200 p-2 flex justify-center items-center font-extrabold">
-    
-      <div class="absolute right-32 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-40 h-40 rounded-full group-hover:scale-150 duration-500 bg-sky-900"></div>
-      <div class="absolute right-6 -top-4  group-hover:top-1 group-hover:right-2 z-10 w-32 h-32 rounded-full group-hover:scale-150  duration-500 bg-sky-800"></div>
-      <div class="absolute -right-12 top-4 group-hover:top-1 group-hover:right-2 z-10 w-24 h-24 rounded-full group-hover:scale-150  duration-500 bg-sky-700"></div>
-      <div class="absolute right-48 -top-4 group-hover:top-1 group-hover:right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150  duration-500 bg-sky-600"></div>
-      <p class="z-10 text-2xl text-white font-serif">Cotizar</p>
-    </button>
-    
+    <p>{description}</p>
   </div>
 </div>

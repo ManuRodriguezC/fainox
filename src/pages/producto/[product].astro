@@ -1,10 +1,10 @@
 ---
 
 import LayoutPage from "../../layouts/LayoutPage.astro";
-import listProducts from "../../store/productos.json";
+import { productos } from "../../store/productos"
 
 export function getStaticPaths() {
-    return listProducts.map(prod => ({
+    return productos.map(prod => ({
         params: { product: prod.name }
     }));
 }

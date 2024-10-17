@@ -1,36 +1,98 @@
 ---
 import { Image } from "astro:assets";
 import Services from "./services.astro";
+import IconAutomatization from '../icons/iconAutomatization.astro'
+import IconCap from '../icons/iconCap.astro'
+import IconFactory from '../icons/iconFactory.astro'
+import IconProyect from '../icons/iconProyect.astro'
+import IconPuzzle from '../icons/iconPuzzle.astro'
+import IconSuport from '../icons/iconSuport.astro'
+const services = [
+    {
+        icon: IconProyect,
+        title: "Proyectos",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconFactory,
+        title: "Fabricación",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconPuzzle,
+        title: "Montajes",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconAutomatization,
+        title: "Automatización y Control",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconCap,
+        title: "Capacitación",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        icon: IconSuport,
+        title: "Soporte y Mantenimiento",
+        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+]
 ---
 
-<section class="flex flex-col w-full px-2 md:px-10">
-  <div class="flex flex-col md:flex-row justify-center items-center gap-5 md:pb-10">
-    <div class="flex flex-col gap-8 p-5 md:p-20 md:mb-10">
-      <div>
-        <h1 class="text-3xl lg:text-4xl xl:text-6xl text-colorBlue font-bold">Fainox Group S.A.S</h1>
-        <h1 class="text-xl lg:text-3xl xl:text-3xl text-colorBlue font-semibold">Soluciones para mejores procesos</h1>
+<section class="flex flex-col justify-center items-center gap-5 mb-20">
+    <div class="w-300px">
+      <div class="flex flex-col gap-3 justify-center items-center px-2 md:px-10">
+        <IconProyect size={50} />
+        <h3 class="text-3xl text-colorBlue font-semibold">{services[0].title}</h3>
+        <p class="w-[50%] text-xl text-gray-600 text-center">{services[0].subtitle}</p>
       </div>
-      <p class="text-sm md:text-md lg:text-2xl">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
     </div>
-    <div class="w-[300px] md:w-[2500px]">
-      <Image
-      src="/images/helpers.png"
-      width={500}
-      height={500}
-      alt="Procesos brindados y apoyados por fainox"
-      class="w-full h-auto object-cover mb-6 md:mb-0"
-      />
-    </div>
-  </div>
 
-  <Services />
+    <div class="flex flex-row w-full justify-between">
+      <div class="w-[33%] flex flex-col gap-5">
+        <div class="flex flex-col gap-3 px-2 md:px-10 justify-center items-center">
+          <IconFactory size={50} />
+          <h3 class="text-3xl text-colorBlue font-semibold">{services[1].title}</h3>
+          <p class="w-[50%] text-xl text-gray-600 text-center">{services[1].subtitle}</p>
+        </div>
+        <div class="flex flex-col gap-3 px-2 md:px-10 justify-center items-center">
+          <IconPuzzle size={50} />
+          <h3 class="text-3xl text-colorBlue font-semibold">{services[2].title}</h3>
+          <p class="w-[50%] text-xl text-gray-600 text-center">{services[2].subtitle}</p>
+        </div>
+      </div>
+      <div class="w-[33%] md:w-[500px]">
+        <Image
+        src="/images/helpers.png"
+        width={500}
+        height={500}
+        alt="Procesos brindados y apoyados por fainox"
+        class="w-full h-auto object-cover mb-6 md:mb-0 rounded-3xl"
+        />
+      </div>
+
+      <div  class="w-[33%] flex flex-col gap-5">
+        <div class="flex flex-col gap-3 px-2 md:px-10 justify-center items-center">
+          <IconAutomatization size={50} />
+          <h3 class="text-3xl text-colorBlue font-semibold">{services[3].title}</h3>
+          <p class="w-[50%] text-xl text-gray-600 text-center">{services[3].subtitle}</p>
+        </div>
+        <div class="flex flex-col gap-3 px-2 md:px-10 justify-center items-center">
+          <IconCap size={50} />
+          <h3 class="text-3xl text-colorBlue font-semibold">{services[4].title}</h3>
+          <p class="w-[50%] text-xl text-gray-600 text-center">{services[4].subtitle}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-300px">
+      <div class="flex flex-col gap-3 px-2 md:px-10 justify-center items-center">
+        <IconSuport size={50} />
+        <h3 class="text-3xl text-colorBlue font-semibold">{services[5].title}</h3>
+        <p class="w-[50%] text-xl text-gray-600 text-center">{services[5].subtitle}</p>
+      </div>
+    </div>
 
 </section>

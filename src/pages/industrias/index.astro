@@ -1,7 +1,7 @@
 ---
 import LayoutPage from "../../layouts/LayoutPage.astro";
-import listProducts from "../../store/productos.json";
 import { industrias } from "../../store/industrias";
+import { productos } from "../../store/productos"
 import Producto from "../../components/industrias/producto.astro";
 import ArrowRight from "../../icons/arrowRight.astro";
 import ArrowLeft from "../../icons/arrowLeft.astro";
@@ -14,11 +14,11 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
         <span class="font-bold text-6xl">Fainox Group</span> brinda soluciones, servicios
         y productos para diferentes sectores o industrias
       </h1>
-      <p class="text-xl">Conoce algunas de las industrias y sus productos</p>
+      <p class="text-xl">Conoce los productos por cada sector o industria</p>
     </div>
     {
       industrias.map((industry, index) => {
-        const productsInIndustry = listProducts.filter((product) =>
+        const productsInIndustry = productos.filter((product) =>
           product.industry.includes(industry)
         );
         return (
@@ -29,8 +29,8 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
             >
               {industry}
             </a>
-            <div class="w-95vw] flex flex-row justify-between">
-              <button id={`left-${index}`} class="hidden md:block md:w-[5%] left no-display">
+            <div class="w-95vw flex flex-row justify-between items-center">
+              <button id={`left-${index}`} class="hidden md:block md:w-[5%] h-28 hover:scale-105 transition-all duration-100 left no-display">
                 <ArrowLeft />
               </button>
 
@@ -43,7 +43,7 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
                 ))}
               </div>
 
-              <button id={`right-${index}`} class="hidden md:block md:w-[5%] w-[5%] right">
+              <button id={`right-${index}`} class="hidden md:block md:w-[5%] w-[5%] h-28 hover:scale-105 transition-all duration-100 right">
                 <ArrowRight />
               </button>
             </div>
@@ -59,7 +59,7 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
     rightButtons.forEach((element, index) => {
       let scrollInterval: any;
 
-      element.addEventListener("click", () => {
+      element.addEventListener("mouseenter", () => {
         const productContainer = document.getElementById(
           `product-container-${index}`
         );
@@ -87,7 +87,7 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
               }
             }
           }
-        }, 300);
+        }, 500);
       });
 
       element.addEventListener("mouseleave", () => {
@@ -129,7 +129,7 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
               }
             }
           }
-        }, 300);
+        }, 500);
 
       });
 
