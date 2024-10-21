@@ -16,7 +16,7 @@ const filterProducts = productos.filter(product => product.industry.includes(ind
 <LayoutPage title={`Sector ${industry}`}>
   <section class="flex flex-col w-full h-auto px-10">
     <p class="text-center text-colorBlue text-5xl font-bold">Productos de {industry}</p>
-    <p class="text-right mr-10 mt-5 text-lg">Productos encontrados: {filterProducts.length}</p>
+    <p class="text-right mr-10 mt-5 text-lg text-gray-600">Productos encontrados: {filterProducts.length}</p>
     <div class="flex flex-wrap gap-10 justify-center items-center py-10 px-20">
       {
         filterProducts.map(product => (

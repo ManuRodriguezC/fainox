@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import FormContact from "./FormContact";
+import ListCotizacion from "../cotizacion/listCotizacion";
 
 export default function Offices() {
 
@@ -42,11 +43,13 @@ export default function Offices() {
   }, [currentOffice])
 
   return (
-    <section className="w-full h-auto flex flex-col md:flex-row justify-around items-center">
-      <div className="w-full md:w-[35%] flex flex-col justify-center items-center gap-10">
+    <section className="w-full px-20 h-auto flex flex-col-reverse md:flex-row justify-around items-center">
+
+
+      <div className="w-full md:w-[45%] flex flex-col justify-center items-center gap-10">
         <div className="flex justify-center items-center w-full h-[350px] object-cover">
           <img
-            className="w-full h-full object-cover rounded-xl shadow-lg"
+            className="w-full h-full object-cover rounded-md shadow-box-black"
             src={offices[currentOffice].image}
             alt={offices[currentOffice].place}
           />
@@ -57,23 +60,28 @@ export default function Offices() {
             offices.map((office, index) => (
               <div
                 onClick={() => setCurrentOffice(index)}
-                className={`flex flex-col justify-center items-center text-center p-5
-                            cursor-pointer ${currentOffice === index && "bg-blue-950 text-white rounded-xl shadow-2xl"}`}>
-                <h3 className="text-lg md:text-2xl font-bold">{office.name}</h3>
-                <p className="text-md md:text-xl font-semibold">{office.place}</p>
-                <p className="text-md md:text-lg">{office.phone}</p>
-                <p className="text-md md:text-lg">{office.address}</p>
+                className={`flex flex-col justify-center items-center text-center py-2 px-4
+                            cursor-pointer ${currentOffice === index && "bg-blue-950 text-white rounded-xl shadow-box-black"}`}>
+                <h3 className="font-bold">{office.name}</h3>
+                <p className="font-semibold">{office.place}</p>
+                <p className="">{office.phone}</p>
+                <p className="">{office.address}</p>
               </div>
             ))
           }
         </div>
       </div>
 
-      {/* <div className="w-[1px] h-[800px] bg-blue-200 rounded-2xl"></div> */}
-
-      <div className="w-[60%] h-auto">
-        <FormContact />
+      <div className="flex flex-col justify-center items-center">
+        <div className="h-auto w-[500px]">
+          <FormContact />
+        </div>
+        <ListCotizacion />
       </div>
+
+
+
+
     </section>
   )
 }

@@ -13,7 +13,7 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
       <h1 class="font-bold text-colorBlue text-4xl">
         Fainox Group
       </h1>
-      <p class="text-xl">Conoce los productos por cada sector o industria</p>
+      <p class="text-xl text-gray-600 mt-2">Conoce los productos por cada sector o industria</p>
     </div>
     {
       industrias.map((industry, index) => {
@@ -24,9 +24,9 @@ import ArrowLeft from "../../icons/arrowLeft.astro";
           <div class="flex flex-col">
             <a
               href={`/industrias/${industry}`}
-              class="w-[350px] underline text-3xl font-semibold text-colorBlue px-4 py-2"
+              class="w-full underline text-3xl font-semibold text-colorBlue px-4 py-2"
             >
-              {industry}
+              Industria - {industry}
             </a>
             <div class="w-95vw flex flex-row justify-between items-center">
               <button id={`left-${index}`} class="hidden md:block md:w-[5%] h-28 hover:scale-105 transition-all duration-100 left no-display">

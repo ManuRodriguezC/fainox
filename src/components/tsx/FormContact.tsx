@@ -9,39 +9,35 @@ export default function FormContact() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full h-auto flex flex-col justify-center items-start gap-4 p-5">
+    <form onSubmit={handleSubmit} className="h-auto flex flex-col justify-center items-center gap-4 p-5">
       <h1 className="text-colorBlue text-3xl font-bold">Datos de Contacto</h1>
-      <p className="text-xl pb-4">Por favor ingresa todos tus datos para poder ser contactado por uno de nuestros Asesores</p>
+      <p className="text-md text-gray-500 pb-4">Por favor ingresa todos tus datos para poder ser contactado por uno de nuestros Asesores</p>
       <div className="flex flex-row gap-10 text-colorBlue">
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-xl font-bold" htmlFor="input">Nombre</label>
-          <input className="p-2 w-[400px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" name="name" id="name" required />
+          <input className="p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Nombre" type="text" name="name" id="name" required />
         </div>
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-lg font-bold" htmlFor="input">Apellido</label>
-          <input className="p-2 w-[400px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" name="lastname" id="lastname" required />
+          <input className="p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Apellido" type="text" name="lastname" id="lastname" required />
         </div>
       </div>
       <div className="flex flex-col gap-2">
         <label className="text-gray-700 text-lg font-bold" htmlFor="input">Correo Electronico</label>
-        <input className="p-2 w-[600px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="email" name="email" id="email" required />
+        <input className="p-2 w-[440px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Correo Electronico" type="email" name="email" id="email" required />
       </div>
       <div className="flex flex-col gap-2">
-        <label className="text-gray-700 text-lg font-bold" htmlFor="input">Direccion</label>
-        <input className="p-2 w-[800px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" name="address" id="address" required />
+        <label className="text-gray-700 text-lg font-bold" htmlFor="input">Dirección</label>
+        <input className="p-2 w-[440px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Dirreción" type="text" name="address" id="address" required />
       </div>
       <div className="flex flex-row gap-10">
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-lg font-bold" htmlFor="input">Municipio</label>
-          <input className="p-2 w-[250px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" name="minucipio" id="minucipio" required />
+          <input className="p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Municipio" name="minucipio" id="minucipio" required />
         </div>
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-lg font-bold" htmlFor="input">Ciudad</label>
-          <input className="p-2 w-[250px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" name="city" id="city" required />
-        </div>
-        <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Bario</label>
-          <input className="p-2 w-[250px] border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" name="barrio" id="barrio" required />
+          <input className="p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Ciudad" name="city" id="city" required />
         </div>
       </div>
       <button className="relative group cursor-pointer mt-5 text-sky-50 overflow-hidden h-16 w-64 rounded-3xl shadow-box-black bg-sky-800 p-2 flex justify-center items-center font-extrabold">

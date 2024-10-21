@@ -1,26 +1,30 @@
 ---
-
 import { Image } from "astro:assets";
-import ButtonCotizacion from "../../components/tsx/ButtonCotizacion"
+import ButtonCotizacion from "../../components/tsx/ButtonCotizacion";
 
 const { name, description, images } = Astro.props;
 ---
-<a
-  href={`/producto/${name}`}
+
+<div
   class={`w-[350px] min-h-[500px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md
-    seeContent cursor-pointer border-2 hover:border-gray-400 hover:shadow-box-black transition-all duration-100`}>
-  <Image
-    class="w-full h-[350px] rounded-md object-cover"
-    height="350"
-    width="350"
-    src={images[0]}
-    alt={name}
-  />
+    seeContent cursor-pointer border-2 hover:border-gray-400 hover:shadow-box-black transition-all duration-100`}
+>
+  <a href={`/producto/${name}`}>
+    <Image
+      class="w-full h-[350px] rounded-md object-cover"
+      height="350"
+      width="350"
+      src={images[0]}
+      alt={name}
+    />
+  </a>
   <div class="w-full flex flex-col gap-5 mb-5">
     <div class="flex flex-row justify-between gap-4">
-      <h1 class="w-[220px] text-xl text-left font-bold text-colorBlue">{name}</h1>
-      <ButtonCotizacion />
+      <a href={`/producto/${name}`} class="w-[220px] text-xl text-left font-bold text-colorBlue">
+        {name}
+      </a>
+      <ButtonCotizacion name={name} client:load />
     </div>
     <p>{description}</p>
   </div>
-</a>
+</div>

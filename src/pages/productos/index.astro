@@ -5,20 +5,19 @@ import { capitalize } from "../../utils/capitalize";
 import { Image } from "astro:assets";
 
 const imagesProducts = [
-  "/products/producto1.jpg",
-  "/products/producto2.jpg",
-  "/products/producto3.jpg",
-  "/products/producto4.jpg",
-  "/products/producto5.jpg",
-  "/products/producto6.jpg",
-  "/products/producto7.jpg",
+  "/products/7.webp",
+  "/products/8.webp",
+  "/products/15.webp",
+  "/products/17.webp",
+  "/products/18.webp",
+  "/products/34-485.webp",
 ];
 ---
 
 <LayoutPage title="Productos Fainox Group SAS">
   <div class="px-20">
     <h1 class="text-colorBlue text-xl mb-4">
-      <span class="font-bold">Fainox Grupo SAS</span> cuenta con una amplia categoria
+      <span class="font-bold text-2xl">Fainox Grupo SAS</span> cuenta con una amplia categoria
       de productos
     </h1>
     <div class="flex flex-row w-full items-center justify-between">
@@ -27,8 +26,9 @@ const imagesProducts = [
           productos.map((producto) => (
             <li>
               <a
-                class="relative before:content-[''] before:absolute before:-left-4 before:top-[4px] before:w-4 before:h-4 hover:before:h-6
-                  before:rounded-full before:bg-blue-200 before:transition-all before:duration-300 hover:before:w-[calc(100%+15px)] before:z-[-1] hover:before:-left-2 hover:before:top-0"
+                class="relative text-gray-600 hover:text-white before:content-[''] before:absolute before:-left-4 before:top-2 before:w-2 before:h-2 hover:before:h-6
+                  before:rounded-full before:bg-colorBlue before:transition-all before:duration-300 hover:before:w-[calc(100%+15px)]
+                  before:z-[-1] hover:before:-left-2 hover:before:top-0"
                 href={`/productos/${producto}`}
               >
                 {capitalize(producto)}
