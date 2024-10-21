@@ -4,7 +4,7 @@ import { Image } from "astro:assets"
 const { name, description, images} = Astro.props
 ---
 
-<a href={`/producto/${name}`} class="relative w-auto h-[400px] flex flex-row group">
+<a href={`/producto/${name}`} class="relative w-auto h-[400px] flex flex-row group border-2 hover:border-gray-400 hover:shadow-box-black rounded-md ">
 
     <div class="w-[350px] h-full z-10 transition-transform duration-500">
       <Image
@@ -12,7 +12,7 @@ const { name, description, images} = Astro.props
         alt={name}
         width="350"
         height="350"
-        class="w-full h-full object-cover rounded-md group-hover:rounded-left brightness-50 group-hover:brightness-75"
+        class="w-full h-full object-cover rounded-md group-hover:rounded-left brightness-75 group-hover:brightness-100"
         />
       <p class="absolute bottom-5 left-5 text-2xl text-white font-semibold">{name}</p>
     </div>

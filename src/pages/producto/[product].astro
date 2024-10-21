@@ -1,21 +1,67 @@
 ---
-
+import { Image } from "astro:assets";
 import LayoutPage from "../../layouts/LayoutPage.astro";
-import { productos } from "../../store/productos"
+import { productos } from "../../store/productos";
+import ButtonCotizacion from "../../components/tsx/ButtonCotizacion";
+import { capitalize } from "../../utils/capitalize";
 
 export function getStaticPaths() {
-    return productos.map(prod => ({
-        params: { product: prod.name }
-    }));
+  return productos.map((prod) => ({
+    params: { product: prod.name },
+  }));
 }
-
 
 const { product } = Astro.params;
 
+const findProduct = productos.find((producto) => producto.name === product);
+if (!findProduct) return Astro.redirect("/productos");
+const similarLine = productos.filter(
+  (producto) => producto.linea === findProduct.linea && producto.name != findProduct.name
+);
+const othersProducts = productos;
 ---
 
 <LayoutPage title={`${product}`}>
-    <div>
-        <h1>{product}</h1>
+  <section class="px-32 flex flex-col w-full">
+    <div class="flex flex-row">
+      <Image
+        src={findProduct?.images[0]}
+        width={500}
+        height={500}
+        alt={`${findProduct.name}-Fainox Group`}
+      />
+      <div class="p-10">
+        <h1 class="text-colorBlue text-4xl font-bold">{findProduct.name}</h1>
+        <p class="my-2 font-semibold text-gray-500">Producto de la Linea - {capitalize(findProduct.linea)}</p>
+        <p class="text-xl py-12">{findProduct.description}</p>
+        <p>{findProduct.industry}</p>
+        <p>{findProduct.linea}</p>
+        <div class="">
+          <ButtonCotizacion />
+        </div>
+      </div>
     </div>
+
+    <div class="h-[1px] my-10 w-full bg-gray-500"></div>
+
+    <div>
+      <h3 class="text-colorBlue text-xl font-bold mb-5">Productos de la misma Linea</h3>
+      <div class="flex flex-wrap gap-4 justify-center items-center">
+        {
+          similarLine.map((prod) => (
+            <a
+              class="border-2 rounded-md hover:shadow-box-black hover:border-gray-400 transition-all duration-150"
+              href={`/producto/${prod.name}`}>
+              <Image
+                src={prod?.images[0]}
+                width={250}
+                height={250}
+                alt={`${prod.name}-Fainox Group`}
+              />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
 </LayoutPage>

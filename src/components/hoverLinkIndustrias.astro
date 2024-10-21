@@ -3,14 +3,14 @@ import { industrias } from "../store/industrias";
 ---
 
 <div
-  class="hidden group-hover:block absolute top-16 -left-[150px] w-[400px] text-2xl border-2
-    border-gray-300 rounded-lg p-2 bg-white gap-y-1-6 font-medium shadow-box-black"
+  class="hidden group-hover:block absolute top-16 -left-[150px] w-[400px] text-lg border-2
+    border-gray-300 rounded-lg p-2 bg-white font-medium shadow-box-black"
 >
   {
     industrias.map((industria) => (
       <a
         href={`/industrias/${industria}`}
-        class="cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-5 hover:bg-gray-100 rounded-lg"
+        class="cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg"
       >
         <p>{industria}</p>
       </a>

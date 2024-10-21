@@ -5,7 +5,10 @@ import ButtonCotizacion from "../../components/tsx/ButtonCotizacion"
 
 const { name, description, images } = Astro.props;
 ---
-<div class={`w-[350px] min-h-[500px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md seeContent`}>
+<a
+  href={`/producto/${name}`}
+  class={`w-[350px] min-h-[500px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md
+    seeContent cursor-pointer border-2 hover:border-gray-400 hover:shadow-box-black transition-all duration-100`}>
   <Image
     class="w-full h-[350px] rounded-md object-cover"
     height="350"
@@ -20,4 +23,4 @@ const { name, description, images } = Astro.props;
     </div>
     <p>{description}</p>
   </div>
-</div>
+</a>
