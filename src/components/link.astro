@@ -2,31 +2,31 @@
 import HoverLinkIndustrias from "./hoverLinkIndustrias.astro";
 import HoverLinkProductos from "./hoverLinkProductos.astro";
 
-const { link } = Astro.props;
+const { link, name } = Astro.props;
 ---
 
 <li
   class="group relative"
   >
   <a
-    href={`/${link.toLowerCase()}`}
-    class="flex flex-row justify-center gap-2 items-center text-2xl text-colorBlue font-bold py-4" aria-keyshortcuts={link}>
+    href={`/${link}`}
+    class="flex flex-row justify-center gap-2 items-center text-lg text-colorBlue font-bold py-4" aria-keyshortcuts={link}>
     <p>
-      {link}
+      {name}
     </p>
     {
-      (link.toLowerCase() == "industrias" || link.toLowerCase() == "productos")
+      (link === "industriasyservicios" || link === "productos")
       &&
       <span class="arrow group-hover:rotate-195 group-hover:left-6 group-hover:top-1"></span>
     }
   </a>
   {
-    link.toLowerCase() == "industrias"
+    link === "industriasyservicios"
     &&
     <HoverLinkIndustrias />
   }
     {
-      link.toLowerCase() == "productos"
+      link === "productos"
       &&
       <HoverLinkProductos />
     }

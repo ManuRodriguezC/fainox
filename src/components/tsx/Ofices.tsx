@@ -45,7 +45,7 @@ export default function Offices() {
   return (
     <section className="w-full px-20 h-auto flex flex-col-reverse md:flex-row justify-around items-center">
 
-
+{/* 
       <div className="w-full md:w-[45%] flex flex-col justify-center items-center gap-10">
         <div className="flex justify-center items-center w-full h-[350px] object-cover">
           <img
@@ -70,9 +70,9 @@ export default function Offices() {
             ))
           }
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-row-reverse justify-start items-center">
         <div className="h-auto w-[500px]">
           <FormContact />
         </div>

@@ -1,47 +1,52 @@
 ---
 import Link from "./link.astro";
 
-const links = ["Industrias", "Productos", "Oportunidades", "Novedades"];
+const links = [
+  {
+    "name": "Nosotros",
+    "link": ""
+  },
+  {
+    "name": "Industrias & Servicios",
+    "link": "industriasyservicios"
+  },
+  {
+    "name": "Productos",
+    "link": "productos"
+  },
+  {
+    "name": "Equipos Usados",
+    "link": "equiposusados"
+  },
+  {
+    "name": "Desarrollos & Novedades",
+    "link": "desarrollosynovedades"
+  },
+  {
+    "name": "Contacto",
+    "link": "contacto"
+  },
+  {
+    "name": "Cotización",
+    "link": "cotizacion"
+  }
+];
 ---
 
 <header class="fixed  top-0 bg-white z-50 w-full flex flex-row justify-between items-center px-10 pt-3 transition-all duration-150">
-  <a href="/">
-    <img id="header-image" class="h-20 transition-all duration-150" src="/images/icono.jpg" alt="Icono Fainox" />
-  </a>
+  <img id="header-image" class="h-20 transition-all duration-150" src="/images/logo.png" alt="Icono Fainox" />
 
   <nav class="hidden lg:block">
 
-    <ul class="flex flex-row gap-x-6 xl:gap-x-20">
+    <ul class="flex flex-row gap-14">
       {
         links.map(link => (
-          <Link link={link}/>
+          <Link link={link.link} name={link.name}/>
       ))
     }
     </ul>
   </nav>
 
-  <div class="hidden lg:block">
-    <a href="/cotizacion">
-      Contacto y Cotiza
-    </a>
-  </div>
-
   <div class="block lg:hidden">Menu</div>
 
 </header>
-
-<!-- <script>
-  const headerImage = document.getElementById('header-image')
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = document.documentElement.scrollTop
-    console.log(scrollTop)
-    if (headerImage) {
-      if (scrollTop > 10 && headerImage) {
-        headerImage.style.height = "80px";
-      } else {
-        headerImage.style.height = "160px"
-      }
-    }
-  })
-</script> -->
