@@ -6,7 +6,7 @@ import { productos } from "../../store/productos"
 
 export function getStaticPaths() {
   return industrias.map(industria => ({
-    params: {industry: industria}
+    params: {industry: industria.name}
   }))
 }
 

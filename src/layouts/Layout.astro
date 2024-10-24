@@ -245,4 +245,26 @@ const { title } = Astro.props;
     outline: 1px solid rgb(3, 30, 57);
     border-radius: 20px;
   }
+
+  @keyframes indu {
+  from {
+    transform: scale(0.8); /* Usando transform */
+    filter: blur(10px);
+  }
+  to {
+    transform: scale(1); /* Usando transform */
+    filter: blur(0px);
+  }
+}
+
+  .indu {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: indu;
+
+    animation-range: entry 20% cover 30%;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+  }
 </style>

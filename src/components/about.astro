@@ -1,48 +1,53 @@
 ---
 import { Image } from "astro:assets";
-import IconAutomatization from '../icons/iconAutomatization.astro'
-import IconCap from '../icons/iconCap.astro'
-import IconFactory from '../icons/iconFactory.astro'
-import IconProyect from '../icons/iconProyect.astro'
-import IconPuzzle from '../icons/iconPuzzle.astro'
-import IconSuport from '../icons/iconSuport.astro'
+import IconAutomatization from "../icons/iconAutomatization.astro";
+import IconCap from "../icons/iconCap.astro";
+import IconFactory from "../icons/iconFactory.astro";
+import IconProyect from "../icons/iconProyect.astro";
+import IconPuzzle from "../icons/iconPuzzle.astro";
+import IconSuport from "../icons/iconSuport.astro";
 const services = [
-    {
-        icon: IconProyect,
-        title: "Proyectos",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        icon: IconFactory,
-        title: "Fabricación",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        icon: IconPuzzle,
-        title: "Montajes",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        icon: IconAutomatization,
-        title: "Automatización y Control",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        icon: IconCap,
-        title: "Capacitación",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        icon: IconSuport,
-        title: "Soporte y Mantenimiento",
-        subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-]
+  {
+    icon: IconProyect,
+    title: "Proyectos",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    icon: IconFactory,
+    title: "Fabricación",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    icon: IconPuzzle,
+    title: "Montajes",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    icon: IconAutomatization,
+    title: "Automatización y Control",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    icon: IconCap,
+    title: "Capacitación",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    icon: IconSuport,
+    title: "Soporte y Mantenimiento",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
 ---
 
-<section class="flex flex-col justify-center items-center gap-5 mb-20">
-
-    <div class="flex flex-row w-full justify-between items-center">
+<section class="flex flex-col justify-center items-center gap-5 mb-20 mt-40">
+  <!-- <div class="flex flex-row w-full justify-between items-center">
 
       <div class="w-[33%] flex flex-col gap-8">
         <div class="flex flex-col justify-center items-center px-2 md:px-10">
@@ -89,6 +94,66 @@ const services = [
           <p class="text-md text-gray-600 text-center">{services[5].subtitle}</p>
         </div>
       </div>
+    </div> -->
+
+  <div class="w-[80%] aspect-[18/14] grid grid-rows-4 grid-cols-4 gap-4">
+    <div
+      class="relative group bg-gray-400 row-span-2 col-span-1 rounded-xl overflow-hidden"
+    >
+      <Image
+        src={"/servicios/servicios.webp"}
+        alt="Proyectos Fainox Group"
+        class="w-full h-full rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200"
+        width={200}
+        height={400}
+      />
+      <div
+        class="absolute bottom-3 left-2 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-3"
+      >
+        <h1 class="text-white text-lg font-semibold">Proyectos</h1>
+        <p
+          class="text-white w-full h-5 group-hover:h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
     </div>
 
+    <div class="relative group bg-gray-400 row-span-1 rounded-xl col-span-2">
+      <Image
+        src={"/servicios/fabricacion.webp"}
+        alt="Proyectos Fainox Group"
+        class="w-full h-[220px] object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200"
+        width={200}
+        height={400}
+      />
+      <div
+        class="absolute bottom-3 left-2 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-3"
+      >
+        <h1 class="text-white text-lg font-semibold">Fabricación</h1>
+        <p
+          class="text-white w-full h-5 group-hover:h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-1"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </div>
+    <div class="bg-gray-400 row-start-2 row-end-4 col-start-2 col-end-4">3</div>
+    <div class="bg-gray-400 row-start-3 col-start-1 row-span-2">4</div>
+    <div class="bg-gray-400 row-start-4 col-start-2 col-end-4">5</div>
+    <div class="bg-gray-400 row-start-1 row-end-3 col-start-4">6</div>
+    <div class="bg-gray-400 row-start-3 row-end-5">7</div>
+  </div>
 </section>
+
+<!-- <div class="w-[50%] p-40 aspect-square grid grid-rows-7 grid-cols-5 gap-4">
+  <div class="bg-gray-400 row-start-1 row-end-3 col-start-1 col-end-3">1</div>
+  <div class="bg-gray-400 row-span-2 col-span-3">2</div>
+  <div class="bg-gray-400 row-start-3 col-span-2 row-end-6">3</div>
+  <div class="bg-gray-400 row-start-4 col-start-">4</div>
+  <div class="bg-gray-400 row-start-2 col-start-3 row-end-4">5</div>
+  <div class="bg-gray-400 row-start-4 col-start-1 col-span-2">6</div>
+  <div class="bg-gray-400 row-start-4 col-start-3">7</div>
+</div> -->

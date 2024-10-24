@@ -10,8 +10,8 @@ const { link, name } = Astro.props;
   >
   <a
     href={`/${link}`}
-    class="flex flex-row justify-center gap-2 items-center text-lg text-colorBlue font-bold py-4" aria-keyshortcuts={link}>
-    <p>
+    class="flex flex-row justify-center gap-2 items-center text-sm lg:text-base xl:text-lg text-colorBlue font-bold py-4" aria-keyshortcuts={link}>
+    <p class="text-center">
       {name}
     </p>
     {

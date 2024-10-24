@@ -6,14 +6,16 @@ import ButtonCotizacion from "../../components/tsx/ButtonCotizacion";
 import { capitalize } from "../../utils/capitalize";
 
 export function getStaticPaths() {
-  return productos.map((prod) => ({
-    params: { product: prod.name },
+  return productos.map((producto) => ({
+    params: { product: producto.name },
   }));
 }
+
 
 const { product } = Astro.params;
 
 const findProduct = productos.find((producto) => producto.name === product);
+
 if (!findProduct) return Astro.redirect("/productos");
 const similarLine = productos.filter(
   (producto) =>
