@@ -152,7 +152,7 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/44.jpg"]
     },
     {
-        "name": "Prensas para Queso ",
+        "name": "Prensas para Queso",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Este equipo se utiliza para realizar el prensado de cuajada, convirtiéndola en queso, para ello utiliza una serie de moldes que le dan su forma característica rectangular.",
@@ -160,7 +160,7 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/105.jpg"]
     },
     {
-        "name": "Hiladora Vapor / Agua",
+        "name": "Hiladora Vapor - Agua",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Hiladora a vapor: Las máquinas de cocción en seco tipo vapor abierto  Este equipo se utiliza para altas capacidades de más de 100 Kg/carga. La cuajada es remoldeada mediante 2 espirales. Gracias al vapor, que se proporciona tanto dentro de la máquina como alrededor de las paredes exteriores; el queso se cocina al gusto. Capacidad: 100 – 500 Kg/Carga. ** Una carga dura aproximadamente entre 10 – 12 minutos.",
@@ -168,7 +168,7 @@ export const productos = [
         "images": ["/products/34-485.webp"] // Falta esta imagen //
     },
     {
-        "name": "Lineas de Transferencia ",
+        "name": "Lineas de Transferencia",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Utilizada en la tranferencia de la cuajada a la máquina de pesaje.",
@@ -176,7 +176,7 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/35.jpg"]
     },
     {
-        "name": "Linea Completa para Queso Hilado / Vapor ",
+        "name": "Linea Completa para Queso Hilado - Vapor",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "La máquina moldeadora calienta la cuajada usando vapor para luego realizar el proceso de remoledeado. Este equipo presenta la función de  pesaje en capacidad hasta 1000 Kg/h. El equipo con capacidad de 1500 Kg/h no provee la función de pesaje.  Capacidad: 500, 1000, 1500 Kg  ",
@@ -192,7 +192,7 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/36.jpg"]
     },
     {
-        "name": "Coccionadoras para Queso Cremoso ",
+        "name": "Coccionadoras para Queso Cremoso",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Máquina de cocción en seco:  Máquina de cocción en seco de tipo cerrado. Permite el remoldeo de la cuajada en una caldera circular mediante la aplicación de vapor que circula por la caldera.  Capacidad: 40-60-80 L/Carga",
@@ -248,7 +248,7 @@ export const productos = [
         "images": ["/products/34-485.webp"] // Falta esta imagen
     },
     {
-        "name": "Equipos para Produccion de dulce de leche (Arequipe/Manjar)",
+        "name": "Equipos para Produccion de dulce de leche (Arequipe - Manjar)",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "derivados varios",
         "description": "******",

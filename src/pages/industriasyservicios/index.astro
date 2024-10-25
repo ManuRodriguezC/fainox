@@ -39,7 +39,7 @@ import { capitalize } from "../../utils/capitalize";
                 );
                 return (
                   <div class="indu">
-                    <h3 class="text-3xl font-bold ml-10 py-4 text-colorBlue">{capitalize(typeSubIndustry.name)}</h3>
+                    <h3 class="text-3xl font-bold text-center md:ml-10 py-4 text-colorBlue">{capitalize(typeSubIndustry.name)}</h3>
                     <div class="w-95vw flex flex-row justify-between items-center">
                       <button
                         id={`left-${index}-${indexx}`}
@@ -50,9 +50,9 @@ import { capitalize } from "../../utils/capitalize";
 
                       <div
                         id={`product-container-${index}-${indexx}`}
-                        class="flex flex-row gap-4 overflow-y-hidden scroll-hidden p-6 pr-96 w-full md:w-[74%] lg:w-[85%]"
+                        class="flex flex-row gap-4 overflow-y-hidden scroll-hidden p-6 md:pr-96 w-full md:w-[74%] lg:w-[85%]"
                         >
-                          <img src={typeSubIndustry.image} class="w-[350px] aspect-square object-cover shadow-box-black rounded-md" alt={typeSubIndustry.name} />
+                          <img src={typeSubIndustry.image} class="hidden sm:block w-[350px] aspect-square object-cover shadow-box-black rounded-md" alt={typeSubIndustry.name} />
                           
                           {filterSubIndustry.map((productFilter) => (
                             <Producto {...productFilter} />
@@ -79,7 +79,7 @@ import { capitalize } from "../../utils/capitalize";
   <script>
     const rightButtons = document.querySelectorAll(".right");
 
-    rightButtons.forEach((element, index) => {
+    rightButtons.forEach((element) => {
       let scrollInterval: any;
 
       element.addEventListener("mouseenter", () => {
@@ -119,7 +119,7 @@ import { capitalize } from "../../utils/capitalize";
 
     const leftButtons = document.querySelectorAll(".left");
 
-    leftButtons.forEach((element, index) => {
+    leftButtons.forEach((element) => {
       let scrollInterval: any;
 
       element.addEventListener("mouseenter", () => {

@@ -1,159 +1,100 @@
 ---
 import { Image } from "astro:assets";
-import IconAutomatization from "../icons/iconAutomatization.astro";
-import IconCap from "../icons/iconCap.astro";
-import IconFactory from "../icons/iconFactory.astro";
-import IconProyect from "../icons/iconProyect.astro";
-import IconPuzzle from "../icons/iconPuzzle.astro";
-import IconSuport from "../icons/iconSuport.astro";
 const services = [
   {
-    icon: IconProyect,
-    title: "Proyectos",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Proyectos",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "servicios.webp",
+    classDiv: "relative group bg-gray-400 row-span-2 col-span-1 rounded-xl overflow-hidden hover:shadow-box-black",
+    classImage: "w-full h-full object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200",
+    info: true
   },
   {
-    icon: IconFactory,
-    title: "Fabricación",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Fabricación",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "fabricacion.webp",
+    classDiv: "relative group bg-gray-400 row-span-1 rounded-xl col-span-2 hover:shadow-box-black",
+    classImage: "w-full h-full lg:h-[270px] object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200",
+    info: true
   },
   {
-    icon: IconPuzzle,
-    title: "Montajes",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Todos los Servicios Fainox",
+    description: "",
+    image: "helpers.webp",
+    classDiv: "bg-gray-400 rounded-xl row-start-2 row-end-4 col-start-2 col-end-4",
+    classImage: "w-full h-full object-cover rounded-xl",
+    info: false
   },
   {
-    icon: IconAutomatization,
-    title: "Automatización y Control",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Automatización & Control",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "automatizacion.webp",
+    classDiv: "relative group rounded-xl bg-gray-400 row-start-3 col-start-1 row-span-2 hover:shadow-box-black",
+    classImage: "w-full h-full object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200",
+    info: true
   },
   {
-    icon: IconCap,
-    title: "Capacitación",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Capacitación",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "capacitacion.webp",
+    classDiv: "relative group rounded-xl bg-gray-400 row-start-4 col-start-2 col-end-4 hover:shadow-box-black",
+    classImage: "w-full h-full lg:h-[270px] object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200",
+    info: true
   },
   {
-    icon: IconSuport,
-    title: "Soporte y Mantenimiento",
-    subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Montajes",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "montajes.webp",
+    classDiv: "relative group rounded-xl bg-gray-400 row-start-1 row-end-3 col-start-4 hover:shadow-box-black",
+    classImage: "w-full h-full object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200",
+    info: true
+  },
+  {
+    name: "Soporte & Mantenimiento",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "soporte.webp",
+    classDiv: "relative group rounded-xl bg-gray-400 row-start-3 row-end-5 hover:shadow-box-black",
+    classImage: "w-full h-full object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200",
+    info: true
   },
 ];
 ---
 
 <section class="flex flex-col justify-center items-center gap-5 mb-20 mt-40">
-  <!-- <div class="flex flex-row w-full justify-between items-center">
 
-      <div class="w-[33%] flex flex-col gap-8">
-        <div class="flex flex-col justify-center items-center px-2 md:px-10">
-          <IconProyect size={50} />
-          <h3 class="text-xl text-colorBlue font-semibold">{services[0].title}</h3>
-          <p class="text-md text-gray-600 text-center">{services[0].subtitle}</p>
-        </div>
-        <div class="flex flex-col px-2 md:px-10 justify-center items-center">
-          <IconFactory size={50} />
-          <h3 class="text-xl text-colorBlue font-semibold">{services[1].title}</h3>
-          <p class="text-md text-gray-600 text-center">{services[1].subtitle}</p>
-        </div>
-        <div class="flex flex-col px-2 md:px-10 justify-center items-center">
-          <IconPuzzle size={50} />
-          <h3 class="text-xl text-colorBlue font-semibold">{services[2].title}</h3>
-          <p class="text-md text-gray-600 text-center">{services[2].subtitle}</p>
-        </div>
-      </div>
+  <h1 class="text-colorBlue text-center px-5 md:px-0 text-3xl lg:text-5xl font-bold mb-10">Servicios y Soportes Fainox Group</h1>
 
-      <div class="w-[33%] md:w-[400px]">
-        <Image
-        src="/images/helpers.png"
-        width={300}
-        height={300}
-        alt="Procesos brindados y apoyados por fainox"
-        class="w-full h-auto object-cover mb-6 md:mb-0 rounded-3xl"
-        />
-      </div>
+  <div class="w-full p-2 lg:p-0 lg:w-[80%] h-[60vh] lg:h-[1000px] xl:h-[1100px] aspect-square lg:aspect-[18/14] grid grid-rows-4 grid-cols-4 gap-2 md:gap-4">
 
-      <div  class="w-[33%] flex flex-col gap-8">
-        <div class="flex flex-col px-2 md:px-10 justify-center items-center">
-          <IconAutomatization size={50} />
-          <h3 class="text-xl text-colorBlue font-semibold">{services[3].title}</h3>
-          <p class="text-md text-gray-600 text-center">{services[3].subtitle}</p>
-        </div>
-        <div class="flex flex-col px-2 md:px-10 justify-center items-center">
-          <IconCap size={50} />
-          <h3 class="text-xl text-colorBlue font-semibold">{services[4].title}</h3>
-          <p class="text-md text-gray-600 text-center">{services[4].subtitle}</p>
-        </div>
-        <div class="flex flex-col px-2 md:px-10 justify-center items-center">
-          <IconSuport size={50} />
-          <h3 class="text-xl text-colorBlue font-semibold">{services[5].title}</h3>
-          <p class="text-md text-gray-600 text-center">{services[5].subtitle}</p>
-        </div>
-      </div>
-    </div> -->
+    {
+      services.map(({name, description, image, classDiv, classImage, info}) => (
 
-  <div class="w-[80%] aspect-[18/14] grid grid-rows-4 grid-cols-4 gap-4">
-    <div
-      class="relative group bg-gray-400 row-span-2 col-span-1 rounded-xl overflow-hidden"
-    >
-      <Image
-        src={"/servicios/servicios.webp"}
-        alt="Proyectos Fainox Group"
-        class="w-full h-full rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200"
-        width={200}
-        height={400}
-      />
-      <div
-        class="absolute bottom-3 left-2 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-3"
-      >
-        <h1 class="text-white text-lg font-semibold">Proyectos</h1>
-        <p
-          class="text-white w-full h-5 group-hover:h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-1"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-    </div>
-
-    <div class="relative group bg-gray-400 row-span-1 rounded-xl col-span-2">
-      <Image
-        src={"/servicios/fabricacion.webp"}
-        alt="Proyectos Fainox Group"
-        class="w-full h-[220px] object-cover rounded-xl brightness-75 group-hover:brightness-50 transition-all duration-200"
-        width={200}
-        height={400}
-      />
-      <div
-        class="absolute bottom-3 left-2 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-3"
-      >
-        <h1 class="text-white text-lg font-semibold">Fabricación</h1>
-        <p
-          class="text-white w-full h-5 group-hover:h-full transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-1"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-    </div>
-    <div class="bg-gray-400 row-start-2 row-end-4 col-start-2 col-end-4">3</div>
-    <div class="bg-gray-400 row-start-3 col-start-1 row-span-2">4</div>
-    <div class="bg-gray-400 row-start-4 col-start-2 col-end-4">5</div>
-    <div class="bg-gray-400 row-start-1 row-end-3 col-start-4">6</div>
-    <div class="bg-gray-400 row-start-3 row-end-5">7</div>
+        <div class={`${classDiv}`}>
+          <Image
+            src={`/servicios/${image}`}
+            alt={`${name} - Fainox Group`}
+            class={classImage}
+            width={200}
+            height={400}
+          />
+          {
+            info
+            &&
+            <div
+              class="absolute bottom-3 left-[2px] md:left-2 transition-transform duration-300 ease-in-out transform group-hover:-translate-y-3"
+              >
+              <h1 class="text-white sm:px-4 text-xs md:text-xl lg:text-2xl font-semibold">{name}</h1>
+              <p
+                class="text-white text-[10px] md:text-lg w-full h-5 group-hover:h-full transition-opacity duration-200
+                ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-1"
+                >
+                {description}
+              </p>
+            </div>
+          }
+        </div>
+      ))
+    }
   </div>
 </section>
 
-<!-- <div class="w-[50%] p-40 aspect-square grid grid-rows-7 grid-cols-5 gap-4">
-  <div class="bg-gray-400 row-start-1 row-end-3 col-start-1 col-end-3">1</div>
-  <div class="bg-gray-400 row-span-2 col-span-3">2</div>
-  <div class="bg-gray-400 row-start-3 col-span-2 row-end-6">3</div>
-  <div class="bg-gray-400 row-start-4 col-start-">4</div>
-  <div class="bg-gray-400 row-start-2 col-start-3 row-end-4">5</div>
-  <div class="bg-gray-400 row-start-4 col-start-1 col-span-2">6</div>
-  <div class="bg-gray-400 row-start-4 col-start-3">7</div>
-</div> -->

@@ -1,5 +1,4 @@
 ---
-import Banner from '../components/banner.astro';
 import LayoutPage from '../layouts/LayoutPage.astro';
 import About from '../components/about.astro';
 import Fainox from '../components/fainox.astro';
@@ -8,8 +7,8 @@ import BannerLoop from '../components/tsx/BannerLoop';
 ---
 
 <LayoutPage title="Fainox Group SAS">
-  <!-- <BannerLoop client:load/> -->
-  <!-- <Fainox /> -->
+  <BannerLoop client:load/>
+  <Fainox />
   <About />
   <!-- <Banner /> -->
 </LayoutPa>
