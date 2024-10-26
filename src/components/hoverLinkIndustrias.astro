@@ -3,7 +3,7 @@ import { industrias } from "../store/industrias";
 ---
 
 <div
-  class="hidden group-hover:block absolute top-12 -left-[150px] w-[400px] text-lg border-2
+  class="hidden group-hover:block absolute top-12 -left-[150px] w-[400px] text-base border-2
     border-gray-300 rounded-lg p-2 bg-white font-medium shadow-box-black"
 >
   {
@@ -20,19 +20,19 @@ import { industrias } from "../store/industrias";
       } else {
         return (
           <details>
-            <summary>{industria.name}</summary>
+            <summary class="cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg">{industria.name}</summary>
             <ul>
               <li>
-                <a href="/automatizacion">Automatizacion</a>
+                <a class="before:w-2 before:h-2 before:bg-colorBlue before:rounded-full cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg" href="#">Automatizacion</a>
               </li>
               <li>
-                <a href="Proyectos">Proyectos</a>
+                <a class="before:w-2 before:h-2 before:bg-colorBlue before:rounded-full cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg" href="#">Proyectos</a>
               </li>
               <li>
-                <a href="Servicios">Servicios</a>
+                <a class="before:w-2 before:h-2 before:bg-colorBlue before:rounded-full cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg" href="#">Servicios</a>
               </li>
               <li>
-                <a href="Productos">Productos</a>
+                <a class="before:w-2 before:h-2 before:bg-colorBlue before:rounded-full cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg" href="#">Productos</a>
               </li>
             </ul>
           </details>

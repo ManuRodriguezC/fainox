@@ -1,6 +1,6 @@
 ---
-import ProductoForList from '../../components/industrias/productoForList.astro';
 import LayoutPage from '../../layouts/LayoutPage.astro';
+import FilterListProduct from '../../components/tsx/FilterListProduct'
 import { industrias } from '../../store/industrias';
 import { productos } from "../../store/productos"
 
@@ -9,20 +9,14 @@ export function getStaticPaths() {
     params: {industry: industria.name}
   }))
 }
-
 const { industry } = Astro.params
 const filterProducts = productos.filter(product => product.industry.includes(industry))
+
 ---
 <LayoutPage title={`Sector ${industry}`}>
   <section class="flex flex-col w-full h-auto px-10">
-    <p class="text-center text-colorBlue text-5xl font-bold">Productos de {industry}</p>
-    <p class="text-right mr-10 mt-5 text-lg text-gray-600">Productos encontrados: {filterProducts.length}</p>
-    <div class="flex flex-wrap gap-10 justify-center items-center py-10 px-20">
-      {
-        filterProducts.map(product => (
-          <ProductoForList {...product}/>
-        ))
-      }
-  </div>
+    <h1 class="text-center text-colorBlue text-5xl font-bold">Industria - {industry}</h1>
+    <FilterListProduct industry={industry} filterProducts={filterProducts} client:load/>
 </section>
+
 </LayoutPage>

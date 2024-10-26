@@ -1,12 +1,15 @@
 ---
 import { Image } from "astro:assets"
+import ButtonCotizacion from "../tsx/ButtonCotizacion"
 
 const { name, description, images} = Astro.props
 ---
 
-<a href={`/producto/${name}`} class="relative w-auto h-[300px] md:h-[400px] flex flex-row group border-2 hover:border-gray-400 hover:shadow-box-black rounded-md ">
+<div class="relative w-auto h-[300px] md:h-[400px] flex flex-row group border-2 hover:border-gray-400 hover:shadow-box-black rounded-md ">
 
-    <div class="w-[280px] md:w-[350px] h-full z-10 transition-transform duration-500">
+    <a
+      href={`/producto/${name}`}
+      class="w-[280px] md:w-[350px] h-full z-10 transition-transform duration-500">
       <Image
         src={images[0]}
         alt={name}
@@ -15,12 +18,16 @@ const { name, description, images} = Astro.props
         class="w-full h-full p-4 object-cover rounded-md group-hover:rounded-left brightness-75 group-hover:brightness-100"
         />
       <p class="block group-hover:hidden absolute bottom-0 w-full left-0 p-2 rounded-lg text-xl text-colorBlue bg-white font-semibold">{name}</p>
-    </div>
+    </a>
 
     <div class="hidden md:block w-0 h-full -translate-x-full group-hover:translate-x-0 group-hover:w-[350px] overflow-hidden transition-all">
-      <div class="text-colorBlue opacity-0 h-full group-hover:opacity-100 transition-opacity duration-300 group-hover:rounded-rigth p-4 border-1 border-gray-500">
-        <h3 class="font-bold text-xl py-2">{name}</h3>
-        <p class="text-gray-500 text-xl font-normal line-clamp-6">{description}</p>
+      <div class="flex flex-col justify-between text-colorBlue opacity-0 h-full group-hover:opacity-100 transition-opacity duration-300 group-hover:rounded-rigth p-4 border-1 border-gray-500">
+        <a
+          href={`/producto/${name}`}>
+          <h3 class="font-bold text-xl py-2">{name}</h3>
+          <p class="text-gray-500 text-xl font-normal line-clamp-6">{description}</p>
+        </a>
+        <ButtonCotizacion client:load name={name} />
       </div>
     </div>
-  </a>
+  </div>

@@ -34,6 +34,7 @@ export default {
       borderRadius: {
         "left": "6px 0px 0px 6px",
         "rigth": "0px 6px 6px 0px",
+        "higt": "10px 10px 0px 0px",
         "round-image1": "22% 78% 49% 51% / 73% 30% 70% 27%",
         "round-image2": "33% 67% 14% 86% / 65% 35% 65% 35%",
         "round-image3": "80% 20% 55% 45% / 27% 35% 65% 73%"
