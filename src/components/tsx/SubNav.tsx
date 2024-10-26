@@ -1,6 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
-import { subIndustrys, type DatesIndustrys } from "../../store/subIndustrys";
 import { capitalize } from "../../utils/capitalize";
+import { subIndustrys, type DatesIndustrys } from "../../store/subIndustrys";
 
 interface Props {
     indus: string;

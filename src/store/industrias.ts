@@ -15,10 +15,10 @@ export const industrias = [
     name: "Alimentos Varios",
     type: "link",
   },
-  {
-    name: "Servicios e Ingenieria",
-    type: "detail",
-  },
+  // {
+  //   name: "Servicios e Ingenieria",
+  //   type: "detail",
+  // },
 ];
 
 export const sectores = [

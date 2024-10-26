@@ -2,7 +2,7 @@ interface SubIndustry {
     [key: string]: DatesIndustrys[];
 }
 
-interface DatesIndustrys {
+export interface DatesIndustrys {
     name: string,
     image: string,
 }
