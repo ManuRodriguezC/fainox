@@ -31,9 +31,7 @@ export default function Offices() {
   const [currentOffice, setCurrentOffice] = useState(1)
 
   useEffect(() => {
-    console.log(currentOffice)
     const updateImage = () => {
-      console.log(currentOffice)
       setCurrentOffice((prevData) => (prevData + 1) % offices.length)
     }
 
@@ -43,10 +41,10 @@ export default function Offices() {
   }, [currentOffice])
 
   return (
-    <section className="w-full px-20 h-auto flex flex-col-reverse md:flex-row justify-around items-center">
+    <section className="w-full px-20 h-auto flex flex-col-reverse md:flex-row justify-center items-center">
 
-{/* 
-      <div className="w-full md:w-[45%] flex flex-col justify-center items-center gap-10">
+
+      {/* <div className="w-full md:w-[45%] flex flex-col justify-center items-center gap-10">
         <div className="flex justify-center items-center w-full h-[350px] object-cover">
           <img
             className="w-full h-full object-cover rounded-md shadow-box-black"
@@ -59,6 +57,7 @@ export default function Offices() {
           {
             offices.map((office, index) => (
               <div
+                key={office.name}
                 onClick={() => setCurrentOffice(index)}
                 className={`flex flex-col justify-center items-center text-center py-2 px-4
                             cursor-pointer ${currentOffice === index && "bg-blue-950 text-white rounded-xl shadow-box-black"}`}>
@@ -72,8 +71,8 @@ export default function Offices() {
         </div>
       </div> */}
 
-      <div className="flex flex-row-reverse justify-start items-center">
-        <div className="h-auto w-[500px]">
+      <div className="flex w-full flex-row-reverse justify-around items-center">
+        <div className="h-auto w-[40%]">
           <FormContact />
         </div>
         <ListCotizacion />

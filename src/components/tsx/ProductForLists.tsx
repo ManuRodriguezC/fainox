@@ -10,15 +10,13 @@ export default function ProductForLists({name, description, images}: Product) {
             <a href={`/producto/${name}`}>
                 <img
                 className="w-full h-[350px] rounded-md object-cover"
-                // height="350"
-                // width="350"
                 src={images[0]}
                 alt={name}
                 />
             </a>
             <div className="w-full flex flex-col gap-5 mb-5">
                 <div className="flex flex-row justify-between gap-4">
-                <a href={`/producto/${name}`} className="w-[220px] text-xl text-left font-bold text-colorBlue">
+                <a href={`/producto/${name}`} className="w-[220px] text-xl text-left font-bold text-colorBlue line-clamp-3">
                     {name}
                 </a>
                 <ButtonCotizacion name={name} />

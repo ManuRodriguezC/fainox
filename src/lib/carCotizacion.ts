@@ -28,3 +28,8 @@ export function removeCarProduct(name: string) {
     console.log("El producto no existe en la lista.");
   }
 }
+
+
+export function cleanCarProduct() {
+  localStorage.removeItem("carProductsList")
+}

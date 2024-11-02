@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getCarProducts } from "../../lib/carCotizacion";
 import { productos } from "../../store/productos";
+import { productosUsados } from "../../store/productosUsados";
 import ButtonCotizacion from "../tsx/ButtonCotizacion";
 
 interface Product {
@@ -13,33 +14,53 @@ interface Product {
 
 export default function ListCotizacion() {
   const [listProducts, setListProducts] = useState<Product[]>([]);
+  const [control, setControl] = useState<boolean>(false)
 
   useEffect(() => {
     const productsToCar = getCarProducts();
     if (productsToCar) {
-      setListProducts(
-        productos.filter(({ name }: Product) => productsToCar.includes(name))
-      );
+      const listProducts = productos.filter(({ name }: Product) => productsToCar.includes(name))
+      const listProductsUsed = productosUsados.filter(({ name }: Product) => productsToCar.includes(name))
+      setListProducts(listProducts.concat(listProductsUsed));
     }
-  }, [listProducts]);
+  }, [control]);
 
   return (
-    <div className="flex flex-col w-[800px] justify-center items-center gap-10">
-      <h4 className="text-colorBlue text-2xl font-semibold">Lista de Productos para Cotización</h4>
+    <div className="flex flex-col w-[45%]">
+      <div className="w-full flex flex-row justify-between items-center">
+        <h4 className="text-colorBlue text-2xl font-semibold">Lista de Productos para Cotización</h4>
+        <p className="text-gray-500 font-semibold">Numero de Productos: {listProducts.length}</p>
+      </div>
       {listProducts.length > 0 ? (
-        <ul className="w-full flex flex-wrap justify-center items-center gap-4">
-          {listProducts.map((product, index) => (
-            <li
-              key={index}
-              className="w-[250px] h-auto flex flex-row justify-around items-center border-2 border-gray-400 rounded-lg shadow-box-black">
-              <img className="w-28 h-2w-28" src={product.images[0]} alt={product.name} />
-              <div className="h-full flex flex-col justify-between">
-                <h3 className="text-colorBlue font-semibold">{product.name}</h3>
-                <ButtonCotizacion name={product.name} size="S" />
-              </div>
-            </li>
-          ))}
-        </ul>
+        <table className="table-fixed bg-gray-200 mt-10 shadow-box-black">
+          <thead className="text-xl text-colorBlue bg-gray-50">
+            <tr>
+              <th className="border-y-[1px] border-l-[1px] text-center pr-10 border-white">Producto</th>
+              <th className="border-y-[1px] border-gray-400"></th>
+              <th className="border-y-[1px] border-r-[1px] border-white"></th>
+            </tr>
+          </thead>
+          <tbody className="overflow-auto" style={{ maxHeight: '500px', display: 'block' }}>
+            {listProducts.map((product, index) => (
+              <tr
+                key={index}
+                className={`${index % 2 ? "bg-gray-100" : "bg-gray-200"} hover:bg-gray-300 transition-colors duration-200 w-full`}
+                style={{ display: 'table', width: '100%', tableLayout: 'fixed' }}
+              >
+                <td className="w-[60%] border-[1px] border-white px-5">
+                  <h3 className="text-colorBlue text-base font-semibold">{product.name}</h3>
+                </td>
+                <td className="border-b-[1px] border-white px-5 flex justify-center">
+                  <img className="w-24 h-24 object-cover" src={product.images[0]} alt={product.name} />
+                </td>
+                <td className="w-[10%] border-[1px] border-white px-5">
+                  <ButtonCotizacion name={product.name} size="S" control={control} setControl={setControl} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
       ) : (
         <p>No hay productos en la cotización</p>
       )}

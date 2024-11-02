@@ -265,4 +265,65 @@ const { title } = Astro.props;
     animation-fill-mode: both;
     animation-duration: 4s;
   }
+
+  @keyframes animationtext {
+    0% {
+      content: "E";
+    }
+    10% {
+      content: "En";
+    }
+    20% {
+      content: "Env";
+    }
+    30% {
+      content: "Envi";
+    }
+    40% {
+      content: "Envia";
+    }
+    50% {
+      content: "Envian";
+    }
+    60% {
+      content: "Enviand";
+    }
+    70% {
+      content: "Enviando";
+    }
+    80% {
+      content: "Enviando .";
+    }
+    90% {
+      content: "Enviando ..";
+    }
+    100% {
+      content: "Enviando ...";
+    }
+  }
+
+  .sending::after {
+    content: "";
+    animation-name: animationtext;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+  }
+
+  .seeForm {
+    visibility: visible;
+    max-height: 800px; /* Ajusta según el contenido esperado */
+    overflow: hidden;
+    transition:
+      max-height 0.5s ease,
+      visibility 0.5s ease;
+  }
+
+  .noseeForm {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.5s ease,
+      visibility 0.3s ease;
+  }
 </style>

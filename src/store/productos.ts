@@ -392,7 +392,7 @@ export const productos = [
         "images": ["/products/34-485.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de Bombeo",
+        "name": "Sistemas de Bombeo 2",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para jugos y bebidas",
         "description": "********************",
@@ -480,7 +480,7 @@ export const productos = [
         "images": ["/products/34-485.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de Bombeo",
+        "name": "Sistemas de Bombeo 3",
         "industry": ["Conservas, Salsas y Aderezos"],
         "subIndustry": "equipos para conservas",
         "description": "********************",
@@ -552,7 +552,7 @@ export const productos = [
         "images": ["/products/34-485.webp"] // Falta esta imagen
     },
     {
-        "name": "Tanques de Almacenamiento",
+        "name": "Tanques de Almacenamiento 2",
         "industry": ["Alimentos Varios"],
         "subIndustry": "aceites y margarinas",
         "description": "********************",
@@ -568,7 +568,7 @@ export const productos = [
         "images": ["/products/34-485.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de Bombeo",
+        "name": "Sistemas de Bombeo 4",
         "industry": ["Alimentos Varios"],
         "subIndustry": "aceites y margarinas",
         "description": "********************",

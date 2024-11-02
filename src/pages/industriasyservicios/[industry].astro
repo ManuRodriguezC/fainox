@@ -13,7 +13,7 @@ const { industry } = Astro.params
 const filterProducts = productos.filter(product => product.industry.includes(industry))
 
 ---
-<LayoutPage title={`Sector ${industry}`}>
+<LayoutPage title={`Sector ${industry} - Fainox Group`}>
   <section class="flex flex-col w-full h-auto px-10">
     <h1 class="text-center text-colorBlue text-5xl font-bold">Industria - {industry}</h1>
     <FilterListProduct industry={industry} filterProducts={filterProducts} client:load/>
