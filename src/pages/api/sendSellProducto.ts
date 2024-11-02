@@ -36,7 +36,9 @@ export async function POST({ request }: { request: Request }): Promise<Response>
         }
     })
 
-    const templatePath = path.join(__dirname, 'sellProduct.html');
+    const templatePath = 'https://fainox.netlify.app/pages/api/sellProduct.html';
+    // const templatePath =  'https://fainox.netlify.app/pages/api/cotizacion.html';
+
     let emailTemplate = fs.readFileSync(templatePath, 'utf8');
 
     emailTemplate = emailTemplate
