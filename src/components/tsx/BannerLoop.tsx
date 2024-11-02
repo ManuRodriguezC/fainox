@@ -28,6 +28,7 @@ export default function BannerLoop() {
               sectores.map((sector) => (
                 <SwiperSlide
                   className={`w-full h-full`}
+                  key={sector.title}
                   >
                     <div className="relative w-full h-full">
 
@@ -46,14 +47,6 @@ export default function BannerLoop() {
                             ))}
                           </ul>
                         </div>
-
-                        {/* <div className="w-full h-28 flex flex-row justify-end">
-                            {
-                              sector.imagesProducts.map(image => (
-                                <img className="w-36 h-36 drop-shadow-drop-white" src={image} alt="Esto es un producto" />
-                              ))
-                            }
-                        </div> */}
 
                       </a>
                     </div>

@@ -1,7 +1,7 @@
 /* empty css                                      */
-import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_DV5iJDhp.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_CQFcNYbx.mjs';
 import 'kleur/colors';
-import { $ as $$LayoutPage } from '../chunks/LayoutPage_B-TjocIA.mjs';
+import { $ as $$LayoutPage } from '../chunks/LayoutPage_ntxe9uOy.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
 import { p as productosUsados, F as FormContact } from '../chunks/productosUsados_DPZ1ybmy.mjs';

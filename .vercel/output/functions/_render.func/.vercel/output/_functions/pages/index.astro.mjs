@@ -1,8 +1,8 @@
 /* empty css                                      */
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, a as renderComponent } from '../chunks/astro/server_DV5iJDhp.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, a as renderComponent } from '../chunks/astro/server_CQFcNYbx.mjs';
 import 'kleur/colors';
-import { s as sectores, $ as $$LayoutPage } from '../chunks/LayoutPage_B-TjocIA.mjs';
-import { $ as $$Image } from '../chunks/_astro_assets_B0eN8v0o.mjs';
+import { s as sectores, $ as $$LayoutPage } from '../chunks/LayoutPage_ntxe9uOy.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_Bll6zqXp.mjs';
 import 'clsx';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -169,7 +169,8 @@ function BannerLoop() {
               }
             )
           ] })
-        }
+        },
+        sector.title
       ))
     }
   ) });

@@ -1,8 +1,8 @@
 /* empty css                                      */
-import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_DV5iJDhp.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_CQFcNYbx.mjs';
 import 'kleur/colors';
 import { F as FormContact, p as productosUsados } from '../chunks/productosUsados_DPZ1ybmy.mjs';
-import { $ as $$LayoutPage } from '../chunks/LayoutPage_B-TjocIA.mjs';
+import { $ as $$LayoutPage } from '../chunks/LayoutPage_ntxe9uOy.mjs';
 import { P as ProductForLists } from '../chunks/ProductForLists_BXVQsdZO.mjs';
 export { renderers } from '../renderers.mjs';
 

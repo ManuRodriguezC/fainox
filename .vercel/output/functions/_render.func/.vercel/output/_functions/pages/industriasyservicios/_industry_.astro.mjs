@@ -1,7 +1,7 @@
 /* empty css                                         */
-import { c as createComponent, r as renderTemplate, a as renderComponent, b as createAstro, m as maybeRenderHead } from '../../chunks/astro/server_DV5iJDhp.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent, b as createAstro, m as maybeRenderHead } from '../../chunks/astro/server_CQFcNYbx.mjs';
 import 'kleur/colors';
-import { c as capitalize, i as industrias, $ as $$LayoutPage } from '../../chunks/LayoutPage_B-TjocIA.mjs';
+import { c as capitalize, i as industrias, $ as $$LayoutPage } from '../../chunks/LayoutPage_ntxe9uOy.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { useState, useMemo } from 'react';
 import { P as ProductForLists } from '../../chunks/ProductForLists_BXVQsdZO.mjs';

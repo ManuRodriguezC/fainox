@@ -1,8 +1,8 @@
 /* empty css                                      */
-import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_DV5iJDhp.mjs';
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead, d as addAttribute } from '../chunks/astro/server_CQFcNYbx.mjs';
 import 'kleur/colors';
-import { p as productos, c as capitalize, $ as $$LayoutPage } from '../chunks/LayoutPage_B-TjocIA.mjs';
-import { $ as $$Image } from '../chunks/_astro_assets_B0eN8v0o.mjs';
+import { p as productos, c as capitalize, $ as $$LayoutPage } from '../chunks/LayoutPage_ntxe9uOy.mjs';
+import { $ as $$Image } from '../chunks/_astro_assets_Bll6zqXp.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {

@@ -1,9 +1,9 @@
 /* empty css                                         */
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, a as renderComponent, b as createAstro } from '../../chunks/astro/server_DV5iJDhp.mjs';
+import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as addAttribute, a as renderComponent, b as createAstro } from '../../chunks/astro/server_CQFcNYbx.mjs';
 import 'kleur/colors';
-import { c as capitalize, $ as $$LayoutPage, p as productos$1 } from '../../chunks/LayoutPage_B-TjocIA.mjs';
+import { c as capitalize, $ as $$LayoutPage, p as productos$1 } from '../../chunks/LayoutPage_ntxe9uOy.mjs';
 import { p as productos } from '../../chunks/productos_D0Z_okRp.mjs';
-import { $ as $$Image } from '../../chunks/_astro_assets_B0eN8v0o.mjs';
+import { $ as $$Image } from '../../chunks/_astro_assets_Bll6zqXp.mjs';
 import { B as ButtonCotizacion } from '../../chunks/ButtonCotizacion_e3Bb1-fq.mjs';
 export { renderers } from '../../renderers.mjs';
 
