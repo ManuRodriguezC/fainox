@@ -36,18 +36,26 @@ export async function POST({ request }: { request: Request }): Promise<Response>
         }
     })
 
-    const templatePath =  path.join(__dirname, 'sellProduct.html');
-    let emailTemplate = fs.readFileSync(templatePath, 'utf8');
+    // const templatePath =  path.join(__dirname, 'sellProduct.html');
+    // let emailTemplate = fs.readFileSync(templatePath, 'utf8');
 
-    emailTemplate = emailTemplate
-        .replace('{{name}}', body.name)
-        .replace('{{lastname}}', body.lastname)
-        .replace('{{email}}', body.email)
-        .replace('{{address}}', body.address)
-        .replace('{{phone}}', body.phone)
-        .replace('{{city}}', body.city)
-        .replace('{{municipio}}', body.minucipio)
-        .replace('{{product}}', body.product)
+    // emailTemplate = emailTemplate
+    //     .replace('{{name}}', body.name)
+    //     .replace('{{lastname}}', body.lastname)
+    //     .replace('{{email}}', body.email)
+    //     .replace('{{address}}', body.address)
+    //     .replace('{{phone}}', body.phone)
+    //     .replace('{{city}}', body.city)
+    //     .replace('{{municipio}}', body.minucipio)
+    //     .replace('{{product}}', body.product)
+
+    const emailText = `
+        Nombre: ${body.name}
+        Apellido: ${body.lastname}
+        Correo: ${body.email}
+        Dirección: ${body.address}
+        Teléfono: ${body.phone}
+        Ciudad: ${body.minucipio}`
 
     const imageBuffer = Buffer.from(body.image, 'base64')
     const imageName = 'image.jpg'
@@ -57,7 +65,7 @@ export async function POST({ request }: { request: Request }): Promise<Response>
             from: 'estebanclimb@gmail.com',
             to: 'manu.rodriguezc.dev@gmail.com',
             subject: 'Solicitud Venta de Equipo',
-            html: emailTemplate,
+            text: emailText,
             attachments: [{
                 filename: imageName,
                 content: imageBuffer,
