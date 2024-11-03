@@ -54,8 +54,8 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
       from: 'estebanclimb@gmail.com',
       to: 'manu.rodriguezc.dev@gmail.com',
       subject: 'Solicitud de Cotizacion',
-      // html: emailTemplate
-      text: "Prueba de envio"
+      html: emailTemplate
+      // text: "Prueba de envio"
     })
     return new Response(
       JSON.stringify({ message: 'Correo Enviado', messageId: info.messageId}),
