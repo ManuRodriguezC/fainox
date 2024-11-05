@@ -1,8 +1,4 @@
 import nodemailer from 'nodemailer';
-import fs from 'fs';
-import path from 'path'
-
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 export async function POST({ request }: { request: Request}): Promise<Response> {
   let body
@@ -35,19 +31,7 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
     }
 });
 
-  // const templatePath =  path.join(__dirname, 'cotizacion.html');
-  // let emailTemplate = fs.readFileSync(templatePath, 'utf8');
-
-  const products = body.products.split("+").join(", "); // Cambiar "+" a ", " para una mejor presentación
-  // emailTemplate = emailTemplate
-  //   .replace('{{name}}', body.name)
-  //   .replace('{{lastname}}', body.lastname)
-  //   .replace('{{email}}', body.email)
-  //   .replace('{{address}}', body.address)
-  //   .replace('{{phone}}', body.phone)
-  //   .replace('{{city}}', body.city)
-  //   .replace('{{municipio}}', body.minucipio)
-  //   .replace('{{products}}', products);
+  const products = body.products.split("+").join(", ");
 
   const emailText = `
   Nombre: ${body.name}
@@ -64,7 +48,6 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
       to: 'manu.rodriguezc.dev@gmail.com',
       subject: 'Solicitud de Cotizacion',
       text: emailText
-      // text: "Prueba de envio"
     })
     return new Response(
       JSON.stringify({ message: 'Correo Enviado', messageId: info.messageId}),

@@ -1,4 +1,6 @@
 ---
+import '@fontsource-variable/sora';
+
 interface Props {
   title: string;
 }
@@ -27,7 +29,8 @@ const { title } = Astro.props;
     --accent-dark: 49, 10, 101;
   }
   html {
-    font-family: system-ui, sans-serif;
+    /* font-family: system-ui, sans-serif; */
+    font-family: 'Sora Variable', sans-serif;
   }
   body {
     width: 100%;

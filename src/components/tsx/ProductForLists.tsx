@@ -4,7 +4,7 @@ import ButtonCotizacion from "./ButtonCotizacion";
 export default function ProductForLists({name, description, images}: Product) {
     return (
         <div
-            className={`w-[350px] min-h-[600px] max-h-[600px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md
+            className={`w-[400px] min-h-[600px] max-h-[600px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md
                 seeContent cursor-pointer border-2 hover:border-gray-400 hover:shadow-box-black transition-all duration-100`}
             >
             <a href={`/producto/${name}`}>

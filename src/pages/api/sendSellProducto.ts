@@ -1,8 +1,4 @@
 import nodemailer from 'nodemailer';
-import fs from 'fs';
-import path from 'path'
-
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 export async function POST({ request }: { request: Request }): Promise<Response> {
     let body
@@ -35,19 +31,6 @@ export async function POST({ request }: { request: Request }): Promise<Response>
             rejectUnauthorized: false
         }
     })
-
-    // const templatePath =  path.join(__dirname, 'sellProduct.html');
-    // let emailTemplate = fs.readFileSync(templatePath, 'utf8');
-
-    // emailTemplate = emailTemplate
-    //     .replace('{{name}}', body.name)
-    //     .replace('{{lastname}}', body.lastname)
-    //     .replace('{{email}}', body.email)
-    //     .replace('{{address}}', body.address)
-    //     .replace('{{phone}}', body.phone)
-    //     .replace('{{city}}', body.city)
-    //     .replace('{{municipio}}', body.minucipio)
-    //     .replace('{{product}}', body.product)
 
     const emailText = `
         Nombre: ${body.name}
