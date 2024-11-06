@@ -18,9 +18,10 @@ const filterProductsCategory = listProducts.filter(
 ---
 
 <LayoutPage title={`${capitalize(category)} - Fainox Group`}>
-  <section class="relative grid grid-cols-4 gap-4 px-20">
+  <section class="relative flex flex-col justify-center items-center lg:grid lg:grid-cols-4 gap-4 md:px-20">
+    {/* Aside para pantallas grandes */}
     <aside
-      class="sticky top-24 left-0 w-[350px] h-[70vh] border-2 border-blue-200 p-4 shadow-box-black rounded-md overflow-auto"
+      class="sticky hidden lg:block top-24 left-0 w-[350px] h-[70vh] border-2 border-blue-200 p-4 shadow-box-black rounded-md overflow-auto"
     >
       <ul class="px-2 py-2 flex flex-col gap-2">
         {
@@ -33,8 +34,32 @@ const filterProductsCategory = listProducts.filter(
       </ul>
     </aside>
 
+    {/* Nav para pantallas pequeñas */}
+    <nav class="w-full flex justify-center items-center lg:hidden relative">
+      <!-- Botón para desplegar el menú -->
+      <button
+        class="w-full bg-gray-100 py-2 text-center font-bold rounded-md cursor-pointer hover:bg-gray-200 focus:outline-none peer"
+      >
+        Tipos de Productos
+      </button>
+    
+      <!-- Menú desplegable -->
+      <ul
+        class="absolute top-full z-50 mt-2 w-full max-h-60 overflow-auto bg-white border border-gray-300 rounded-md shadow-lg hidden peer-focus:block"
+      >
+        {productos.map((product) => (
+          <li class="border-b z-50 border-gray-300 last:border-none">
+            <a href={`/productos/${product}`} class="block px-4 py-2 hover:bg-gray-100">
+              {product}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    
+
     <div
-      class="col-span-3 flex flex-col justify-around items-center overflow-y-auto h-full scroll-hidden"
+      class="col-span-3 ml-10 flex flex-col justify-around items-center overflow-y-auto h-full scroll-hidden"
     >
       <h1 class="text-4xl text-colorBlue font-bold">{capitalize(category)}</h1>
       <p class="text-right text-lg text-gray-500 font-semibold mb-6">
@@ -50,3 +75,16 @@ const filterProductsCategory = listProducts.filter(
     </div>
   </section>
 </LayoutPage>
+
+<script>
+  const selected = document.getElementById("product-select")
+  if (selected) {
+    selected.addEventListener("change", (e) => {
+      const selectedProduct = e.target as HTMLSelectElement
+      const valueSelect = selectedProduct.value
+      if (valueSelect) {
+        window.location.href = `/productos/${valueSelect}`;
+      }
+    });
+  }  
+</script>
