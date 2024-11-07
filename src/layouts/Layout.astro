@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/sora';
+import "@fontsource-variable/sora";
 
 interface Props {
   title: string;
@@ -14,7 +14,7 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/jpg+xml" href="/images/icono.jpg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -30,7 +30,7 @@ const { title } = Astro.props;
   }
   html {
     /* font-family: system-ui, sans-serif; */
-    font-family: 'Sora Variable', sans-serif;
+    font-family: "Sora Variable", sans-serif;
   }
   body {
     width: 100%;
@@ -314,7 +314,7 @@ const { title } = Astro.props;
 
   .seeForm {
     visibility: visible;
-    max-height: 800px; /* Ajusta según el contenido esperado */
+    max-height: 1500px; /* Ajusta según el contenido esperado */
     overflow: hidden;
     transition:
       max-height 0.5s ease,
@@ -328,5 +328,9 @@ const { title } = Astro.props;
     transition:
       max-height 0.5s ease,
       visibility 0.3s ease;
+  }
+
+  .nav-visible {
+    transform: translateX(0);
   }
 </style>

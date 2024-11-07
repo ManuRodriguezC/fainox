@@ -4,6 +4,8 @@ import FilterListProduct from '../../components/tsx/FilterListProduct'
 import { industrias } from '../../store/industrias';
 import { productos } from "../../store/productos"
 
+export const prerender = true
+
 export function getStaticPaths() {
   return industrias.map(industria => ({
     params: {industry: industria.name}
@@ -14,8 +16,8 @@ const filterProducts = productos.filter(product => product.industry.includes(ind
 
 ---
 <LayoutPage title={`Sector ${industry} - Fainox Group`}>
-  <section class="flex flex-col w-full h-auto px-10">
-    <h1 class="text-center text-colorBlue text-5xl font-bold">Industria - {industry}</h1>
+  <section class="flex flex-col w-full h-auto px-0 md:px-10">
+    <h1 class="text-center text-colorBlue text-lg md:text-2xl lg:text-3xl xl:text-5xl font-bold">Industria - {industry}</h1>
     <FilterListProduct industry={industry} filterProducts={filterProducts} client:load/>
 </section>
 

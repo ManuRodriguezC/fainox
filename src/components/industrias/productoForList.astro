@@ -6,13 +6,13 @@ const { name, description, images } = Astro.props;
 ---
 
 <div
-  class={`w-full max-w-[400px] min-h-[600px] max-h-[600px] flex flex-col gap-4 mb-10 backgroundProduct px-4 rounded-md
+  class={`w-full md:w-[400px] min-h-[600px] max-h-[600px] flex flex-col gap-4 mb-10 backgroundProduct md:px-4 rounded-md
     seeContent cursor-pointer border-2 hover:border-gray-400 hover:shadow-box-black transition-all duration-100`}
 >
   <a href={`/producto/${name}`}>
     <Image
-      class="w-full h-[350px] rounded-md object-cover"
-      height="350"
+      class="w-full h-[320px] rounded-md object-cover"
+      height="320"
       width="350"
       src={images[0]}
       alt={name}
@@ -20,11 +20,11 @@ const { name, description, images } = Astro.props;
   </a>
   <div class="w-full flex flex-col gap-5 mb-5">
     <div class="flex flex-row justify-between gap-4">
-      <a href={`/producto/${name}`} class="w-[220px] text-xl text-left font-bold text-colorBlue">
+      <a href={`/producto/${name}`} class="w-[220px] px-4 md:px-0 text-xl text-left font-bold text-colorBlue">
         {name}
       </a>
       <ButtonCotizacion name={name} client:load />
     </div>
-    <p class="text-sm text-pretty line-clamp-6">{description}</p>
+    <p class="text-sm text-pretty px-4 md:px-0 line-clamp-6">{description}</p>
   </div>
 </div>

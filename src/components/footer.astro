@@ -8,11 +8,12 @@ import { capitalize } from "../utils/capitalize";
   <div class="h-[1px] w-[90%] my-10 bg-blue-900"></div>
 
   <div
-    class="flex flex-col justify-between items-center gap-4 px-20 w-full custom:flex-row"
+    class="flex flex-col justify-between items-center gap-4 px-5 md:px-20 w-full custom:flex-row"
   >
     <img src="/images/logo.png" class="h-36 custom:h-60" alt="" />
-    <div class="flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-16">
-      <div class="flex flex-row md:flex-col gap-10 md:gap-0">
+    <div class="w-full flex flex-col md:flex-row justify-around gap-4 md:gap-8 lg:gap-16">
+
+      <div class="flex flex-col gap-4">
         <h2 class="font-bold text-colorBlue text-2xl">Industrias</h2>
         <div class="flex flex-col">
           {
@@ -30,13 +31,13 @@ import { capitalize } from "../utils/capitalize";
 
       <div class="block md:hidden h-[1px] w-[90%] bg-blue-900"></div>
 
-      <div class="flex flex-col md:flex-col gap-10 md:gap-0">
-        <h2 class="font-bold text-colorBlue mb-2 text-2xl">Productos</h2>
-        <div class="grid grid-cols-3 gap-x-10">
+      <div class="flex flex-col gap-4">
+        <h2 class="font-bold text-colorBlue text-2xl">Productos</h2>
+        <div class="grid grid-cols-1 gap-x-10">
           {
-            productos.map((sector) => (
+            productos.slice(0, 5).map((sector) => (
               <a
-                class="text-sm text-gray-400 hover:text-gray-600 font-semibold my-1  transition-all duration-200"
+                class="text-sm text-gray-400 hover:text-gray-600 font-semibold my-2  transition-all duration-200"
                 href={`/productos/${sector}`}
               >
                 {capitalize(sector)}
@@ -48,15 +49,15 @@ import { capitalize } from "../utils/capitalize";
 
       <div class="block md:hidden h-[1px] w-[90%] bg-blue-900"></div>
 
-      <div class="block md:hidden h-[1px] w-[90%] bg-blue-900"></div>
-
-      <div class="flex flex-row md:flex-col gap-10 md:gap-0">
+      <div class="flex flex-col gap-4">
         <h2 class="font-bold text-colorBlue text-2xl">
-          Terminos y Condiciones
+          Nosotros
         </h2>
         <div class="flex flex-col">
-          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Politicas</a>
-          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Privacidad</a>
+          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Equipos Usados</a>
+          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Desarrollos & Novedades</a>
+          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Contacto</a>
+          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Terminos y Condiciones</a>
         </div>
       </div>
     </div>
@@ -64,8 +65,8 @@ import { capitalize } from "../utils/capitalize";
 
   <div class="h-[1px] w-[90%] my-10 bg-blue-900"></div>
 
-  <div class="flex flex-row justify-between items-center px-20 w-full">
-    <p class="text-colorBlue font-bold text-center">
+  <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-20 gap-4 w-full">
+    <p class="text-colorBlue text-sm md:text-base font-bold text-center">
       © 2024 Fainox Group SAS, Soluciones para mejores procesos.
     </p>
     <div class="flex flex-row items-center gap-6">

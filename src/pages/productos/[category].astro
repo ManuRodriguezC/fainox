@@ -4,6 +4,9 @@ import { productos } from "../../store/typeProductos";
 import { productos as listProducts } from "../../store/productos";
 import { capitalize } from "../../utils/capitalize";
 import ProductoForList from "../../components/industrias/productoForList.astro";
+import Search from '../../icons/search.astro'
+
+export const prerender = true;
 
 export function getStaticPaths() {
   return productos.map((producto) => ({
@@ -18,7 +21,7 @@ const filterProductsCategory = listProducts.filter(
 ---
 
 <LayoutPage title={`${capitalize(category)} - Fainox Group`}>
-  <section class="relative flex flex-col justify-center items-center lg:grid lg:grid-cols-4 gap-4 md:px-20">
+  <section class="w-full relative flex flex-col justify-center items-center lg:grid lg:grid-cols-4 gap-4 md:px-20">
     {/* Aside para pantallas grandes */}
     <aside
       class="sticky hidden lg:block top-24 left-0 w-[350px] h-[70vh] border-2 border-blue-200 p-4 shadow-box-black rounded-md overflow-auto"
@@ -38,19 +41,22 @@ const filterProductsCategory = listProducts.filter(
     <nav class="w-full flex justify-center items-center lg:hidden relative">
       <!-- Botón para desplegar el menú -->
       <button
-        class="w-full bg-gray-100 py-2 text-center font-bold rounded-md cursor-pointer hover:bg-gray-200 focus:outline-none peer"
+        class="w-full flex flex-row justify-center items-center gap-5 bg-gray-100 py-2 text-center font-bold rounded-md
+        cursor-pointer hover:bg-gray-200 focus:outline-none peer text-gray-600"
       >
-        Tipos de Productos
+          Buscar Productos
+          <Search />
       </button>
     
       <!-- Menú desplegable -->
       <ul
-        class="absolute top-full z-50 mt-2 w-full max-h-60 overflow-auto bg-white border border-gray-300 rounded-md shadow-lg hidden peer-focus:block"
+        class="absolute top-full z-50 mt-2 w-full max-h-60 overflow-auto bg-white border border-gray-300
+        rounded-md shadow-lg hidden peer-focus:block"
       >
         {productos.map((product) => (
           <li class="border-b z-50 border-gray-300 last:border-none">
             <a href={`/productos/${product}`} class="block px-4 py-2 hover:bg-gray-100">
-              {product}
+              {capitalize(product)}
             </a>
           </li>
         ))}
@@ -59,13 +65,13 @@ const filterProductsCategory = listProducts.filter(
     
 
     <div
-      class="col-span-3 ml-10 flex flex-col justify-around items-center overflow-y-auto h-full scroll-hidden"
+      class="w-full col-span-3 flex flex-col justify-around items-center md:overflow-y-auto h-full scroll-hidden"
     >
       <h1 class="text-4xl text-colorBlue font-bold">{capitalize(category)}</h1>
       <p class="text-right text-lg text-gray-500 font-semibold mb-6">
         Productos encontrados: {filterProductsCategory.length}
       </p>
-      <div class="flex flex-wrap gap-10 justify-center items-center">
+      <div class="flex w-full flex-wrap gap-10 justify-center items-center">
         {
           filterProductsCategory.map((product) => (
             <ProductoForList {...product} />

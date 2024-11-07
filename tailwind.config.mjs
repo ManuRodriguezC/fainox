@@ -44,6 +44,9 @@ export default {
       },
       width: {
         'fit': 'fit-content'
+      },
+      fontSize: {
+        'sss': '8px'
       }
     },
   },

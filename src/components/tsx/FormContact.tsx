@@ -90,10 +90,10 @@ export default function FormContact({ pay }: Props) {
 
   if (controlSend) {
     return (
-      <div className="flex flex-col justify-around items-center w-full h-72 rounded-xl bg-custom-blue-gradient shadow-box-black">
+      <div id="send" className="w-full lg:w-[1024px] py-5 my-10 h-auto flex flex-col justify-around items-center rounded-xl bg-custom-blue-gradient shadow-box-black">
         <h1 className="text-white w-[80%] text-center font-medium text-2xl">Hola <span className="font-bold">{name}</span> pronto nuestro equipo se pondra en contacto contigo!</h1>
         <p className="text-blue-100 text-lg text-center">Gracias por confiar en nostros y querer ser parte de la familia Fainox Group</p>
-        <a className="text-white bg-white/20 py-2 px-10 rounded-full hover:bg-white hover:text-colorBlue transition-all duration-300" href="/industriasyservicios">Te invitamos a ver todas nuestras industrias</a>
+        <a className="text-white text-center bg-white/20 py-2 px-10 rounded-full hover:bg-white hover:text-colorBlue transition-all duration-300" href="/industriasyservicios">Te invitamos a ver todas nuestras industrias</a>
       </div>
     )
   }
@@ -102,12 +102,12 @@ export default function FormContact({ pay }: Props) {
     <form
       id="form"
       onSubmit={handleSubmit}
-      className={`w-full flex flex-col justify-center items-center gap-4 p-5 ${pay && "noseeForm"}`}>
+      className={`w-full flex flex-col md:mt-0 py-10 justify-center items-center gap-4 md:p-5 ${pay && "noseeForm"}`}>
       {!pay && <h1 className="text-colorBlue text-3xl font-bold">Estimado Cliente</h1>}
       {
         pay
           ?
-          <p className="w-[60%] text-gray-500 text-center">
+          <p className="w-full md:w-[60%] px-4 md:px-0 text-gray-500 text-center">
             Con Fainox Group SAS, vender tus productos y maquinaria es fácil y seguro. Nos enfocamos en brindarte un proceso transparente y confiable, conectándote con los compradores adecuados. Confía en nuestra experiencia y deja que te ayudemos a obtener el mejor valor.
           </p>
           :
@@ -116,9 +116,9 @@ export default function FormContact({ pay }: Props) {
           </p>
       }
 
-      {pay && <p className="text-colorBlue my-5">Por favor llena el siguiente formulario para ponernos en contacto contigo, recuerda tener una foto de tu producto o maquinaria</p>}
+      {pay && <p className="text-colorBlue px-4 md:px-0 my-5 text-center">Por favor llena el siguiente formulario para ponernos en contacto contigo, recuerda tener una foto de tu producto o maquinaria</p>}
 
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-10">
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-xl font-bold" htmlFor="input">Nombre</label>
           <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Nombre" type="text" name="name" id="name" required />
@@ -129,22 +129,24 @@ export default function FormContact({ pay }: Props) {
         </div>
       </div>
 
-      <div className="flex flex-row gap-10">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-10">
 
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-lg font-bold" htmlFor="input">Correo Electronico</label>
-          <input className="p-2 w-[300px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Correo Electronico" type="email" name="email" id="email" required />
+          <input className="p-2 w-[250px] md:w-[300px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Correo Electronico" type="email" name="email" id="email" required />
         </div>
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-lg font-bold" htmlFor="input">Celular</label>
-          <input className="p-2 w-[200px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Numero de Celular" type="phone" name="phone" id="phone" required />
+          <input className="p-2 w-[250px] md:w-[200px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Numero de Celular" type="phone" name="phone" id="phone" required />
         </div>
       </div>
+
       <div className="flex flex-col gap-2">
         <label className="text-gray-700 text-lg font-bold" htmlFor="input">Dirección</label>
-        <input className="p-2 w-[540px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Dirreción" type="text" name="address" id="address" required />
+        <input className="p-2 w-[250px] md:w-[540px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Dirreción" type="text" name="address" id="address" required />
       </div>
-      <div className="flex flex-row gap-10">
+
+      <div className="h-full flex flex-col md:flex-row gap-5 md:gap-10">
         <div className="flex flex-col gap-2">
           <label className="text-gray-700 text-lg font-bold" htmlFor="input">Municipio</label>
           <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Municipio" name="minucipio" id="minucipio" required />
@@ -156,7 +158,7 @@ export default function FormContact({ pay }: Props) {
       </div>
       {
         pay &&
-        <div className="flex flex-row gap-10">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-10">
           <div className="flex flex-col gap-2">
             <label className="text-gray-700 text-xl font-bold" htmlFor="input">Equipo</label>
             <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Nombre del Equipo" type="text" name="product" id="product" required />

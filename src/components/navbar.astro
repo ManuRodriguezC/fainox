@@ -1,54 +1,87 @@
 ---
+import Nav from "../icons/nav.astro";
+import CloseNav from "../icons/closeNav.astro";
 import Link from "./link.astro";
 
 const links = [
   {
-    "name": "Nosotros",
-    "link": ""
+    name: "Nosotros",
+    link: "",
   },
   {
-    "name": "Industrias & Servicios",
-    "link": "industriasyservicios"
+    name: "Industrias & Servicios",
+    link: "industriasyservicios",
   },
   {
-    "name": "Productos",
-    "link": "productos"
+    name: "Productos",
+    link: "productos",
   },
   {
-    "name": "Equipos Usados",
-    "link": "equiposusados"
+    name: "Equipos Usados",
+    link: "equiposusados",
   },
   {
-    "name": "Desarrollos & Novedades",
-    "link": "desarrollosynovedades"
+    name: "Desarrollos & Novedades",
+    link: "desarrollosynovedades",
   },
   {
-    "name": "Contacto",
-    "link": "contacto"
+    name: "Contacto",
+    link: "contacto",
   },
   {
-    "name": "Cotización",
-    "link": "cotizacion"
-  }
+    name: "Cotización",
+    link: "cotizacion",
+  },
 ];
 ---
 
-<header class="fixed top-0 bg-white z-50 w-[98%] md:w-full flex flex-row justify-between items-center px-0 md:px-10 pt-3 transition-all duration-150">
+<header
+  class="fixed top-0 bg-white z-50 w-[98%] md:w-full flex flex-row justify-between items-center px-0 md:px-10 pt-3 transition-all duration-150"
+>
   <a href="/">
-    <img id="header-image" class="h-14 xl:h-16 transition-all duration-150" src="/images/logo.png" alt="Icono Fainox" />
+    <img
+      id="header-image"
+      class="h-14 xl:h-16 transition-all duration-150"
+      src="/images/logo.png"
+      alt="Icono Fainox"
+    />
   </a>
 
   <nav class="hidden lg:block">
-
     <ul class="flex flex-row gap-6 lg:gap-8 xl:gap-14">
-      {
-        links.map(link => (
-          <Link link={link.link} name={link.name}/>
-      ))
-    }
+      {links.map((link) => <Link link={link.link} name={link.name} />)}
     </ul>
   </nav>
 
-  <div class="block pr-6 lg:hidden">Menu</div>
-
+  {/* Nav movil */}
+  <button id="open-nav" class="fixed top-6 right-4 lg:hidden pr-2">
+    <Nav />
+  </button>
+  <nav
+    id="phone-nav"
+    class="fixed w-[320px] transform translate-x-full transition-transform duration-300 h-screen bg-white right-0 top-0"
+  >
+    <button id="close-nav" class="fixed right-4 top-4">
+      <CloseNav />
+    </button>
+    <ul class="mt-10">
+      {links.map((link) => <Link link={link.link} name={link.name} />)}
+    </ul>
+  </nav>
 </header>
+
+<script>
+  const openNav = document.getElementById("open-nav");
+  const closeNav = document.getElementById("close-nav");
+  const contNav = document.getElementById("phone-nav");
+
+  openNav?.addEventListener("click", () => {
+    contNav?.classList.add("translate-x-0"); // Alterna entre translate-x-0 y translate-x-full
+    contNav?.classList.remove("translate-x-full"); // Alterna entre translate-x-0 y translate-x-full
+  });
+
+  closeNav?.addEventListener("click", () => {
+    contNav?.classList.add("translate-x-full"); // Alterna entre translate-x-0 y translate-x-full
+    contNav?.classList.remove("translate-x-0"); // Alterna entre translate-x-0 y translate-x-full
+  });
+</script>

@@ -26,9 +26,9 @@ export default function ListCotizacion() {
   }, [control]);
 
   return (
-    <div className="flex flex-col w-[45%]">
-      <div className="w-full flex flex-row justify-between items-center">
-        <h4 className="text-colorBlue text-2xl font-semibold">Lista de Productos para Cotización</h4>
+    <div className="flex flex-col w-full xl:w-[45%]">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center">
+        <h4 className="text-colorBlue text-center text-2xl font-semibold">Lista de Productos para Cotización</h4>
         <p className="text-gray-500 font-semibold">Numero de Productos: {listProducts.length}</p>
       </div>
       {listProducts.length > 0 ? (
@@ -47,13 +47,13 @@ export default function ListCotizacion() {
                 className={`${index % 2 ? "bg-gray-100" : "bg-gray-200"} hover:bg-gray-300 transition-colors duration-200 w-full`}
                 style={{ display: 'table', width: '100%', tableLayout: 'fixed' }}
               >
-                <td className="w-[60%] border-[1px] border-white px-5">
+                <td className="w-[50%] md:w-[60%] border-[1px] border-white px-5">
                   <h3 className="text-colorBlue text-base font-semibold">{product.name}</h3>
                 </td>
                 <td className="border-b-[1px] border-white px-5 flex justify-center">
                   <img className="w-24 h-24 object-cover" src={product.images[0]} alt={product.name} />
                 </td>
-                <td className="w-[10%] border-[1px] border-white px-5">
+                <td className="w-[20%] md:w-[10%] border-[1px] border-white px-3 md:px-5">
                   <ButtonCotizacion name={product.name} size="S" control={control} setControl={setControl} />
                 </td>
               </tr>

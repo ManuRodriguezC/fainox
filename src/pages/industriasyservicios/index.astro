@@ -10,7 +10,7 @@ import { capitalize } from "../../utils/capitalize";
 ---
 
 <LayoutPage title="Fainox Group en todas las industrias">
-  <div id="content-info" class="flex flex-col gap-10 px-5 lg:px-10 mt-36">
+  <section id="content-info" class="flex flex-col w-full gap-10 px-0 lg:px-10 mt-36">
     {
       industrias.map((industry, index) => {
         if (industry.type === "link") {
@@ -21,7 +21,7 @@ import { capitalize } from "../../utils/capitalize";
             <div class="flex flex-col">
               <a
                 href={`/industriasyservicios/${industry.name}`}
-                class="text-white rounded-md text-4xl text-center hover:bg-blue-800 hover:shadow-xl transition-all duration-150 font-semibold bg-colorBlue px-4 py-2"
+                class="text-white rounded-md text-2xl lg:text-3xl xl:text-4xl text-center hover:bg-blue-800 hover:shadow-xl transition-all duration-150 font-semibold bg-colorBlue px-4 py-2"
               >
                 Industria - {industry.name}
               </a>
@@ -31,7 +31,7 @@ import { capitalize } from "../../utils/capitalize";
                 );
                 return (
                   <div class="indu">
-                    <h3 class="text-3xl font-bold text-center md:ml-10 py-4 text-colorBlue">{capitalize(typeSubIndustry.name)}</h3>
+                    <h3 class="text-xl lg:text-2xl xl:text-3xl font-bold text-center md:ml-10 py-4 text-colorBlue">{capitalize(typeSubIndustry.name)}</h3>
                     <div class="w-95vw flex flex-row justify-between items-center">
                       <button
                         id={`left-${index}-${indexx}`}
@@ -66,7 +66,7 @@ import { capitalize } from "../../utils/capitalize";
         }
       })
     }
-  </div>
+  </section>
 
   <script>
     const rightButtons = document.querySelectorAll(".right");
