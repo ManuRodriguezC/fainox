@@ -47,6 +47,9 @@ export default {
       },
       fontSize: {
         'sss': '8px'
+      },
+      zIndex: {
+        'z-100': '100'
       }
     },
   },

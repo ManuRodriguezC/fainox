@@ -8,7 +8,7 @@ import { sectores } from "../../store/industrias";
 
 export default function BannerLoop() {
   return (
-    <section className="w-full h-[40vh] md:h-[80vh]">
+    <section className="w-full h-[40vh] md:h-[77vh]">
       <Swiper
         slidesPerView={1}
         spaceBetween={4}

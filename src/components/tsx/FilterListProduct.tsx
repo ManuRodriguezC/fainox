@@ -22,14 +22,14 @@ export default function     FilterListProduct({ industry, filterProducts }: Prop
         <div className="w-full">
             <SubNav indus={industry} setFilter={setFilter} filter={filter} />
             <p className="text-center md:text-right md:mr-10 mt-5 text-base md:text-lg text-gray-600">Productos encontrados: {filteredList.length}</p>
-            <div className="w-full h-auto flex flex-row justify-center md:gap-5 xl:m-5">
+            <div className="w-full h-auto flex flex-row justify-center md:gap-5 xl:my-5">
                 {subIndustrys[industry].some(indus => filter === "" || indus.name === filter) ? (
                     subIndustrys[industry].map((indus, index) => {
                         if (filter === "" || indus.name === filter) {
                             return (
                                 <img
                                     key={index}
-                                    className={`${filter === indus.name ? "w-[100%] h-72" : "w-[20%] h-44"} object-cover rounded-none md:rounded-md shadow-box-black hover:scale-110
+                                    className={`${filter === indus.name ? "w-[100%] h-72" : "w-[20%] h-44"} object-cover rounded-none md:rounded-md shadow-box-black
                                     transition-all duration-200 brightness-75 hover:brightness-100`}
                                     src={indus.image}
                                     alt={indus.name}

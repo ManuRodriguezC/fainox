@@ -16,7 +16,7 @@ const imagesProducts = [
 
 <LayoutPage title="Productos Fainox Group SAS">
   <section class="px-10 md:px-20 md:py-20">
-    <h1 class="text-colorBlue text-center text-xl mb-4">
+    <h1 class="text-colorBlue text-center text-base md:text-xl mb-4">
       <span class="font-bold text-2xl">Fainox Grupo SAS</span> cuenta con una amplia categoria
       de productos
     </h1>
@@ -38,7 +38,7 @@ const imagesProducts = [
           ))
         }
       </ul>
-      <div class="w-[450px] h-[450px] overflow-hidden">
+      <div class="w-full h-auto md:w-[450px] md:h-[450px] overflow-hidden">
         {
           imagesProducts.map((image, index) => (
             <Image
