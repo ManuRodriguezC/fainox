@@ -17,7 +17,7 @@ const { name, description, images} = Astro.props
         height="350"
         class="w-full h-full p-4 object-cover rounded-md group-hover:rounded-left brightness-75 group-hover:brightness-100"
         />
-      <p class="block group-hover:hidden absolute bottom-0 w-full left-0 p-2 rounded-lg text-xl text-colorBlue bg-white font-semibold">{name}</p>
+      <p class="block group-hover:hidden absolute bottom-0 w-full left-0 p-2 rounded-lg text-sm text-colorBlue bg-white font-semibold">{name}</p>
     </a>
 
     <div class="hidden md:block w-0 h-full -translate-x-full group-hover:translate-x-0 group-hover:w-[350px] overflow-hidden transition-all">
@@ -25,7 +25,7 @@ const { name, description, images} = Astro.props
         <a
           href={`/producto/${name}`}>
           <h3 class="font-bold text-xl py-2">{name}</h3>
-          <p class="text-gray-500 text-xl font-normal line-clamp-6">{description}</p>
+          <p class="text-gray-500 text-base font-normal line-clamp-6">{description}</p>
         </a>
         <ButtonCotizacion client:load name={name} />
       </div>

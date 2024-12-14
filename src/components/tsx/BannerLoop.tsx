@@ -43,7 +43,7 @@ export default function BannerLoop() {
                           <p className="text-xs md:text-lg lg:text-lg font-light py-5">{sector.description}</p>
                           <ul className="text-xs md:text-xl lg:text-base xl:text-lg p-3 md:p-10 flex flex-wrap justify-between items-center gap-2 md:gap-10 list-disc">
                             {sector.lines.map(line=> (
-                              <li className="font-semibold md:font-bold">{line}</li>
+                              <li key={line} className="font-semibold md:font-bold">{line}</li>
                             ))}
                           </ul>
                         </div>

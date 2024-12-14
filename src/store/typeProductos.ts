@@ -7,6 +7,7 @@ export const productos = [
     'envasadoras',
     'equipos para lecheria y devivados',
     'equipos para procesar frutas',
+    'equipos para procesar alimentos',
     'evaporadores',
     'formadoras de queso',
     'frezzers',

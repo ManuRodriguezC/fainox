@@ -44,7 +44,7 @@ export default function Offices() {
     <section className="w-full px-5 md:px-20 h-auto flex flex-col justify-center items-center">
       <div className="flex w-full flex-col xl:flex-row justify-around items-center">
         <ListCotizacion />
-        <div className="h-auto w-full xl:w-[40%]">
+        <div className={`h-auto w-full flex justify-center items-center xl:w-[40%]`}>
           <FormContact />
         </div>
       </div>
