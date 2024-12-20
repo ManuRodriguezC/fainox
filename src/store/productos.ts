@@ -80,14 +80,6 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/20.jpg"]
     },
     {
-        "name": "Equipos de Bombeo",
-        "industry": ["Lacteos y Derivados"],
-        "subIndustry": "equipos para yogurt",
-        "description": "*****************", //
-        "linea": "sistemas de bombeo",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen //
-    },
-    {
         "name": "Tanques de Fermentado",
         "industry": ["Lacteos y Derivados"],
         "subIndustry": "equipos para yogurt",
@@ -307,7 +299,7 @@ export const productos = [
         "name": "Túneles de Lavado de Fruta",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para pulpas",
-        "description": "*************************",
+        "description": "Son sistemas de lavado continuo que permiten lavar frutas y vegetales. Se componen de varias etapas, según el nivel de resistencia del producto a la abrasión y la cantidad de suciedad a remover: burbujeo, spray, cepillado.",
         "linea": "cabina para lavado",
         "images": ["/products/tuneles de lavado de frutas.webp"] // Falta esta imagen
     },
@@ -347,17 +339,17 @@ export const productos = [
         "name": "Sistemas de envasado",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para pulpas",
-        "description": "*************************",
-        "linea": "*************************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Son sistemas de llenado de envases, sean estos de tipo rígido o de tipo bolsa (pillow). En estos sistemas se dosifica el líquido en el envase con un sistema de llenado preciso, que puede ser por pistón, o por pesaje.",
+        "linea": "envasadoras",
+        "images": ["/products/sistemas de envasado.webp"] // Falta esta imagen
     },
     {
         "name": "Pasteurizadores en Linea Tubulares",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para pulpas",
-        "description": "",
-        "linea": "",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
+        "linea": "pasteurizadores",
+        "images": ["/products/pasteurizador tubular.webp"] // Falta esta imagen
     },
     {
         "name": "Tanques de Preparación y Mezcla",
@@ -373,42 +365,26 @@ export const productos = [
         "subIndustry": "equipos para jugos y bebidas",
         "description": "Son equipos diseñados para homogenizar líquidos alimenticios, evitando su separación luego del envasado. Por lo general se utilizan cabezales de inmersión en tanques de mezcla y también sistemas de recirculación. Existen de tipo High shear (alto cizallamiento) y de tipo centrífugos.",
         "linea": "homogenizadores",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "images": ["/products/sistema homogenizacion.webp"] // Falta esta imagen
     },
     {
         "name": "Pasteurizadores en Linea a Placas",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para jugos y bebidas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
+        "linea": "pasteurizadores",
+        "images": ["/products/pasteurizador placas.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de Bombeo 2",
+        "name": "Sistemas de Bombeo",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para jugos y bebidas",
-        "description": "********************",
-        "linea": "********************",
+        "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
+        "linea": "sistemas de bombeo",
         "images": ["/images/Image-not-found.webp"] // Falta esta imagen
     },
     {
-        "name": "Botellas",
-        "industry": ["Frutas, Pulpa y Jugos"],
-        "subIndustry": "equipos para jugos y bebidas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Bolsas",
-        "industry": ["Frutas, Pulpa y Jugos"],
-        "subIndustry": "equipos para jugos y bebidas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Vasos",
+        "name": "Bolsas, Botellas y Vasos",
         "industry": ["Frutas, Pulpa y Jugos"],
         "subIndustry": "equipos para jugos y bebidas",
         "description": "********************",
@@ -443,9 +419,9 @@ export const productos = [
         "name": "Pasteurizadores",
         "industry": ["Conservas, Salsas y Aderezos"],
         "subIndustry": "equipos para conservas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
+        "linea": "pasteurizadores",
+        "images": ["/products/pasteurizador batch.webp"] // Falta esta imagen
     },
     {
         "name": "Intercambiadores para Enfriamiento",
@@ -472,11 +448,11 @@ export const productos = [
         "images": ["/products/evaporador.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de Bombeo 3",
+        "name": "Sistemas de Bombeo",
         "industry": ["Conservas, Salsas y Aderezos"],
         "subIndustry": "equipos para conservas",
-        "description": "********************",
-        "linea": "********************",
+        "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
+        "linea": "sistemas de bombeo",
         "images": ["/images/Image-not-found.webp"] // Falta esta imagen
     },
     {
