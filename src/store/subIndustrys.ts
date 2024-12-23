@@ -8,7 +8,7 @@ export interface DatesIndustrys {
 }
 
 export const subIndustrys: SubIndustry = {
-    "Lacteos y Derivados": [
+    "Lactea y de Derivados": [
         {
             "name": "equipos para leche",
             "image": "/industrys/leche.webp",

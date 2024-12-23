@@ -1,7 +1,7 @@
 export const productos = [
     {
         "name": "Tanques de Almacenamiento",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Recipientes para almacenamiento de alimentos, agua, licores, productos químicos y cosméticos, fabricados con Aceros Inoxidables A304L y A316L. Capacidades variables adaptadas a las necesidades específicas del cliente. Pared simple, aislamiento térmico o chaquetas de transferencia térmica para modulación de la temperatura interna.",
         "linea": "tanques",
@@ -9,7 +9,7 @@ export const productos = [
     },
     {
         "name": "Sistemas de Bombeo",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
         "linea": "sistemas de bombeo",
@@ -17,7 +17,7 @@ export const productos = [
     },
     {
         "name": "Equipos para recibo de leche",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Sistema de caudalímetro electromagnético de 50 ton/h de capacidad, y con contador de 5 ton/h, sistema de plc con pantalla táctil en el idioma deseado, sistema operativo (fecha y hora código del camión, litros) bomba de hélice flexible para proteger el sensor de flujo de la leche en la espuma, el aire que separa el aire del eliminador de línea y el filtro de limpieza de leche.",
         "linea": "equipos para lecheria y devivados",
@@ -25,7 +25,7 @@ export const productos = [
     },
     {
         "name": "Descremadoras - Bactofugadoras - Estandarizadoras",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "CLARIFICACIÓN Y SEPARADOR DE CREMA MANUAL Y AUTOMATICO Separador de clarificación: esta unidad permite la clarificación eficiente de células somáticas, coágulos de manchas, leucocitos, microorganismos, acumulaciones de proteínas y residuos, así como otros elementos contaminantes nocivos que no se pueden separar con una limpieza profunda. El objetivo principal de la limpieza de separadores es extraer materiales sólidos de la leche de manera eficiente y continua. Separador de crema: permite la separación de las moléculas de aceite en la leche. Esta unidad estandariza la cantidad de grasa en la leche. Los separadores de crema permiten la separación de la crema de leche sin problemas de manera continua y con alta eficiencia. Capacidad: 1000, 2000, 5000, 10000, 20000 L/h",
         "linea": "descremadoras",
@@ -33,7 +33,7 @@ export const productos = [
     },
     {
         "name": "Equipos Homogeneizadores",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Homogeneizador 1 y 2 Etapas Los homogeneizadores están diseñados para lisar las partículas en los productos alimenticios (partículas de aceite y proteínas) para adquirir un producto final homogeneizado. Estas unidades se utilizan más comúnmente en las instalaciones de leche, crema y yogur. La aplicación de homogeneización mejora las características de consumo, la calidad y la vida útil de los productos al mismo tiempo que aumenta la producción. Capacidad: 500-15000 LT/H",
         "linea": "homogenizadores",
@@ -41,7 +41,7 @@ export const productos = [
     },
     {
         "name": "Pasteurizador Tubular",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
         "linea": "pasteurizadores",
@@ -49,7 +49,7 @@ export const productos = [
     },
     {
         "name": "Pasteurizador de Placas",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Los pasteurizadores son sistemas automáticos que sistemáticamente calientan y enfrían la leche mediante intercambiadores de calor en placa, con el fin de aumentar la temperatura de la leche sin degradar las características físicas y bioquímicas (vitaminas y diastasis) de las bacterias patógenas y los nutrientes. Capacidad: 1000, 3000, 5000, 10.000, 15.000 Lt/h",
         "linea": "pulverizadores",
@@ -57,7 +57,7 @@ export const productos = [
     },
     {
         "name": "UHT",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "***********", //
         "linea": "lineas UHT",
@@ -65,7 +65,7 @@ export const productos = [
     },
     {
         "name": "Torres de Pulverización",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para leche",
         "description": "Son equipos destinados a evaporar líquidos para eliminación del agua contenida en ellos, para posteriormente pulverizarlos. Para esto, se utilizan sistemas evaporativos continuos al vacío, y un sistema de secado por lecho fluidizado con aire caliente controlado.",
         "linea": "pulverizadores",
@@ -73,7 +73,7 @@ export const productos = [
     },
     {
         "name": "Sistemas de Premezcla",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para yogurt",
         "description": "Estos sistemas, mejor conocidos como Batch Mixer, son tanques a medida de la necesidad del cliente, con sistemas de control de temperatura y sistemas de mezcla personalizados de acuerdo con la necesidad. Pueden tener sistemas de agitación lenta, rápida, emulsión y sistemas de homogeneización recirculativos centrífugos.",
         "linea": "mezcladores para solidos y polvos",
@@ -81,7 +81,7 @@ export const productos = [
     },
     {
         "name": "Tanques de Fermentado",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para yogurt",
         "description": "Son tanques para fermentación o maduración de productos alimenticios, con sistemas de control de temperatura para garantizar la estabilidad del producto final. Pueden tener sistemas de agitación para mantener el producto homogéneo.",
         "linea": "tanques",
@@ -89,7 +89,7 @@ export const productos = [
     },
     {
         "name": "Envasadoras Manuales, Semi o Automáticas",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para yogurt",
         "description": "Envasadora de Botes: La capacidad de llenado se puede seleccionar entre 100-500 GR (Varía según el diámetro del recipiente). Capacidad: varía entre 1200 – 5600 PIEZAS/H",
         "linea": "envasadoras",
@@ -97,7 +97,7 @@ export const productos = [
     },
     {
         "name": "Evaporador al vacio de yogurt",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para yogurt",
         "description": "Estas unidades se utilizan principalmente para aumentar la proporción de materia sólida en la leche, evaporando el contenido de agua, así como para espesar la consistencia de la melaza y la mermelada mediante la evaporación del agua. La temperatura de ebullición disminuye a medida que la máquina permite la evaporación bajo presión de vacío.",
         "linea": "envasadoras",
@@ -105,7 +105,7 @@ export const productos = [
     },
     {
         "name": "Cuartos Frios",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para yogurt",
         "description": "********", //
         "linea": "***********", //
@@ -113,7 +113,7 @@ export const productos = [
     },
     {
         "name": "Tinas para Cuajado - Tinas doble O",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Son recipientes cuyo objetivo es el cuajado de la leche para posterior obtención de queso. Para ello, tienen una chaqueta de intercambio térmico que permite controlar la temperatura del producto, así como sistemas de agitación y corte de cuajada a medida de la necesidad específica. Pueden ser de tipo abiertas, cerradas, oblongas, Doble 0, polivalentes.",
         "linea": "tinas para queso",
@@ -121,7 +121,7 @@ export const productos = [
     },
     {
         "name": "Polivalentes",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "DESCRIPCION TANQUE MILKMAN: La leche se calienta hasta la temperatura de fermentación en el Tanque de Proceso de Queso. Cuando la leche se transforma en cuajada antes de ser cortada por mezcladores especiales dentro del tanque.Capacidad: 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 8000 LT / 10.000 y 11.000 LT",
         "linea": "*****",
@@ -129,7 +129,7 @@ export const productos = [
     },
     {
         "name": "Mesas de Desuerado",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Como su nombre indica, son mesas para separar la cuajada del suero posterior al proceso de cuajado. Estas pueden tener desde el diseño más sencillo para separación manual, hasta sistemas de pre prensado de accionamiento neumático.",
         "linea": "equipos para lecheria y devivados",
@@ -137,7 +137,7 @@ export const productos = [
     },
     {
         "name": "Prensas para Queso",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Este equipo se utiliza para realizar el prensado de cuajada, convirtiéndola en queso, para ello utiliza una serie de moldes que le dan su forma característica rectangular.",
         "linea": "formadoras de queso",
@@ -145,7 +145,7 @@ export const productos = [
     },
     {
         "name": "Hiladora Vapor - Agua",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Hiladora a vapor: Las máquinas de cocción en seco tipo vapor abierto  Este equipo se utiliza para altas capacidades de más de 100 Kg/carga. La cuajada es remoldeada mediante 2 espirales. Gracias al vapor, que se proporciona tanto dentro de la máquina como alrededor de las paredes exteriores; el queso se cocina al gusto. Capacidad: 100 – 500 Kg/Carga. ** Una carga dura aproximadamente entre 10 – 12 minutos.",
         "linea": "*******", //
@@ -153,7 +153,7 @@ export const productos = [
     },
     {
         "name": "Lineas de Transferencia",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Utilizada en la tranferencia de la cuajada a la máquina de pesaje.",
         "linea": "*********", //
@@ -161,7 +161,7 @@ export const productos = [
     },
     {
         "name": "Linea Completa para Queso Hilado - Vapor",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "La máquina moldeadora calienta la cuajada usando vapor para luego realizar el proceso de remoledeado. Este equipo presenta la función de  pesaje en capacidad hasta 1000 Kg/h. El equipo con capacidad de 1500 Kg/h no provee la función de pesaje.  Capacidad: 500, 1000, 1500 Kg  ",
         "linea": "formadoras de queso",
@@ -169,7 +169,7 @@ export const productos = [
     },
     {
         "name": "Línea de Formado para Queso Hilado",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Esta máquina permite la realización del procedimiento de pesaje en máquinas de remoldeo tipo ebullición en seco y tipo ebullición en húmedo de 1000 Kg.",
         "linea": "formadoras de queso",
@@ -177,7 +177,7 @@ export const productos = [
     },
     {
         "name": "Coccionadoras para Queso Cremoso",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "Máquina de cocción en seco:  Máquina de cocción en seco de tipo cerrado. Permite el remoldeo de la cuajada en una caldera circular mediante la aplicación de vapor que circula por la caldera.  Capacidad: 40-60-80 L/Carga",
         "linea": "******", //
@@ -185,7 +185,7 @@ export const productos = [
     },
     {
         "name": "Lineas para Ricota",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "equipos para quesos",
         "description": "El suero es evaporado en la caldera para producir queso de suero.",
         "linea": "formadoras de queso",
@@ -193,7 +193,7 @@ export const productos = [
     },
     {
         "name": "Mantequeras por Baches",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "lineas de mantequilla",
         "description": "Batidora tipo tambor para producir mantequilla a partir de crema.",
         "linea": "mantequilleras",
@@ -201,7 +201,7 @@ export const productos = [
     },
     {
         "name": "Lineas en Continuo",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "lineas de mantequilla",
         "description": "******", //
         "linea": "****", //
@@ -209,7 +209,7 @@ export const productos = [
     },
     {
         "name": "Tanques maduradores de Crema",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "lineas de mantequilla",
         "description": "Son tanques con sistemas de control de temperatura y agitación muy sensibles, con la finalidad de madurar la crema previo al proceso de batido. Tienen un sistema de control muy exacto.",
         "linea": "tanques",
@@ -217,7 +217,7 @@ export const productos = [
     },
     {
         "name": "Moldeadora de Mantequilla",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "lineas de mantequilla",
         "description": "Permite volver a moldear la mantequilla para extraer el contenido de agua.",
         "linea": "mantequilleras",
@@ -225,7 +225,7 @@ export const productos = [
     },
     {
         "name": "Envasadoras de Mantequilla y Enpacadoras",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "lineas de mantequilla",
         "description": "***********",
         "linea": "Envasadoras",
@@ -233,7 +233,7 @@ export const productos = [
     },
     {
         "name": "Equipos para Produccion de dulce de leche (Arequipe - Manjar)",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "******",
         "linea": "equipos para lecheria y devivados",
@@ -241,7 +241,7 @@ export const productos = [
     },
     {
         "name": "Cocedor industrial tipo Stephan",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "Cooker Semiautomatico: Máquina de cocción en seco de tipo cerrado. Permite el remoldeo de la cuajada en una caldera circular mediante la aplicación de vapor que circula por la caldera.  Capacidad: 40-60-80 L/Carga",
         "linea": "equipos para lecheria y devivados",
@@ -249,7 +249,7 @@ export const productos = [
     },
     {
         "name": "Lineas de proceso para crema de Leche",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "*********",
         "linea": "equipos para lecheria y devivados",
@@ -257,7 +257,7 @@ export const productos = [
     },
     {
         "name": "Lineas de proceso para queso crema",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "En esta unidad se preparan todos los productos análogos de queso, queso crema, salsas de chocolate, salsas de tomate, mayonesa, ketchup, salsas especiales para pasteles, helados, helados de almizcle, hummus, etc.",
         "linea": "equipos para lecheria y devivados",
@@ -265,7 +265,7 @@ export const productos = [
     },
     {
         "name": "Torres de Evaporación para Leche Condensada",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "Estas unidades se utilizan principalmente para aumentar la proporción de materia sólida en la leche, evaporando el contenido de agua, así como para espesar la consistencia de la melaza y la mermelada mediante la evaporación del agua.  La temperatura de ebullición disminuye a medida que la máquina permite la evaporación bajo presión de vacío.  Por lo tanto; los minerales del producto no se degradan y el agua se extrae de forma rápida para adquirir la máxima eficacia posible.  Capacidad: 1000, 2000, 3000, 4000, 5000 L.",
         "linea": "equipos para lecheria y devivados",
@@ -273,7 +273,7 @@ export const productos = [
     },
     {
         "name": "Enfriadores tubulares para producos Viscosos",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "Son intercambiadores de temperatura de tipo tubulares para enfriamiento mediante intercambio indirecto de productos viscosos. Pueden ser de tipo Shell and tubes (coraza – tubos) y de tipo scrapped Surface (superficie rascada).",
         "linea": "equipos para lecheria y devivados",
@@ -281,7 +281,7 @@ export const productos = [
     },
     {
         "name": "Pasteurizadores, Homogeneizadoras y Frezzer para Helados",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "*********",
         "linea": "equipos para lecheria y devivados",
@@ -289,7 +289,7 @@ export const productos = [
     },
     {
         "name": "Deodorizador",
-        "industry": ["Lacteos y Derivados"],
+        "industry": ["Lactea y de Derivados"],
         "subIndustry": "derivados varios",
         "description": "Proporciona un producto más delicioso al separar los olores no deseados de la leche con su técnica de vacío fuerte.",
         "linea": "equipos para lecheria y devivados",
@@ -521,7 +521,7 @@ export const productos = [
     },
     {
         "name": "Sistemas de Agitación",
-        "industry": ["Alimentos Varios", "Lacteos y Derivados"],
+        "industry": ["Alimentos Varios", "Lactea y de Derivados"],
         "subIndustry": "aceites y margarinas",
         "description": "Son sistemas adaptados a recipientes, con la finalidad de lograr una mezcla o agitación específica. Pueden ser de alta velocidad: cowles, hélices, emulsión; o de baja velocidad: rascados, escudos, etc.",
         "linea": "agitadores",

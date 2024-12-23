@@ -25,12 +25,13 @@ const similarLine = productos.filter(
 ---
 
 <LayoutPage title={`${product}`}>
-  <section class="px-5 md:px-20 xl:px-32 flex flex-col w-full">
+  <section class="px-5 mt-32 md:px-20 xl:px-32 flex flex-col w-full">
     <div class="flex flex-col lg:flex-row">
       <Image
         src={findProduct?.images[0]}
         width={500}
         height={500}
+        class="h-auto w-[500px]"
         alt={`${findProduct.name}-Fainox Group`}
       />
       <div class="md:p-10">
@@ -59,12 +60,15 @@ const similarLine = productos.filter(
                 class="border-2 rounded-md hover:shadow-box-black hover:border-gray-400 transition-all duration-150"
                 href={`/producto/${prod.name}`}
               >
-                <Image
-                  src={prod?.images[0]}
-                  width={250}
-                  height={250}
-                  alt={`${prod.name}-Fainox Group`}
-                />
+                <div class="w-72 h-72">
+                  <Image
+                    class="w-full h-full object-cover"
+                    src={prod?.images[0]}
+                    width={250}
+                    height={250}
+                    alt={`${prod.name}-Fainox Group`}
+                    />
+                </div>
                 <p class="text-colorBlue text-sm">{prod.name}</p>
               </a>
             ))}

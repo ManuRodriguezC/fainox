@@ -16,18 +16,18 @@ const { link, name } = Astro.props;
       {name}
     </p>
     {
-      (link === "industriasyservicios" || link === "productos")
+      (link === "sectores-industriales" || link === "productos-servicios")
       &&
       <span class="hidden lg:block arrow group-hover:rotate-195 group-hover:left-6 group-hover:top-1"></span>
     }
   </a>
   {
-    link === "industriasyservicios"
+    link === "sectores-industriales"
     &&
     <HoverLinkIndustrias />
   }
     {
-      link === "productos"
+      link === "productos-servicios"
       &&
       <HoverLinkProductos />
     }

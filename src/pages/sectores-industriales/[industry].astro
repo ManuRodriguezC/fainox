@@ -8,17 +8,18 @@ export const prerender = true
 
 export function getStaticPaths() {
   return industrias.map(industria => ({
-    params: {industry: industria.name}
+    params: {industry: industria.link}
   }))
 }
 const { industry } = Astro.params
-const filterProducts = productos.filter(product => product.industry.includes(industry))
+const linkIndustry = industrias.filter((indus) => indus.link === industry)[0].name
+const filterProducts = productos.filter(product => product.industry.includes(linkIndustry))
 
 ---
 <LayoutPage title={`Sector ${industry} - Fainox Group`}>
   <section class="flex flex-col w-full h-auto px-0 md:px-10 mt-24">
-    <h1 class="text-center text-colorBlue text-lg md:text-2xl lg:text-3xl xl:text-5xl font-bold">Industria - {industry}</h1>
-    <FilterListProduct industry={industry} filterProducts={filterProducts} client:load/>
+    <h1 class="text-center text-colorBlue text-lg md:text-2xl lg:text-3xl xl:text-5xl font-bold">Industria {linkIndustry}</h1>
+    <FilterListProduct industry={linkIndustry} filterProducts={filterProducts} client:load/>
 </section>
 
 </LayoutPage>

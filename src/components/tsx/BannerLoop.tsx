@@ -39,7 +39,7 @@ export default function BannerLoop() {
                         href={sector.link}
                       >
                         <div>
-                          <h2 className="text-xl md:text-4xl xl:text-5xl font-bold mb-2 md:mb-6">Industria - {sector.title}</h2>
+                          <h2 className="text-xl md:text-4xl xl:text-5xl font-bold mb-2 md:mb-6">Industria {sector.title}</h2>
                           <p className="text-xs md:text-lg lg:text-lg font-light py-5">{sector.description}</p>
                           <ul className="text-xs md:text-xl lg:text-base xl:text-lg p-3 md:p-10 flex flex-wrap justify-between items-center gap-2 md:gap-10 list-disc">
                             {sector.lines.map(line=> (

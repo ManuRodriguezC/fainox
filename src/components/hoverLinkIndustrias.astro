@@ -11,7 +11,7 @@ import { industrias } from "../store/industrias";
       if (industria.type === "link") {
         return (
           <a
-            href={`/industriasyservicios/${industria.name}`}
+            href={`/sectores-industriales/${industria.link}`}
             class="cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg"
           >
             <p>{industria.name}</p>
