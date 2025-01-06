@@ -1,0 +1,100 @@
+---
+import ArrowDown from "../icons/arrowDown.astro"
+import { productosyservicios } from "../store/typeProductos"
+
+    const styleLink = "cursor-pointer bg-white hover:border-[1px] transition-all duration-200 border-blue-200 hover:bg-slate-200 text-xl text-colorBlue font-semibold rounded-lg"
+---
+
+<ul class="mt-16 flex flex-col m-2 gap-5">
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/">
+            Nosotros
+        </a>
+    </li>
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/sectores-industriales">
+            Sectores Industriales
+        </a>
+    </li>
+    <li class={styleLink}>
+        <button id="button-list" class="flex w-full flex-row px-5 py-2 justify-between items-center">
+            Productos & Servicios
+            <ArrowDown />
+        </button>
+        <ul class="hidden flex-col gap-2 transition-all duration-300" id="list-service">
+            {
+                productosyservicios.map((producto, indexx) => (
+                    <li class={styleLink}>
+                        <button
+                            id={`nav-movil-${indexx}`}        
+                            class="flex w-full flex-row px-8 py-2 text-lg justify-between items-center">
+                            - {producto.name}
+                            <ArrowDown />
+                        </button>
+                        <ul id={`list-movil-${indexx}`} class="hidden flex-col gap-2 list-disc mx-10 text-base">
+                            {
+                                producto.services.map((service) => (
+                                    <li>
+                                        <a
+                                        class="block w-full bg-colorBlue text-white rounded-md px-5 py-2"
+                                        href={`/productos-servicios/${producto.name.toLowerCase().replaceAll(" ", "-")}/${service.name.toLowerCase().replaceAll(" ", "-")}`}
+                                        >
+                                            {service.name}
+                                        </a>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </li>
+                ))
+            }
+        </ul>
+    </li>
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/equiposusados">
+            Equipos Usados
+        </a>
+    </li>
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/desarrollosynovedades">
+            Desarrollos & Novedades
+        </a>
+    </li>
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/contacto">
+            Contacto
+        </a>
+    </li>
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/cotizacion">
+            Cotización
+        </a>
+    </li>
+</ul>
+
+<script>
+    // Seleccionar todos los párrafos y listas correspondientes
+    const buttonService = document.getElementById('button-list')
+    const listService = document.getElementById('list-service')
+
+    if (buttonService && listService)
+    buttonService.addEventListener('click', () => {
+        listService.classList.toggle('flex')
+        listService.classList.toggle('hidden')
+    })
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const navButtons = document.querySelectorAll("[id^='nav-movil-']");
+  
+      navButtons.forEach((navLink, index) => {
+        const list = document.getElementById(`list-movil-${index}`);
+        navLink.addEventListener('click', () => {
+            // const row = document.getElementById(`row-down-${index}`)
+            list?.classList.toggle('flex')
+            list?.classList.toggle('hidden')
+            // row?.classList.toggle('rotate')
+            }
+        )
+      });
+    });
+  </script>

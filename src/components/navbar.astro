@@ -2,6 +2,7 @@
 import Nav from "../icons/nav.astro";
 import CloseNav from "../icons/closeNav.astro";
 import Link from "./link.astro";
+import NavMovil from "./navMovil.astro";
 
 const links = [
   {
@@ -66,14 +67,14 @@ const links = [
   </button>
   <nav
     id="phone-nav"
-    class="fixed w-[320px] transform translate-x-full transition-transform duration-300 h-screen bg-white right-0 top-0"
+    class="fixed w-[320px] transform translate-x-full transition-transform duration-300 h-screen bg-gray-100 right-0 top-0"
   >
     <button id="close-nav" class="fixed right-4 top-4">
       <CloseNav />
     </button>
-    <ul class="mt-10">
-      {links.map((link) => <Link link={link.link} name={link.name} />)}
-    </ul>
+
+    <NavMovil />
+
   </nav>
 </header>
 
