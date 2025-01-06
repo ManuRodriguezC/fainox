@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import LayoutPage from "../layouts/LayoutPage.astro";
-import '../styles/novedades.css'
 const novedades = [
   {
     title: "Lorem Impsum assattsuuas",
@@ -22,7 +21,6 @@ const novedades = [
     image: "/innovations/inno3.webp",
   },
 ];
-const aliados = ["/alianz/stk.webp", "/alianz/logo.webp"]
 ---
 
 <LayoutPage title="Novedades Fainox">
@@ -56,32 +54,10 @@ const aliados = ["/alianz/stk.webp", "/alianz/logo.webp"]
     </div>
 
     <div class="w-full flex flex-col justify-center items-center">
-      <h2 class="text-colorBlue text-3xl font-bold">Nuestros Aliados</h2>
 
-      <div class="marquee">
-        <ul class="marquee-content">
-          {aliados.map(ali => (
-            <li>
-              <Image width={500} height={500} src={ali} alt={ali}/>
-            </li>
-          ))}
-        </ul>
-      </div>
+
 
     </div>
   </section>
 </LayoutPage>
 
-<script type="module">
-  document.addEventListener('DOMContentLoaded', () => {
-    const root = document.documentElement;
-    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-    const marqueeContent = document.querySelector("ul.marquee-content");
-
-    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-    for(let i = 0; i < parseInt(marqueeElementsDisplayed); i++) {
-      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-    }
-  });
-</script>

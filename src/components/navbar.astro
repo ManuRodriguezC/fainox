@@ -7,30 +7,37 @@ const links = [
   {
     name: "Nosotros",
     link: "",
+    typeLink: true
   },
   {
     name: "Sectores Industriales",
     link: "sectores-industriales",
+    typeLink: true
   },
   {
     name: "Productos & Servicios",
     link: "productos-servicios",
+    typeLink: false
   },
   {
     name: "Equipos Usados",
     link: "equiposusados",
+    typeLink: true
   },
   {
     name: "Desarrollos & Novedades",
     link: "desarrollosynovedades",
+    typeLink: true
   },
   {
     name: "Contacto",
     link: "contacto",
+    typeLink: true
   },
   {
     name: "Cotización",
     link: "cotizacion",
+    typeLink: true
   },
 ];
 ---
@@ -48,8 +55,8 @@ const links = [
   </a>
 
   <nav class="hidden lg:block">
-    <ul class="flex flex-row gap-6 lg:gap-8 xl:gap-14">
-      {links.map((link) => <Link link={link.link} name={link.name} />)}
+    <ul class="flex flex-row gap-3 lg:gap-4 xl:gap-8">
+      {links.map((link) => <Link link={link.link} name={link.name} typeLink={link.typeLink} />)}
     </ul>
   </nav>
 

@@ -11,28 +11,31 @@ import FormContact from "../components/tsx/FormContact";
     <h1
       id="button-form"
       class="text-white text-2xl text-center font-semibold border-2 bg-colorBlue border-white px-6 py-2
-      rounded-lg shadow-box-black hover:scale-105 transition-all duration-200 cursor-pointer">
+      rounded-lg shadow-box-black transition-all duration-200 cursor-pointer">
       Alguien necesita lo que tu ya no usas, da clic para vender tu producto!
     </h1>
     <div class="h-full flex flex-col justify-center items-center">
-      <FormContact pay={true} client:load/>
+      <FormContact pay={false} client:load/>
     </div>
-    <div class="w-full flex flex-col md:flex-row justify-center items-center md:justify-around">  
-      <p class="text-colorBlue text-center text-xl font-semibold">Productos usados de excelente calidad</p>
-      <p class="text-gray-500 text-lg">Productos encontrados: {productosUsados.length}</p>
-    </div>
-    
-    <div class="flex flex-wrap gap-6 justify-center items-center mt-5 md:p-10">
-      {
-        productosUsados.map((product: Product) => (
-          <ProductForLists {...product} client:load />
-        ))
-      }
-    </div>
+    {
+      productosUsados.length > 0 &&
+      <div class="w-full flex flex-col md:flex-row justify-center items-center md:justify-around">  
+        <p class="text-colorBlue text-center text-xl font-semibold">Productos usados de excelente calidad</p>
+        <p class="text-gray-500 text-lg">Productos encontrados: {productosUsados.length}</p>
+      </div>
+      
+      <div class="flex flex-wrap gap-6 justify-center items-center mt-5 md:p-10">
+        {
+          productosUsados.map((product: Product) => (
+            <ProductForLists {...product} client:load />
+          ))
+        }
+      </div>
+    }
 </section>
 </LayoutPage>
 
-<script>
+<!-- <script>
   const button = document.getElementById('button-form')
   const form = document.getElementById('form')
   if (button && form) {
@@ -45,5 +48,5 @@ import FormContact from "../components/tsx/FormContact";
         form.classList.add('seeForm')
       }
     })
-  }
+  } -->
 </script>

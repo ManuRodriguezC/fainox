@@ -21,14 +21,15 @@ export default function ButtonCotizacion({ name, size, control, setControl }: Pr
 
   const handleClick = () => {
     addCarProduct(name);
-    console.log("test")
     setExist(true); // Actualizar el estado para reflejar que el producto existe
   };
 
   const handleClickDelete = () => {
     removeCarProduct(name);
     setExist(false); // Actualizar el estado para reflejar que el producto fue eliminado
-    if (control && setControl) setControl(!control)
+    if (setControl) {
+      setControl(!control)
+    }
   };
 
   if (size === "S") {

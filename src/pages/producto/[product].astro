@@ -4,23 +4,58 @@ import LayoutPage from "../../layouts/LayoutPage.astro";
 import { productos } from "../../store/productos";
 import ButtonCotizacion from "../../components/tsx/ButtonCotizacion";
 import { capitalize } from "../../utils/capitalize";
+import { suministrosycomponentes } from "../../store/suministrosycomponentes";
+import type { Product } from "../../store/types/product";
+import { productosUsados } from "../../store/productosUsados";
 
 export const prerender = true;
 
 export function getStaticPaths() {
-  return productos.map((producto) => ({
-    params: { product: producto.name },
+  const productPaths = productos.map((producto) => ({
+    params: { product: producto.name.toLowerCase().replaceAll(" ", "-") },
   }));
+
+  const productUsedPaths = productosUsados.map((producto: Product) => ({
+    params: { product: producto.name.toLowerCase().replaceAll(" ", "-") },
+  }));
+
+  const suministroPaths = suministrosycomponentes.flatMap((suministro) =>
+    suministro.list.products.map((producto) => ({
+      params: { product: producto.name.toLowerCase().replaceAll(" ", "-") },
+    }))
+  );
+
+  return [...productPaths, ...productUsedPaths, ...suministroPaths];
 }
 
 const { product } = Astro.params;
 
-const findProduct = productos.find((producto) => producto.name === product);
+const findProduct = productos.find(
+  (producto) => producto.name.toLowerCase().replaceAll(" ", "-") === product
+);
 
-if (!findProduct) return Astro.redirect("/productos");
+let productData = findProduct;
+
+if (!findProduct) {
+  productData = suministrosycomponentes
+    .flatMap((suministro) => suministro.list.products)
+    .find(
+      ({ name }: Product) => name.toLowerCase().replaceAll(" ", "-") === product
+    );
+}
+
+let findFinalProduct = productData;
+
+if (!productData) {
+  findFinalProduct = productosUsados.find(
+    (producto: Product) => producto.name.toLowerCase().replaceAll(" ", "-") === product)
+}
+
+if (!findFinalProduct) return Astro.redirect('/');
+
 const similarLine = productos.filter(
   (producto) =>
-    producto.linea === findProduct.linea && producto.name != findProduct.name
+    producto.linea === findFinalProduct.linea && producto.name !== findFinalProduct.name
 );
 ---
 
@@ -28,20 +63,20 @@ const similarLine = productos.filter(
   <section class="px-5 mt-32 md:px-20 xl:px-32 flex flex-col w-full">
     <div class="flex flex-col lg:flex-row">
       <Image
-        src={findProduct?.images[0]}
+        src={findFinalProduct?.images[0]}
         width={500}
         height={500}
-        class="h-auto w-[500px]"
-        alt={`${findProduct.name}-Fainox Group`}
+        class="h-[400px] w-auto"
+        alt={`${findFinalProduct.name}-Fainox Group`}
       />
       <div class="md:p-10">
-        <h1 class="text-colorBlue text-2xl lg:text-3xl xl:text-4xl font-bold">{findProduct.name}</h1>
+        <h1 class="text-colorBlue text-2xl lg:text-3xl xl:text-4xl font-bold">{findFinalProduct.name}</h1>
         <p class="my-2 font-semibold text-gray-500">
-          Producto de la Linea - {capitalize(findProduct.linea)}
+          Producto de la Linea - {capitalize(findFinalProduct.linea)}
         </p>
-        <p class="text-base md:text-xl py-6 md:py-12">{findProduct.description}</p>
+        <p class="text-base md:text-xl py-6 md:py-12">{findFinalProduct.description}</p>
         <div class="">
-          <ButtonCotizacion client:load name={findProduct.name} />
+          <ButtonCotizacion client:load name={findFinalProduct.name} />
         </div>
       </div>
     </div>
@@ -58,7 +93,7 @@ const similarLine = productos.filter(
             {similarLine.map((prod) => (
               <a
                 class="border-2 rounded-md hover:shadow-box-black hover:border-gray-400 transition-all duration-150"
-                href={`/producto/${prod.name}`}
+                href={`/producto/${prod.name.toLowerCase().replaceAll(' ', '-')}`}
               >
                 <div class="w-72 h-72">
                   <Image

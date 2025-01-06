@@ -29,3 +29,89 @@ export const productos = [
     'tinas para queso',
     'yogurteras',
 ];
+
+export const productosyservicios = [
+    {
+        'name': 'Desarrollo de Equipos para',
+        'services': [
+            {
+                'name':'Lacteos y Derivados',
+                'link': ''
+            },
+            {
+                'name': 'Frutas Pulpas y Bebidas',
+                'link': ''
+            },
+            {
+                'name': 'Conservas, Salsas y Aderezos',
+                'link': ''
+            },
+            {
+                'name': 'Alimentos Varios',
+                'link': ''
+            },
+            {
+                'name': 'Carnes y Embutidos',
+                'link': ''
+            },
+            {
+                'name': 'Granos, Cereales y Harinas',
+                'link': ''
+            },
+            {
+                'name': 'Aceites y Margarinas',
+                'link': ''
+            }
+        ]
+    },
+    {
+        'name': 'Suministros y Componentes',
+        'services': [
+            {
+                'name': 'Sistemas de Bombeo',
+                'products': [
+                    'Bombas Industriales',
+                    'Bombas Sanitarias Positivas - Certificadas',
+                    'Bombas Sanitarias Centrifugas - Certificadas',
+                ]
+            },
+            {
+                'name': 'Valculas de Operación',
+                'products': [
+                    'Manuales y Actuadas',
+                ]
+            },
+            {
+                'name': 'Valculas de Proceso',
+                'products': [
+                    'De asiento simple - asiento doble',
+                ]
+            }, 
+        ]
+    },
+    {
+        'name': 'Equipos y Sistemas de Lavado',
+        'services': [
+            {
+                'name': 'Cabinas y tuneles de Lavado'
+            },
+            {
+                'name': 'Sistemas de Lavado CIP y COP'
+            }
+        ]
+    },
+    {
+        'name': 'Servicios de Ingenieria',
+        'services': [
+            {
+                'name': 'Consultoria y Asistencia de Proyectos',
+            },
+            {
+                'name': 'Ingeniería Conceptual, Presupuestal y de Destalle',
+            },
+            {
+                'name': 'Monajes Industriales'
+            },
+        ]
+    }
+]

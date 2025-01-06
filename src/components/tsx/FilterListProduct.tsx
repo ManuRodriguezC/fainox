@@ -6,7 +6,7 @@ import { subIndustrys } from "../../store/subIndustrys";
 
 interface Props {
     industry: string;
-    filterProducts: Product[]
+    filterProducts: Product[];
 }
 
 export default function     FilterListProduct({ industry, filterProducts }: Props) {

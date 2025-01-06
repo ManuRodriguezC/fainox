@@ -1,20 +1,59 @@
 ---
-import { productos } from "../store/typeProductos";
+import ArrowDown from "../icons/arrowDown.astro";
+import { productosyservicios } from "../store/typeProductos";
 import { capitalize } from "../utils/capitalize";
 ---
 
 <div
-  class="hidden group-hover:lg:grid absolute grid-cols-4 gap-1 w-[800px] border-gray-300 rounded-lg
-    p-5 bg-white gap-y-1-6 font-medium shadow-box-black text-base"
+  class="hidden group-hover:lg:flex absolute flex-col gap-1 w-[500px] h-auto border-gray-300 rounded-lg
+     bg-white font-medium shadow-box-black text-base py-4"
 >
-  {
-    productos.map((producto) => (
-      <a
-        class="decoration-slice hover:bg-gray-100 p-2 rounded-xl"
-        href={`/productos-servicios/${producto}`}
+  {productosyservicios.map((producto, index) => (
+    <div
+      id={`nav-${index}`}
       >
-        {capitalize(producto)}
-      </a>
-    ))
-  }
+      <div
+        class="flex flex-row justify-between pr-10 items-center decoration-slice hover:bg-gray-100 p-2 mx-3 rounded-xl cursor-pointer"
+      >
+        <p>{capitalize(producto.name)}</p>
+        <div id={`row-down-${index}`} class="transition-all duration-300">
+          <ArrowDown />
+        </div>
+      </div>
+
+      <ul
+        id={`list-${index}`}
+        class="hidden bg-gray-100 flex-col list-disc px-10 py-5"
+      >
+        {producto.services.map((service, idx) => (
+          <a
+            href={`/productos-servicios/${producto.name.toLowerCase().replaceAll(" ", "-")}/${service.name.toLowerCase().replaceAll(" ", "-")}`}>
+            <li
+                class="p-1 px-4 hover:bg-white rounded-xl cursor-pointer"
+                >
+                  {service.name}
+            </li>
+          </a>
+        ))}
+      </ul>
+    </div>
+  ))}
 </div>
+
+<script>
+  // Seleccionar todos los párrafos y listas correspondientes
+  document.addEventListener("DOMContentLoaded", () => {
+    const navButtons = document.querySelectorAll("[id^='nav-']");
+
+    navButtons.forEach((navLink, index) => {
+      const list = document.getElementById(`list-${index}`);
+      const row = document.getElementById(`row-down-${index}`)
+      navLink.addEventListener('click', () => {
+        list?.classList.toggle('flex')
+        list?.classList.toggle('hidden')
+        row?.classList.toggle('rotate')
+      }
+    )
+    });
+  });
+</script>

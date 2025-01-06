@@ -1,7 +1,20 @@
 ---
+import Image from "astro/components/Image.astro";
 import { sectores } from "../store/industrias";
 import { productos } from "../store/typeProductos";
 import { capitalize } from "../utils/capitalize";
+import { serviciosingenieria } from "../store/suministrosycomponentes";
+
+const aliados = [
+  "/alianz/stk.webp",
+  "/alianz/logo.webp",
+  "/alianz/Logo Konexa Packaging.webp",
+  "/alianz/logo trepko.webp",
+  "/alianz/Logo Milkman.webp",
+  "/alianz/logo simon-freres.webp",
+  "/alianz/logo velox.webp",
+]
+
 ---
 
 <footer class="w-ful flex flex-col justify-center items-center pb-10">
@@ -10,7 +23,16 @@ import { capitalize } from "../utils/capitalize";
   <div
     class="flex flex-col justify-between items-center gap-4 px-5 md:px-20 w-full custom:flex-row"
   >
-    <img src="/images/logo.png" class="h-36 custom:h-60" alt="" />
+    <div class="marquee">
+      <ul class="marquee-content flex gap-5">
+        {aliados.map(ali => (
+          <li>
+            <Image class="max-h-[180px] w-auto" width={500} height={50} src={ali} alt={ali}/>
+          </li>
+        ))}
+      </ul>
+    </div>
+
     <div class="w-full flex flex-col md:flex-row justify-around gap-4 md:gap-8 lg:gap-16">
 
       <div class="flex flex-col gap-4">
@@ -32,15 +54,15 @@ import { capitalize } from "../utils/capitalize";
       <div class="block md:hidden h-[1px] w-[90%] bg-blue-900"></div>
 
       <div class="flex flex-col gap-4">
-        <h2 class="font-bold text-colorBlue text-2xl">Productos</h2>
+        <h2 class="font-bold text-colorBlue text-2xl">Servicios</h2>
         <div class="grid grid-cols-1 gap-x-10">
           {
-            productos.slice(0, 5).map((sector) => (
+            serviciosingenieria.map((sector) => (
               <a
                 class="text-sm text-gray-400 hover:text-gray-600 font-semibold my-2  transition-all duration-200"
-                href={`/productos/${sector}`}
+                href={`/productos-servicios/servicios-de-ingenieria/${sector.name.toLowerCase().replaceAll(" ", "-")}`}
               >
-                {capitalize(sector)}
+                {capitalize(sector.name)}
               </a>
             ))
           }
@@ -57,7 +79,7 @@ import { capitalize } from "../utils/capitalize";
           <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Equipos Usados</a>
           <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Desarrollos & Novedades</a>
           <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Contacto</a>
-          <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Terminos y Condiciones</a>
+          <!-- <a href="/contacto/#tyc" class="text-sm text-gray-400 font-semibold my-2 hover:text-gray-600 transition-all duration-200">Terminos y Condiciones</a> -->
         </div>
       </div>
     </div>
@@ -99,3 +121,17 @@ import { capitalize } from "../utils/capitalize";
     </div>
   </div>
 </footer>
+
+<script type="module">
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+    const marqueeContent = document.querySelector("ul.marquee-content");
+
+    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+    for(let i = 0; i < parseInt(marqueeElementsDisplayed); i++) {
+      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    }
+  });
+</script>

@@ -3,25 +3,18 @@ import { Image } from "astro:assets";
 import LayoutPage from "../layouts/LayoutPage.astro";
 const offices = [
   {
-    title: "Sede Principal",
-    city: "Zipaquira - Cundinamarca",
-    address: "Calle 145 # 45 - 52",
-    phone: "+57 3005786932",
+    title: "Sede Administrativa y Comercial",
+    city: "Sede Colombia: Calle 8 No 37-46 Local # 100, C.C. La Catedral, Zipaquirá - Cundinamarca, Colombia.",
+    address: "Sede Quito: Avenida Eloy Alfaro. Quito, Ecuador.",
+    phone: "(+57) 3241390907, (+57) 3223369750, (+57) 3144687182",
     image: "/offices/office1.jpg",
   },
   {
-    title: "Sede de Fabricacion  y Ensamble",
-    city: "Medellin - Antioquia",
-    address: "Carrera 55 # 45 - 78",
-    phone: "+57 314875236",
+    title: "Sede de Fabricación  y Ensamble",
+    city: "Sede Colombia: Planta de producción Barrio Carvajal",
+    address: "Sede Quito: Avenida Eloy Alfaro. Quito, Ecuador.",
+    phone: "(+57) 3241390907, (+57) 3223369750, (+57) 3144687182",
     image: "/offices/office2.jpg",
-  },
-  {
-    title: "Sede Ventas",
-    city: "Bogotá - Cundinamarca",
-    address: "Avenida Boyaca # 45 - 25",
-    phone: "+57 3124786596",
-    image: "/offices/office3.jpg",
   },
 ];
 ---
@@ -53,10 +46,10 @@ const offices = [
       las cuales nos podras contactar.
     </p>
 
-    <div class="flex flex-wrap justify-center items-center gap-20 py-16">
+    <div class="flex flex-wrap justify-center items-start gap-20 py-16">
       {
         offices.map(({ title, address, phone, image, city }) => (
-          <div class="w-[320px] md:w-[400px] h-auto">
+          <div class="w-[320px] md:w-[400px] h-auto gap-y-2 flex flex-col">
             <Image
               class="object-cover w-full h-[250px] md:h-[300px] shadow-xl rounded-xl"
               width={300}
@@ -65,15 +58,15 @@ const offices = [
               alt={title}
             />
             <h2 class="text-colorBlue pt-5 text-2xl font-semibold">{title}</h2>
-            <p class="text-gray-500 text-sm">Ciudad: {city}</p>
-            <p class="text-gray-500 text-sm">Dirreción: {address}</p>
-            <p class="text-gray-500 text-sm">Telefono: {phone}</p>
+            <p class="text-gray-500 text-sm">{city}</p>
+            <p class="text-gray-500 text-sm">{address}</p>
+            <p class="text-gray-500 text-sm">Telefonos: {phone}</p>
           </div>
         ))
       }
     </div>
 
-    <div id="tyc" class="p-5 md:p-20 flex flex-col md:flex-row gap-20">
+    <!-- <div id="tyc" class="p-5 md:p-20 flex flex-col md:flex-row gap-20">
       <div>
         <h4 class="text-colorBlue text-3xl font-semibold mb-3">Terminos</h4>
         <p class="text-gray-600 text-sm">
@@ -98,6 +91,6 @@ const offices = [
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-    </div>
+    </div> -->
   </section>
 </LayoutPage>

@@ -3,6 +3,7 @@ import { getCarProducts } from "../../lib/carCotizacion";
 import { productos } from "../../store/productos";
 import { productosUsados } from "../../store/productosUsados";
 import ButtonCotizacion from "../tsx/ButtonCotizacion";
+import { equiposdelavado, suministrosycomponentes } from "../../store/suministrosycomponentes";
 
 interface Product {
   name: string;
@@ -13,7 +14,7 @@ interface Product {
 }
 
 export default function ListCotizacion() {
-  const [listProducts, setListProducts] = useState<Product[]>([]);
+  const [listProducts, setListProducts] = useState<any[]>([]);
   const [control, setControl] = useState<boolean>(false)
 
   useEffect(() => {
@@ -21,7 +22,24 @@ export default function ListCotizacion() {
     if (productsToCar) {
       const listProducts = productos.filter(({ name }: Product) => productsToCar.includes(name))
       const listProductsUsed = productosUsados.filter(({ name }: Product) => productsToCar.includes(name))
-      setListProducts(listProducts.concat(listProductsUsed));
+      const listSuministros = suministrosycomponentes
+          .flatMap((prod) => prod.list.products)
+          .filter(({ name }: Product) => productsToCar.includes(name));
+      const listEquipos = equiposdelavado.filter((prod) => productsToCar.includes(prod.name))
+      const setListEquipos = listEquipos.map((equip) => {
+        return {
+          name: equip.name,
+          images: [equip.data.imagenes[0]],
+        }
+      })
+      
+      const conbinetList = [
+        ...listProducts,
+        ...listProductsUsed,
+        ...listSuministros,
+        ...setListEquipos
+      ]
+      setListProducts(conbinetList);
     }
   }, [control]);
 

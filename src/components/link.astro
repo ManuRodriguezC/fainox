@@ -1,26 +1,48 @@
 ---
+import ArrowDown from "../icons/arrowDown.astro";
 import HoverLinkIndustrias from "./hoverLinkIndustrias.astro";
 import HoverLinkProductos from "./hoverLinkProductos.astro";
 
-const { link, name } = Astro.props;
+const { link, name, typeLink } = Astro.props;
 ---
 
 <li
   class="group relative"
   >
-  <a
-    href={`/${link}`}
-    class="flex flex-row justify-center gap-2 items-center text-sm lg:text-base hover:text-blue-600
-   text-colorBlue font-bold py-0 my-8 md:my-0 md:py-4 transition-all duration-200" aria-keyshortcuts={link}>
-    <p class="text-center">
-      {name}
-    </p>
-    {
-      (link === "sectores-industriales" || link === "productos-servicios")
-      &&
-      <span class="hidden lg:block arrow group-hover:rotate-195 group-hover:left-6 group-hover:top-1"></span>
-    }
-  </a>
+  {
+    typeLink
+    ?
+    <a
+      href={`/${link}`}
+      class="flex flex-row justify-center gap-2 items-center text-sm lg:text-base hover:text-blue-600
+      text-colorBlue font-bold py-0 my-8 md:my-0 md:py-4 transition-all duration-200" aria-keyshortcuts={link}>
+      <p class="text-center">
+        {name}
+      </p>
+      {
+        (link === "sectores-industriales" || link === "productos-servicios")
+        &&
+        <div class="transition-all duration-300 group-hover:rotate-180">
+          <ArrowDown />
+        </div>
+      }
+    </a>
+    :
+    <button
+      class="flex flex-row justify-center gap-2 items-center text-sm lg:text-base hover:text-blue-600
+      text-colorBlue font-bold py-0 my-8 md:my-0 md:py-4 transition-all duration-200" aria-keyshortcuts={link}>
+      <p class="text-center">
+        {name}
+      </p>
+      {
+        (link === "sectores-industriales" || link === "productos-servicios")
+        &&
+        <div class="transition-all duration-300 group-hover:rotate-180">
+          <ArrowDown />
+        </div>
+      }
+    </button>
+  }
   {
     link === "sectores-industriales"
     &&
