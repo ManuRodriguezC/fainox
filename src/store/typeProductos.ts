@@ -28,6 +28,7 @@ export const productos = [
     'tanques',
     'tinas para queso',
     'yogurteras',
+    'usados'
 ];
 
 export const productosyservicios = [

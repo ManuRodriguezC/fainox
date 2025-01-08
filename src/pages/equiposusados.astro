@@ -11,11 +11,11 @@ import FormContact from "../components/tsx/FormContact";
     <h1
       id="button-form"
       class="text-white text-2xl text-center font-semibold border-2 bg-colorBlue border-white px-6 py-2
-      rounded-lg shadow-box-black transition-all duration-200 cursor-pointer">
+      rounded-lg shadow-box-black transition-all duration-200 cursor-pointer hover:scale-105">
       Alguien necesita lo que tu ya no usas, da clic para vender tu producto!
     </h1>
     <div class="h-full flex flex-col justify-center items-center">
-      <FormContact pay={false} client:load/>
+      <FormContact pay={true} client:load/>
     </div>
     {
       productosUsados.length > 0 &&
@@ -35,7 +35,7 @@ import FormContact from "../components/tsx/FormContact";
 </section>
 </LayoutPage>
 
-<!-- <script>
+<script>
   const button = document.getElementById('button-form')
   const form = document.getElementById('form')
   if (button && form) {
@@ -48,5 +48,5 @@ import FormContact from "../components/tsx/FormContact";
         form.classList.add('seeForm')
       }
     })
-  } -->
+  }
 </script>

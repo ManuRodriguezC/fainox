@@ -3,22 +3,34 @@ import { Image } from "astro:assets";
 import LayoutPage from "../layouts/LayoutPage.astro";
 const novedades = [
   {
-    title: "Lorem Impsum assattsuuas",
+    title: "Tanque para Proceso Alimentario - Automático - Flor de Aragua",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "/innovations/inno1.webp",
+      "Equipo diseñado para producción de 1.000L útiles  provisto de Doble Camisa y Aislamiento, Sistema de Agitación Lenta y Emulsificador de alto cizallamiento. Sistema de Autolavado (CIP) Conexión de Tubería para Cargue y Descargue ,Sistema de Control de Llenado y Vaciado controlado con Celdas de Carga ,Todo el sistema controlado y operado desde un PLC con una HMI con recetas por tiempo de preparación, agitación y peso. Provisto de Bomba Positiva de tipo Sinusoidal, Válvulas de Control, Etc. Material : AISI 304",
+    image: "/innovations/Desarrollo y Novedades 1.webp",
   },
   {
-    title: "Lorem Impsum assattsuuas",
+    title: "Marmita para Fabricación de Derivados Lácteo - Prolac",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "/innovations/inno2.webp",
+      "Equipo para preparación de tipo manual con sistema de combustión a gas mediante quemadores, sistema de volteo, con capacidad para 200kl con sistema de agitación incorporado.",
+    image: "/innovations/Desarrollo y Novedades 3.webp",
   },
   {
-    title: "Lorem Impsum assattsuuas",
+    title: "Marmitas de Fabricación Alimentarias",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "/innovations/inno3.webp",
+      "Equipos con capacidad para 1.000Lt útiles, provistos de Agitación, Camisa Dimple  para Doble Propósito, Tablero de Control, Conexión para Servicios Industriales. Material: AISI 304",
+    image: "/innovations/Desarrollo y Novedades 2.webp",
+  },
+  {
+    title: "CIP Central - Dejamu Subachoque",
+    description:
+      "Equipo totalmente automático diseñado para el lavado de Marmitas de Proceso, Silos para Leche y Líneas de Tubería. Cuatro tanques con Agitación, Sistema de Calentamiento, Válvulas Automáticas, Bombas de Impulso, Bombas Dosificadoras de Sosa y Ácido. Pantalla Táctil,PLC ,HMI Delta control desde tablero y remoto para interior de planta.",
+    image: "/innovations/Desarrollo y Novedades 4.webp",
+  },
+  {
+    title: "Intercambiador de Calor - Distribuidora Biotech",
+    description:
+      "Equipo fabricado para el enfriamiento de Salsas. Material : AISI 304",
+    image: "/innovations/Desarrollo y Novedades 5.webp",
   },
 ];
 ---
@@ -41,7 +53,7 @@ const novedades = [
       la calidad de vida. Juntos, buscamos transformar el futuro y hacer una
       diferencia significativa en la sociedad.
     </p>
-    <div class="flex flex-wrap justify-center items-center gap-20 py-24 lg:py-36">
+    <div class="flex flex-wrap justify-center items-start gap-20 py-10 lg:py-16">
       {
         novedades.map(({title, description, image}) => (
           <div class="w-[320px] md:w-[400px] h-auto">

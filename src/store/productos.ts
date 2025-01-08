@@ -8,15 +8,15 @@ export const productos = [
         "linea": "tanques",
         "images": ["https://www.stkmakina.com/resimler/6.jpg"],
     },
-    {
-        "name": "Sistemas de Bombeo",
-        "industry": ["Lactea y de Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "equipos para leche",
-        "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
-        "linea": "sistemas de bombeo",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen // 
-    },
+    // {
+    //     "name": "Sistemas de Bombeo",
+    //     "industry": ["Lactea y de Derivados"],
+    //     "product": ["lacteos-y-derivados"],        
+    //     "subIndustry": "equipos para leche",
+    //     "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
+    //     "linea": "sistemas de bombeo",
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen // 
+    // },
     {
         "name": "Equipos para recibo de leche",
         "industry": ["Lactea y de Derivados"],
@@ -24,16 +24,16 @@ export const productos = [
         "subIndustry": "equipos para leche",
         "description": "Sistema de caudalímetro electromagnético de 50 ton/h de capacidad, y con contador de 5 ton/h, sistema de plc con pantalla táctil en el idioma deseado, sistema operativo (fecha y hora código del camión, litros) bomba de hélice flexible para proteger el sensor de flujo de la leche en la espuma, el aire que separa el aire del eliminador de línea y el filtro de limpieza de leche.",
         "linea": "equipos para lecheria y devivados",
-        "images": ["https://www.stkmakina.com/resimler/15.jpg"]
+        "images": ["https://www.stkmakina.com/resimler/92.jpg"]
     },
     {
-        "name": "Descremadoras - Bactofugadoras - Estandarizadoras",
+        "name": "Separadores y Estandarizadores de Crema",
         "industry": ["Lactea y de Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para leche",
-        "description": "CLARIFICACIÓN Y SEPARADOR DE CREMA MANUAL Y AUTOMATICO Separador de clarificación: esta unidad permite la clarificación eficiente de células somáticas, coágulos de manchas, leucocitos, microorganismos, acumulaciones de proteínas y residuos, así como otros elementos contaminantes nocivos que no se pueden separar con una limpieza profunda. El objetivo principal de la limpieza de separadores es extraer materiales sólidos de la leche de manera eficiente y continua. Separador de crema: permite la separación de las moléculas de aceite en la leche. Esta unidad estandariza la cantidad de grasa en la leche. Los separadores de crema permiten la separación de la crema de leche sin problemas de manera continua y con alta eficiencia. Capacidad: 1000, 2000, 5000, 10000, 20000 L/h",
+        "description": "Clarificador: esta unidad permite la clarificación eficiente de células somáticas, coágulos de manchas, leucocitos, microorganismos, acumulaciones de proteínas y residuos, así como otros elementos contaminantes nocivos que no se pueden separar con una limpieza profunda. El objetivo principal de la limpieza de separadores es extraer materiales sólidos de la leche de manera eficiente y continua. Separador de crema: permite la separación de las moléculas de aceite en la leche. Esta unidad estandariza la cantidad de grasa en la leche. Los separadores de crema permiten la separación de la crema de leche sin problemas de manera continua y con alta eficiencia. Capacidad: 1000, 2000, 5000, 10000, 20000 L/h",
         "linea": "descremadoras",
-        "images": ["https://www.stkmakina.com/resimler/15.jpg"]
+        "images": ["https://img.directindustry.es/images_di/photo-g/216475-15123717.webp"]
     },
     {
         "name": "Equipos Homogeneizadores",
@@ -42,7 +42,7 @@ export const productos = [
         "subIndustry": "equipos para leche",
         "description": "Homogeneizador 1 y 2 Etapas Los homogeneizadores están diseñados para lisar las partículas en los productos alimenticios (partículas de aceite y proteínas) para adquirir un producto final homogeneizado. Estas unidades se utilizan más comúnmente en las instalaciones de leche, crema y yogur. La aplicación de homogeneización mejora las características de consumo, la calidad y la vida útil de los productos al mismo tiempo que aumenta la producción. Capacidad: 500-15000 LT/H",
         "linea": "homogenizadores",
-        "images": ["https://www.stkmakina.com/resimler/15.jpg"]
+        "images": ["https://www.stkmakina.com/resimler/19.jpg"]
     },
     {
         "name": "Pasteurizador Tubular",
@@ -51,26 +51,26 @@ export const productos = [
         "subIndustry": "equipos para leche",
         "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
         "linea": "pasteurizadores",
-        "images": ["https://www.stkmakina.com/resimler/15.jpg"]
+        "images": ["https://www.stkmakina.com/resimler/101.jpg"]
     },
     {
         "name": "Pasteurizador de Placas",
         "industry": ["Lactea y de Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para leche",
-        "description": "Los pasteurizadores son sistemas automáticos que sistemáticamente calientan y enfrían la leche mediante intercambiadores de calor en placa, con el fin de aumentar la temperatura de la leche sin degradar las características físicas y bioquímicas (vitaminas y diastasis) de las bacterias patógenas y los nutrientes. Capacidad: 1000, 3000, 5000, 10.000, 15.000 Lt/h",
+        "description": "Los pasteurizadores son sistemas automáticos que sistemáticamente calientan y enfrían la leche mediante intercambiadores de calor en placa, con el fin de aumentar la temperatura de la leche sin degradar las características físicas y bioquímicas (vitaminas y diastasis) de las bacterias patógenas y los nutrientes.",
         "linea": "pulverizadores",
-        "images": ["https://www.stkmakina.com/resimler/15.jpg"]
+        "images": ["https://www.stkmakina.com/resimler/17.jpg"]
     },
-    {
-        "name": "UHT",
-        "industry": ["Lactea y de Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "equipos para leche",
-        "description": "***********", //
-        "linea": "lineas UHT",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen //
-    },
+    // {
+    //     "name": "UHT",
+    //     "industry": ["Lactea y de Derivados"],
+    //     "product": ["lacteos-y-derivados"],        
+    //     "subIndustry": "equipos para leche",
+    //     "description": "***********", //
+    //     "linea": "lineas UHT",
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen //
+    // },
     {
         "name": "Torres de Pulverización",
         "industry": ["Lactea y de Derivados"],
@@ -116,15 +116,15 @@ export const productos = [
         "linea": "envasadoras",
         "images": ["https://www.stkmakina.com/resimler/24.jpg"]
     },
-    {
-        "name": "Cuartos Frios",
-        "industry": ["Lactea y de Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "equipos para yogurt",
-        "description": "********", //
-        "linea": "***********", //
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen //
-    },
+    // {
+    //     "name": "Cuartos Frios",
+    //     "industry": ["Lactea y de Derivados"],
+    //     "product": ["lacteos-y-derivados"],        
+    //     "subIndustry": "equipos para yogurt",
+    //     "description": "********", //
+    //     "linea": "***********", //
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen //
+    // },
     {
         "name": "Tinas para Cuajado - Tinas doble O",
         "industry": ["Lactea y de Derivados"],
@@ -168,7 +168,7 @@ export const productos = [
         "subIndustry": "equipos para quesos",
         "description": "Hiladora a vapor: Las máquinas de cocción en seco tipo vapor abierto  Este equipo se utiliza para altas capacidades de más de 100 Kg/carga. La cuajada es remoldeada mediante 2 espirales. Gracias al vapor, que se proporciona tanto dentro de la máquina como alrededor de las paredes exteriores; el queso se cocina al gusto. Capacidad: 100 – 500 Kg/Carga. ** Una carga dura aproximadamente entre 10 – 12 minutos.",
         "linea": "*******", //
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen //
+        "images": ["https://www.stkmakina.com/resimler/34.jpg"]
     },
     {
         "name": "Lineas de Transferencia",
@@ -224,15 +224,15 @@ export const productos = [
         "linea": "mantequilleras",
         "images": ["https://www.stkmakina.com/resimler/57.jpg"]
     },
-    {
-        "name": "Lineas en Continuo",
-        "industry": ["Lactea y de Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "lineas de mantequilla",
-        "description": "******", //
-        "linea": "****", //
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
+    // {
+    //     "name": "Lineas en Continuo",
+    //     "industry": ["Lactea y de Derivados"],
+    //     "product": ["lacteos-y-derivados"],        
+    //     "subIndustry": "lineas de mantequilla",
+    //     "description": "******", //
+    //     "linea": "****", //
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+    // },
     {
         "name": "Tanques maduradores de Crema",
         "industry": ["Lactea y de Derivados"],
@@ -265,9 +265,9 @@ export const productos = [
         "industry": ["Lactea y de Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "derivados varios",
-        "description": "******",
+        "description": "Estas unidades se utilizan principalmente para aumentar la proporción de materia sólida en la leche, evaporando el contenido de agua, así como para espesar la consistencia del producto mediante la evaporación del agua. La temperatura de ebullición disminuye a medida que la máquina permite la evaporación bajo presión de vacío. Por lo tanto; los minerales del producto no se degradan y el agua se extrae de forma rápida para adquirir la máxima eficacia posible.  Capacidad: 1000, 2000, 3000, 4000, 5000 L",
         "linea": "equipos para lecheria y devivados",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "images": ["https://img.directindustry.es/images_di/photo-g/216475-15129147.webp"] // Falta esta imagen
     },
     {
         "name": "Cocedor industrial tipo Stephan",
@@ -278,15 +278,15 @@ export const productos = [
         "linea": "equipos para lecheria y devivados",
         "images": ["https://www.stkmakina.com/resimler/34-485.jpg"]
     },
-    {
-        "name": "Lineas de proceso para crema de Leche",
-        "industry": ["Lactea y de Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "derivados varios",
-        "description": "*********",
-        "linea": "equipos para lecheria y devivados",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
+    // {
+    //     "name": "Lineas de proceso para crema de Leche",
+    //     "industry": ["Lactea y de Derivados"],
+    //     "product": ["lacteos-y-derivados"],        
+    //     "subIndustry": "derivados varios",
+    //     "description": "*********",
+    //     "linea": "equipos para lecheria y devivados",
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+    // },
     {
         "name": "Lineas de proceso para queso crema",
         "industry": ["Lactea y de Derivados"],
@@ -315,13 +315,13 @@ export const productos = [
         "images": ["/products/enfriador tubular.webp"] // Falta esta imagen
     },
     {
-        "name": "Pasteurizadores, Homogeneizadoras y Frezzer para Helados",
+        "name": "Unidad para helado",
         "industry": ["Lactea y de Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "derivados varios",
         "description": "*********",
         "linea": "equipos para lecheria y devivados",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "images": ["https://www.stkmakina.com/resimler/65.jpg"] // Falta esta imagen
     },
     {
         "name": "Deodorizador",
@@ -423,15 +423,6 @@ export const productos = [
         "images": ["/products/pasteurizador placas.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de Bombeo",
-        "industry": ["Frutas, Pulpa y Jugos"],
-        "product": ["frutas-pulpas-y-bebidas"],        
-        "subIndustry": "equipos para jugos y bebidas",
-        "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
-        "linea": "sistemas de bombeo",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
         "name": "Bolsas, Botellas y Vasos",
         "industry": ["Frutas, Pulpa y Jugos"],
         "product": ["frutas-pulpas-y-bebidas"],        
@@ -459,7 +450,7 @@ export const productos = [
         "images": ["/products/despulpador.webp"] // Falta esta imagen
     },
     {
-        "name": "Marmitas de Cocción",
+        "name": "Marmitas de Cocción y Proceso",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
         "subIndustry": "equipos para conservas",
@@ -483,7 +474,7 @@ export const productos = [
         "subIndustry": "equipos para conservas",
         "description": "********************",
         "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "images": ["/products/intercambiadorenfriamiento.webp"] // Falta esta imagen
     },
     {
         "name": "Evaporador Esferico al vacio",
@@ -492,7 +483,7 @@ export const productos = [
         "subIndustry": "equipos para conservas",
         "description": "Equipo para evaporación y concentración de alimentos, se usa para concentrar los productos, fabricación de jaleas, mermeladas, arequipe, leche condensada y evaporada. Tiene un sistema de control de temperatura y sistemas de agitación por superficie rascada y es capaz de manejar productos de alta viscosidad final.",
         "linea": "evaporadores",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "images": ["https://www.stkmakina.com/resimler/82.jpg"] // Falta esta imagen
     },
     {
         "name": "Evaporadores",
@@ -503,42 +494,33 @@ export const productos = [
         "linea": "evaporadores",
         "images": ["/products/evaporador.webp"] // Falta esta imagen
     },
-    {
-        "name": "Sistemas de Bombeo",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
-        "description": "Bombas centrifugas, lobulares, Positivas, Cavidad Progresiva, Doble Tornillo y Sinusoidales",
-        "linea": "sistemas de bombeo",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
-        "name": "1- Bombas Positivas",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
-        "name": "2- Bombas Sinusoidales",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
-        "name": "3- Bombas Doble Tornillo",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
+    // {
+    //     "name": "Bombas Positivas",
+    //     "industry": ["Conservas, Salsas y Aderezos"],
+    //     "product": ["conservas,-salsas-y-aderezos"],        
+    //     "subIndustry": "equipos para salsas y aderezos",
+    //     "description": "********************",
+    //     "linea": "bombas",
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+    // },
+    // {
+    //     "name": "Bombas Sinusoidales",
+    //     "industry": ["Conservas, Salsas y Aderezos"],
+    //     "product": ["conservas,-salsas-y-aderezos"],        
+    //     "subIndustry": "equipos para salsas y aderezos",
+    //     "description": "******",
+    //     "linea": "bombas",
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+    // },
+    // {
+    //     "name": "Bombas Doble Tornillo",
+    //     "industry": ["Conservas, Salsas y Aderezos"],
+    //     "product": ["conservas,-salsas-y-aderezos"],        
+    //     "subIndustry": "equipos para salsas y aderezos",
+    //     "description": "***",
+    //     "linea": "bombas",
+    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+    // },
     {
         "name": "Envasadoras",
         "industry": ["Conservas, Salsas y Aderezos", "Frutas, Pulpa y Jugos"],
@@ -567,22 +549,13 @@ export const productos = [
         "images": ["/products/molino coloidal.webp"] // Falta esta imagen
     },
     {
-        "name": "Marmitas de Proceso",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
-    {
         "name": "Sistemas Tubulares de Enfriamiento",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
         "subIndustry": "equipos para salsas y aderezos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Son intercambiadores de temperatura de tipo tubulares para enfriamiento mediante intercambio indirecto de productos viscosos. Pueden ser de tipo Shell and tubes (coraza – tubos) y de tipo scrapped Surface (superficie rascada).",
+        "linea": "marmitas de proceso",
+        "images": ["/products/enfriador tubular.webp"] // Falta esta imagen
     },
     {
         "name": "Sistemas de Agitación",
@@ -592,15 +565,6 @@ export const productos = [
         "description": "Son sistemas adaptados a recipientes, con la finalidad de lograr una mezcla o agitación específica. Pueden ser de alta velocidad: cowles, hélices, emulsión; o de baja velocidad: rascados, escudos, etc.",
         "linea": "agitadores",
         "images": ["/products/sistemas de agitacion.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Sistemas de Bombeo 4",
-        "industry": ["Alimentos Varios"],
-        "product": ["aceites-y-margarinas", "alimentos-varios"],        
-        "subIndustry": "aceites y margarinas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
     },
     {
         "name": "Intercambiadores de Calor",

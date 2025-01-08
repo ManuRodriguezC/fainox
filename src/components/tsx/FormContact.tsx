@@ -93,7 +93,7 @@ export default function FormContact({ pay }: Props) {
       <div id="send" className="w-full lg:w-[1024px] py-5 my-10 h-auto flex flex-col gap-6 justify-around items-center rounded-xl bg-custom-blue-gradient shadow-box-black">
         <h1 className="text-white w-[80%] text-center font-medium text-2xl">¡Hola <span className="font-bold">{name}</span> pronto nuestro equipo se pondrá en contacto contigo!</h1>
         <p className="text-blue-100 text-lg text-center">Gracias por confiar en nosotros y querer ser parte de la familia Fainox Group</p>
-        <a className="text-white text-center bg-white/20 py-2 px-10 rounded-full hover:bg-white hover:text-colorBlue transition-all duration-300" href="/industriasyservicios">Te invitamos a ver todas nuestras industrias</a>
+        <a className="text-white text-center bg-white/20 py-2 px-10 rounded-full hover:bg-white hover:text-colorBlue transition-all duration-300" href="/equiposusados">Te invitamos a ver todas nuestras industrias</a>
       </div>
     )
   }
@@ -102,7 +102,7 @@ export default function FormContact({ pay }: Props) {
     <form
       id="form"
       onSubmit={handleSubmit}
-      className={`w-full flex flex-col md:mt-0 py-10 justify-center items-center gap-4 md:p-5 ${pay && "noseeForm"}`}>
+      className={`w-full flex flex-col md:mt-0 py-10 justify-center items-center gap-4 md:p-5 seeForm`}>
       {!pay && <h1 className="text-colorBlue text-3xl font-bold">Estimado Cliente</h1>}
       {
         pay
