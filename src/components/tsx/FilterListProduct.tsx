@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function     FilterListProduct({ industry, filterProducts }: Props) {
-    const [filter, setFilter] = useState("")
+    const [filter, setFilter] = useState(filterProducts[0].subIndustry)
 
     const filteredList = useMemo(() => {
         return filter === ""

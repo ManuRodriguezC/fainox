@@ -53,6 +53,10 @@ export const suministrosycomponentes = [
     },
     {
         'name': 'valculas-de-proceso',
+        // 'data': {
+        //     'imagenes': ['/suministros/valvulaDeProceso.webp', '/suministros/cabinalavado2.webp', '/suministros/cabinalavado3.webp'],
+        //     'descripcion': 'Proveemos a la Industria Alimentaria de Válvulas de Proceso con Actuador neumático y operación eléctrica de 4-20V – Tipo 2/1 - 3/1  para conducción de fluidos Alimentarios y /o de Lavado CIP de DOS,TRES y hasta CUATRO VIAS con asiento simpe o barrera de vapor para procesos asépticos UHT bajo normativas EHDG, FDA – ASME BPE en materiales : AISI 316 en conexiones tipo CLAMP o SMS, Con Cabezal y Posicionadores led o sencillas ;Desarrollamos Manifold de Válvulas para Sistemas de Distribución en Planta.'
+        // },
         'list': {
             'description': '',
             'products': [
@@ -99,8 +103,8 @@ export const serviciosingenieria = [
         'description': 'Nuestro equipo técnico esta capacitado para el desarrollo de proyectos “llave en mano” partiendo de la concepción del propósito industrial mismo, hasta la entrega de la planta en producción Asistimos y Asesoramos a nuestros clientes en la presentación del proyecto a desarrollar y/o sustentación técnica ante el comité de inversión.',
     },
     {
-        'name': 'monajes industriales',
-        'image': '/servicios/fabricacion.webp',
+        'name': 'montajes industriales',
+        'image': '/servicios/montajes.webp',
         'description': 'Nuestro Equipo técnico y humano esta calificado para realizar montajes de tipo Industrial como instalación de tuberías para Agua,Vapor,Aire, Etc. Siendo nuestra especialidad y con gran experiencia lo relacionado con montajes en Tubería Sanitaria Tipo AISI-304/316/BPE con purga de gas inerte STAWG y/o soldadura ORBITAL.'
     }
 ]

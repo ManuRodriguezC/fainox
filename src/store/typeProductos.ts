@@ -9,10 +9,12 @@ export const productos = [
     'equipos para procesar frutas',
     'equipos para procesar alimentos',
     'evaporadores',
+    'esterilizadores',
     'formadoras de queso',
     'frezzers',
     'homogenizadores',
     'intercambiadores de calor',
+    'intercambiadores de placas',
     'lineas UHT',
     'mantequilleras',
     'marmitas de proceso',
@@ -28,7 +30,11 @@ export const productos = [
     'tanques',
     'tinas para queso',
     'yogurteras',
-    'usados'
+    'usados',
+    'valculas y filtros',
+    'polivalentes',
+    'hiladoras',
+    'lineas en continuo'
 ];
 
 export const productosyservicios = [
@@ -111,7 +117,7 @@ export const productosyservicios = [
                 'name': 'Ingeniería Conceptual, Presupuestal y de Destalle',
             },
             {
-                'name': 'Monajes Industriales'
+                'name': 'Montajes Industriales'
             },
         ]
     }

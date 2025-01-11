@@ -9,7 +9,7 @@ export default function ProductForLists({name, description, images}: Product) {
             >
             <a href={`/producto/${name.toLowerCase().replaceAll(' ', '-')}`}>
                 <img
-                className="w-full h-[320px] rounded-md object-cover"
+                className="w-full h-[320px] rounded-md object-contain"
                 src={images[0]}
                 alt={name}
                 />

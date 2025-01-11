@@ -40,6 +40,7 @@ if (servicio == "desarrollo-de-equipos-para") {
 } else if (servicio == "servicios-de-ingenieria") {
   serviciosdeingenieria = serviciosingenieria.filter((servicio) => servicio.name.toLowerCase().replaceAll(' ', '-') === servicioyproducto);
 }
+
 ---
 
 <LayoutPage
@@ -66,6 +67,7 @@ if (servicio == "desarrollo-de-equipos-para") {
     <!-- Suministros y componentes -->
     {
       listService.length > 0 && (
+
         <h3 class="text-lg text-gray-700 m-5 text-center">{listService[0].list.description}</h3>
         <div class="flex flex-wrap gap-6 justify-center items-center py-10 md:px-10 md:py-5">
           {
@@ -101,7 +103,10 @@ if (servicio == "desarrollo-de-equipos-para") {
       serviciosdeingenieria.length > 0 && (
         <div class="flex flex-col gap-5">
           <img
-            class="h-[500px] w-auto object-cover mx-auto shadow-black rounded-2xl py-5"
+            class={`
+              w-auto object-contain shadow-black rounded-2xl py-5 h-[500px]
+              ${serviciosdeingenieria[0].name === "ingeniería conceptual, presupuestal y de destalle" ? "rotate-90 mx-auto" : ""}
+              `}
             alt={serviciosdeingenieria[0].name}
             src={serviciosdeingenieria[0].image} alt={serviciosdeingenieria[0].name}/>
           <h3 class="text-lg text-gray-700 m-5 text-center">{serviciosdeingenieria[0].description}</h3>

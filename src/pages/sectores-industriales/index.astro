@@ -20,7 +20,7 @@ import { capitalize } from "../../utils/capitalize";
           return (
             <div class="flex flex-col">
               <a
-                href={`/industriasyservicios/${industry.name}`}
+                href={`/sectores-industriales/${industry.name.toLowerCase().replaceAll(" ", "-").replaceAll(",", "")}`}
                 class="text-white rounded-md text-2xl lg:text-3xl xl:text-4xl text-center hover:bg-blue-800 hover:shadow-xl transition-all duration-150 font-semibold bg-colorBlue px-4 py-2"
               >
                 Industria - {industry.name}
