@@ -6,7 +6,7 @@ export const industrias = [
   },
   {
     name: "Frutas, Pulpa y Bebidas",
-    link: "frutas-pulpa-y-bedidas",
+    link: "frutas-pulpa-y-bebidas",
     type: "link",
   },
   {
@@ -27,7 +27,7 @@ export const industrias = [
 
 export const sectores = [
   {
-    title: "Lactea y de Derivados",
+    title: "Lacteos y Derivados",
     description:
       "La industria láctea se enfrenta a un futuro lleno de oportunidades. Los avances globales y las nuevas tendencias brindan un enorme potencial para el sector y en FAINOX GROUP S.A.S, estamos preparados para ayudarte a aprovecharlo. Nuestra gama de equipos higiénicos innovadores está diseñada para optimizar los procesos lácteos, garantizando no solo la eficiencia en cada etapa de la producción, sino también las más altas condiciones de higiene y seguridad alimentaria.",
     link: "/sectores-industriales/lacteos-y-derivados",
