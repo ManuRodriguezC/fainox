@@ -83,13 +83,13 @@ export const productosyservicios = [
                 ]
             },
             {
-                'name': 'Valculas de Operación',
+                'name': 'Valvulas de Operación',
                 'products': [
                     'Manuales y Actuadas',
                 ]
             },
             {
-                'name': 'Valculas de Proceso',
+                'name': 'Valvulas de Proceso',
                 'products': [
                     'De asiento simple - asiento doble',
                 ]
