@@ -35,7 +35,7 @@ export const suministrosycomponentes = [
         },
     },
     {
-        'name': 'valculas-de-operación',
+        'name': 'valvulas-de-operación',
         'list': {
             'description': '',
             'products': [
@@ -52,11 +52,7 @@ export const suministrosycomponentes = [
         },
     },
     {
-        'name': 'valculas-de-proceso',
-        // 'data': {
-        //     'imagenes': ['/suministros/valvulaDeProceso.webp', '/suministros/cabinalavado2.webp', '/suministros/cabinalavado3.webp'],
-        //     'descripcion': 'Proveemos a la Industria Alimentaria de Válvulas de Proceso con Actuador neumático y operación eléctrica de 4-20V – Tipo 2/1 - 3/1  para conducción de fluidos Alimentarios y /o de Lavado CIP de DOS,TRES y hasta CUATRO VIAS con asiento simpe o barrera de vapor para procesos asépticos UHT bajo normativas EHDG, FDA – ASME BPE en materiales : AISI 316 en conexiones tipo CLAMP o SMS, Con Cabezal y Posicionadores led o sencillas ;Desarrollamos Manifold de Válvulas para Sistemas de Distribución en Planta.'
-        // },
+        'name': 'valvulas-de-proceso',
         'list': {
             'description': '',
             'products': [
