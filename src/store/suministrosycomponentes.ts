@@ -35,7 +35,7 @@ export const suministrosycomponentes = [
         },
     },
     {
-        'name': 'valvulas-de-operación',
+        'name': 'valvulas-de-operacion',
         'list': {
             'description': '',
             'products': [
