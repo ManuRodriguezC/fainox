@@ -42,8 +42,8 @@ const novedades = [
     <h1
       class="w-[80%] md:w-[70%] text-center text-colorBlue font-semibold md:leading-7 lg:leading-10 text-2xl lg:text-4xl"
     >
-      Fainox Group te ofrece las últimas innovaciones y desarrollos de la
-      industria, presentando soluciones que transforman el futuro.
+      En Fainox Group ofrecemos soluciones y equipos integrados para los
+      procesos de la industria de alimentos, lácteos y afines.
     </h1>
     <!-- <p class="w-[80%] md:w-[50%] text-base md:text-lg text-center text-gray-500 py-10">
       Desde 2012, Fainox Group se ha comprometido a desarrollar soluciones
@@ -53,23 +53,26 @@ const novedades = [
       la calidad de vida. Juntos, buscamos transformar el futuro y hacer una
       diferencia significativa en la sociedad.
     </p> -->
-    <div class="flex flex-wrap justify-center items-start gap-20 py-10 lg:py-16">
+    <div
+      class="flex flex-wrap justify-center items-start gap-20 py-10 lg:py-16"
+    >
       {
-        novedades.map(({title, description, image}) => (
+        novedades.map(({ title, description, image }) => (
           <div class="w-[320px] md:w-[400px] h-auto">
-            <Image class="object-cover w-full h-[250px] md:h-[300px] rounded-xl" width={300} height={300} src={image} alt={title} />
-            <h2 class="text-colorBlue py-5 text-xl">{title}</h2>
-            <p class="text-gray-500 text-sm">{description}</p>
+            <Image
+              class="object-cover w-full h-[250px] md:h-[300px] rounded-xl"
+              width={300}
+              height={300}
+              src={image}
+              alt={title}
+            />
+            <h2 class="text-colorBlue py-5 text-xl text-center">{title}</h2>
+            <p class="text-gray-500 text-sm text-center">{description}</p>
           </div>
         ))
       }
     </div>
 
-    <div class="w-full flex flex-col justify-center items-center">
-
-
-
-    </div>
+    <div class="w-full flex flex-col justify-center items-center"></div>
   </section>
 </LayoutPage>
-
