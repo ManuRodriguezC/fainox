@@ -30,7 +30,7 @@ export default function     FilterListProduct({ industry, filterProducts }: Prop
                             return (
                                 <img
                                     key={index}
-                                    className={`${filter === indus.name ? "w-[100%] h-72" : `w-[${size}%] h-44`} object-cover rounded-none md:rounded-md shadow-box-black
+                                    className={`${filter === indus.name ? "w-[70%] h-72" : `w-[${size}%] h-44`} object-cover rounded-none md:rounded-md shadow-box-black
                                     transition-all duration-200 brightness-75 hover:brightness-100`}
                                     src={indus.image}
                                     alt={indus.name}

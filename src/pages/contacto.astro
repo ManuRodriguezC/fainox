@@ -5,65 +5,58 @@ import Map from "../components/tsx/Map";
 const offices = [
   {
     classStyle: "absolute top-0 left-0 w-full h-full clip-left flex",
-    classImage: "w-[60%] absolute object-cover md:object-container top-0 h-[90%] brightness-50 hover:brightness-75 transition-all duration-200",
+    classImage: "w-[60%] absolute object-cover md:object-container top-0 h-[100%] brightness-50 hover:brightness-75 transition-all duration-200",
     title: "Sede Administrativa y Comercial",
-    city: "Sede Colombia: Calle 8 No 37-46 Local # 100, C.C. La Catedral, Zipaquirá - Cundinamarca, Colombia.",
-    address: "Sede Quito: Avenida Eloy Alfaro. Quito, Ecuador.",
-    phone: "(+57) 3241390907, (+57) 3223369750, (+57) 3144687182",
+    city: "Colombia: Calle 8 No 37-46 Local # 100, C.C. La Catedral, Zipaquirá - Cundinamarca, Colombia.",
+    address: "Quito: Avenida Los Aceitunos y Eloy Alfaro. Quito, Ecuador.",
     image: "/offices/office1.webp",
-    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.4744310990823!2d-73.9850548227405!3d5.026527681928887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e406e2af6b1fad1%3A0xf33fbc3cd72b77f!2sCl%208%20%2337%20Local%20%23%20100%2C%20Zipaquir%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses-419!2sco!4v1736728271088!5m2!1ses-419!2sco",
-    latitud: "5.026527681928887",
-    longitud: "-73.9850548227405"
   },
   {
     classStyle: "absolute top-0 right-0 w-full h-full clip-right flex",
-    classImage: "w-[60%] absolute top-0 h-[90%] brightness-50 hover:brightness-75 transition-all duration-200",
-    title: "Sede de Fabricación  y Ensamble",
-    city: "Sede Colombia: Planta de producción Barrio Carvajal",
-    address: "Sede Quito: Avenida Eloy Alfaro. Quito, Ecuador.",
-    phone: "(+57) 3241390907, (+57) 3223369750, (+57) 3144687182",
-    image: "/offices/office2.webp",
-    googleMap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.7667070635225!2d-74.14799360792023!3d4.6148876335807625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9eba4ebbaa4b%3A0xc484df08571f7f46!2sCarvajal%2C%20Antonio%20Nari%C3%B1o%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1736728363229!5m2!1ses-419!2sco",
-    latitud: "4.6148876335807625",
-    longitud: "-74.14799360792023"
+    classImage: "w-[60%] absolute top-0 h-[100%] brightness-50 hover:brightness-75 transition-all duration-200",
+    title: "Sede de Fabricación  y Desarrollo",
+    city: "Colombia: Planta de producción Barrio Carvajal",
+    address: "Quito: Avenida Los Aceitunos y Eloy Alfaro. Quito, Ecuador.",
+    image: "/servicios/fabricacion1.webp",
   },
 ];
 ---
 
 <LayoutPage title="Contacto - Fainox">
-  <section class="w-full"> <!-- py-20 px-10 -->
+  <section class="w-full h-auto"> <!-- py-20 px-10 -->
     <div class="py-20 px-10">
       <h1 class="text-colorBlue font-bold text-5xl">Contacto</h1>
       <p class="p-5 text-gray-600 text-lg">
         Si quieres contartarte con alguno de nuestros asesores pueden hacerlo
         atravez de uno de nuestros canales:
       </p>
-      <ul class="px-10 text-gray-700 list-disc">
+      <ul class="flex flex-col gap-3 px-10 text-gray-700 list-disc">
         <li>
-          Quieres vender alguno producto: <a
-          href="/equiposusados"
-          class="text-colorBlue font-bold">Aqui!</a
-          >
+          <span class="font-bold">
+            División Comercial
+          </span>
+          <p>
+            Teléfonos (+57) 3241390907, (+57) 3223369750, (+57) 3144687182
+          </p>
         </li>
-        <li>
-          Quieres recibir una Cotizacion de los prodcutos que seleccionaste: <a
-          href="/cotizacion"
-          class="text-colorBlue font-bold">Aqui!</a
-        >
-      </li>
+      <li>
+          <span class="font-bold">
+            División Técnica y Desarrollo
+          </span>
+          <p>
+            Teléfono (+57) 3223369750
+          </p>
+        </li>
 
       </ul>
-      <p class="p-5 text-gray-600">
-        Si no a continuacion podras conocer nuestras diferentes sedes y lineas en
-        las cuales nos podras contactar.
-      </p>
+
     </div>
 
-    <div class="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] w-full">
+    <div class="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[500px] w-full">
 
       <!-- <div class="flex flex-wrap justify-center items-start gap-20 py-16"> -->
         {
-          offices.map(({classStyle, classImage, title, address, phone, image, city, googleMap, latitud, longitud}, index) => (
+          offices.map(({classStyle, classImage, title, address, image, city}, index) => (
             <div class={`${classStyle} ${index % 2 === 0 ? "flex-col" : "relative flex-col-reverse"}`}>
               <Image
                 // class="object-cover w-[55%] h-[250px] md:h-[300px] shadow-xl rounded-xl"
@@ -77,19 +70,17 @@ const offices = [
                 <h2 class="pt-5 md:text-xl lg:text-2xl font-semibold">{title}</h2>
                 <p class="font-light md:font-normal transition-all duration-200 text-white text-xs xl:text-base">{city}</p>
                 <p class="font-light md:font-normal transition-all duration-200 text-white text-xs xl:text-base">{address}</p>
-                <p class="font-light md:font-normal transition-all duration-200 text-white text-xs xl:text-base">Telefonos: {phone}</p>
               </div>
   
-              <div class={`h-[10%] brightness-90 hover:brightness-100 hover:h-[50%] transition-all duration-500 z-1000 
-                ${index % 2 === 0 ? `absolute bottom-0 w-[60%] left-0` : `absolute bottom-0 w-[60%] right-0`}`}>
-                <Map googleMapsUrl={googleMap} latitud={latitud} longitud={longitud} client:load />
-              </div>
             </div>
           ))
         }
 
     </div>
 
+    <div class={`h-[100px] brightness-90 hover:brightness-100 hover:h-[400px] transition-all duration-500 z-1000`}>
+      <Map  client:load />
+    </div>
 
 
   </section>

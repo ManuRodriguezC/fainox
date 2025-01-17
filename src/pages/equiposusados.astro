@@ -40,9 +40,9 @@ import FormContact from "../components/tsx/FormContact";
   const form = document.getElementById('form')
   if (button && form) {
     button.addEventListener('click', () => {
-      if (form?.classList.contains('seeForm')) {
+      if (form?.classList.contains('noseeFormseeForm')) {
         form.classList.remove('seeForm')
-        form.classList.add('noseeForm')
+        form.classList.add('')
       } else {
         form.classList.remove('noseeForm')
         form.classList.add('seeForm')

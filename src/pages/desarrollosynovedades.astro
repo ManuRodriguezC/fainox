@@ -45,29 +45,24 @@ const novedades = [
       En Fainox Group ofrecemos soluciones y equipos integrados para los
       procesos de la industria de alimentos, lácteos y afines.
     </h1>
-    <!-- <p class="w-[80%] md:w-[50%] text-base md:text-lg text-center text-gray-500 py-10">
-      Desde 2012, Fainox Group se ha comprometido a desarrollar soluciones
-      innovadoras que impacten positivamente en la vida de las personas. Con un
-      enfoque en la colaboración, trabajamos de la mano con diversas compañías y
-      organizaciones para crear nuevos productos que rompan fronteras y mejoren
-      la calidad de vida. Juntos, buscamos transformar el futuro y hacer una
-      diferencia significativa en la sociedad.
-    </p> -->
+
     <div
-      class="flex flex-wrap justify-center items-start gap-20 py-10 lg:py-16"
+      class="flex flex-col px-4 md:px-14 xl:px-24 justify-center w-full items-center gap-36 py-10 lg:py-16"
     >
       {
         novedades.map(({ title, description, image }) => (
-          <div class="w-[320px] md:w-[400px] h-auto">
+          <div class="w-full h-auto flex flex-col lg:flex-row  items-center justify-center">
             <Image
-              class="object-cover w-full h-[250px] md:h-[300px] rounded-xl"
+              class="object-cover w-[600px] h-auto rounded-xl"
               width={300}
               height={300}
               src={image}
               alt={title}
             />
-            <h2 class="text-colorBlue py-5 text-xl text-center">{title}</h2>
-            <p class="text-gray-500 text-sm text-center">{description}</p>
+            <div class="px-1 lg:px-10">
+              <h2 class="text-colorBlue py-5 text-3xl text-center">{title}</h2>
+              <p class="text-gray-500 text-lg text-center">{description}</p>
+            </div>
           </div>
         ))
       }

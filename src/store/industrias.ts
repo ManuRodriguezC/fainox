@@ -19,10 +19,6 @@ export const industrias = [
     link: "alimentos-varios",
     type: "link",
   },
-  // {
-  //   name: "Servicios e Ingenieria",
-  //   type: "detail",
-  // },
 ];
 
 export const sectores = [
@@ -63,7 +59,7 @@ export const sectores = [
   {
     title: "Conservas, Salsas y Aderezos",
     description:
-      "Nuestros Equipos, Módulos y Líneas de procesamiento integrales están diseñados para cubrir las necesidades de pequeños emprendimientos y grandes industrias del sector, las soluciones que FAINOX GROPUP propone aseguran altos estándares sanitarios y el cumplimiento de normas nacionales e internacionales.",
+      "Nuestros Equipos, Módulos y Líneas de procesamiento integrales están diseñados para cubrir las necesidades de pequeños emprendimientos y grandes industrias del sector, las soluciones que FAINOX GROUP propone aseguran altos estándares sanitarios y el cumplimiento de normas nacionales e internacionales.",
     link: "/sectores-industriales/conservas-salsas-y-aderezos",
     image: "/industrys/salsas.webp",
     backgraund: "bg-custom-blue2-gradient",

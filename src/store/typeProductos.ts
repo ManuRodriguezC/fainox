@@ -34,7 +34,8 @@ export const productos = [
     'valculas y filtros',
     'polivalentes',
     'hiladoras',
-    'lineas en continuo'
+    'lineas en continuo',
+    'coccionador'
 ];
 
 export const productosyservicios = [

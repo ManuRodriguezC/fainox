@@ -42,13 +42,13 @@ export const subIndustrys: SubIndustry = {
     ],
     "Conservas, Salsas y Aderezos": [
         {
-            "name": "equipos para conservas",
-            "image": "/industrys/conservas.webp",
-        },
-        {
-            "name": "equipos para salsas y aderezos",
+            "name": "equipos para conservas, salsas y aderezos",
             "image": "/industrys/aderesos.webp",
-        }
+        },
+        // {
+        //     "name": "equipos para salsas y aderezos",
+        //     "image": "/industrys/aderesos.webp",
+        // }
     ],
     "Alimentos Varios": [
         {

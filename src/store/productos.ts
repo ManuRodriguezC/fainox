@@ -120,6 +120,15 @@ export const productos = [
         "images": ["/products/Sistema Premezcla.webp"]
     },
     {
+        "name": "Sistemas de Bombeo",
+        "industry": ["Lacteos y Derivados"],
+        "product": ["lacteos-y-derivados"],        
+        "subIndustry": "equipos para yogurt",
+        "description": "Bombas sanitarias, certificadas para aplicación y manejo de producto viscosos en proceso o terminado (Lobulares, Doble Tornillo, Sinusoidales). Materiales AISI 304 - 316.",
+        "linea": "sistemas de bombeo",
+        "images": ["/products/Sistemas de Bombeo Yogurt.webp"]
+    },
+    {
         "name": "Mezcladores para solidos y polvos",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
@@ -160,7 +169,7 @@ export const productos = [
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para yogurt",
-        "description": "La capacidad de llenado se puede seleccionar entre 100-500 ml (Varía según el diámetro del recipiente). Capacidad: varía entre 1200 - 5600 Piezas/Hora.",
+        "description": "La capacidad de llenado se puede seleccionar entre 100-500 ml. Capacidad de llenado: varía entre 20 - 100 unidad por minuto.",
         "linea": "envasadoras",
         "images": ["/products/llenadora semiautomatica.webp"]
     },
@@ -179,7 +188,7 @@ export const productos = [
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para yogurt",
         "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
-        "linea": "envasadoras",
+        "linea": "pasteurizadores",
         "images": ["/products/Pasteurizador Tubular para Yogurt.webp"]
     },
 
@@ -332,6 +341,33 @@ export const productos = [
         "linea": "mantequilleras",
         "images": ["https://www.stkmakina.com/resimler/58.jpg"]
     },
+    {
+        "name": "Sistema de envasado  y empacado de Mantequilla",
+        "industry": ["Lacteos y Derivados"],
+        "product": ["lacteos-y-derivados"],        
+        "subIndustry": "lineas de mantequilla",
+        "description": "Nuestras soluciones van desde bloques de 125gr hasta 500gr, con envoltura en papel aluminio de 3 capas y/o dispensación a granel en polietileno y caja; así mismo disponemos de equipos para envasado en tarrinas o sachet desde 30gr hasta 1.000gr con tapa y foil de aluminio.",
+        "linea": "envasadoras",
+        "images": ["https://www.stkmakina.com/resimler/58.jpg"]
+    },
+    {
+        "name": "Empacadora al vacio",
+        "industry": ["Lacteos y Derivados"],
+        "product": ["lacteos-y-derivados"],        
+        "subIndustry": "lineas de mantequilla",
+        "description": "Permite el empaquetado de productos al vacío. Esto provee un mayor tiempo de conservación de los productos.",
+        "linea": "empacadoras",
+        "images": ["https://www.stkmakina.com/resimler/71.jpg"]
+    },
+    {
+        "name": "Intercambiador Tubulares Corrugados",
+        "industry": ["Lacteos y Derivados"],
+        "product": ["lacteos-y-derivados"],        
+        "subIndustry": "lineas de mantequilla",
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiador tubular corrugado.webp"]
+    },
 
     // Equipos derivados varios
 
@@ -353,15 +389,6 @@ export const productos = [
         "linea": "equipos para lecheria y devivados",
         "images": ["https://www.stkmakina.com/resimler/34-485.jpg"]
     },
-    // {
-    //     "name": "Lineas de proceso para crema de Leche",
-    //     "industry": ["Lacteos y Derivados"],
-    //     "product": ["lacteos-y-derivados"],        
-    //     "subIndustry": "derivados varios",
-    //     "description": "*********",
-    //     "linea": "equipos para lecheria y devivados",
-    //     "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    // },
     {
         "name": "Lineas de proceso para queso crema",
         "industry": ["Lacteos y Derivados"],
@@ -390,7 +417,7 @@ export const productos = [
         "images": ["/products/enfriador tubular.webp"] // Falta esta imagen
     },
     {
-        "name": "Unidad para helado",
+        "name": "Freezer para Helado",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "derivados varios",
@@ -456,7 +483,7 @@ export const productos = [
         "images": ["/products/pasteurizador batch.webp"] // Falta esta imagen
     },
     {
-        "name": "Sistemas de envasado",
+        "name": "Sistemas de envasado para Jugos y Bebidas",
         "industry": ["Frutas, Pulpa y Bebidas"],
         "product": ["frutas-pulpas-y-bebidas"],        
         "subIndustry": "equipos para jugos y bebidas",
@@ -469,9 +496,9 @@ export const productos = [
         "industry": ["Frutas, Pulpa y Bebidas"],
         "product": ["frutas-pulpas-y-bebidas"],        
         "subIndustry": "equipos para pulpas",
-        "description": "Son sistemas de llenado de envases, sean estos de tipo rígido o de tipo bolsa (pillow). En estos sistemas se dosifica el líquido en el envase con un sistema de llenado preciso, que puede ser por pistón, o por pesaje.",
+        "description": "Diseñada para dosificar y sellar productos viscosos y líquidos como leche, jugos, pulpas de frutas, cremas, salsas, yogurt, etc. Está fabricada en acero inoxidable. Dosificado por pistón tipo jeringa y sellado neumático con pulso electrónico, válvula antigoteo velocidad por temporizada calibración por sensor electrónico.",
         "linea": "envasadoras",
-        "images": ["/products/sistemas de envasado.webp"]
+        "images": ["/products/Sistemas de Envasado Pulpas.webp"]
     },
     {
         "name": "Pasteurizadores en Linea Tubulares",
@@ -516,7 +543,7 @@ export const productos = [
         "name": "Lavadoras de frutas",  // industria de conservas salsas y aderezos
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son sistemas de lavado continuo que permiten lavar frutas y vegetales. Se componen de varias etapas, según el nivel de resistencia del producto a la abrasión y la cantidad de suciedad a remover: burbujeo, spray, cepillado.",
         "linea": "cabina para lavado",
         "images": ["/products/lavadora frutas.webp"]
@@ -525,7 +552,7 @@ export const productos = [
         "name": "Despulpadoras",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son máquinas que separan la pulpa de frutas y vegetales mediante rozamiento del producto sobre un cedazo o tamiz por fuerza centrífuga. Pueden ser de un solo cuerpo con tamices intercambiables y también estar acopladas en dos cuerpos para generar extracción de pulpa y refinado en un solo paso.",
         "linea": "equipos para procesar frutas",
         "images": ["/products/despulpador.webp"] // Falta esta imagen
@@ -534,7 +561,7 @@ export const productos = [
         "name": "Marmitas de Cocción y Proceso",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son recipientes con sistemas de intercambio térmico y agitación controlados, que permiten la cocción de alimentos. El intercambio térmico por lo general es indirecto, lo que garantiza la uniformidad del producto final.",
         "linea": "marmitas de proceso",
         "images": ["/products/marmita coccion.webp"] // Falta esta imagen
@@ -543,7 +570,7 @@ export const productos = [
         "name": "Pasteurizadores",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
         "linea": "pasteurizadores",
         "images": ["/products/pasteurizador batch.webp"] // Falta esta imagen
@@ -552,91 +579,103 @@ export const productos = [
         "name": "Intercambiadores para Enfriamiento",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "********************",
         "linea": "********************",
-        "images": ["/products/intercambiadorenfriamiento.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Evaporador Esferico al vacio",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
-        "description": "Equipo para evaporación y concentración de alimentos, se usa para concentrar los productos, fabricación de jaleas, mermeladas, arequipe, leche condensada y evaporada. Tiene un sistema de control de temperatura y sistemas de agitación por superficie rascada y es capaz de manejar productos de alta viscosidad final.",
-        "linea": "evaporadores",
-        "images": ["https://www.stkmakina.com/resimler/82.jpg"] // Falta esta imagen
+        "images": ["/products/intercambiadorenfriamiento.webp"]
     },
     {
         "name": "Evaporadores",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Equipo para evaporación y concentración de alimentos, se usa para concentrar los productos, fabricación de jaleas, mermeladas, arequipe, leche condensada y evaporada. Tiene un sistema de control de temperatura y sistemas de agitación por superficie rascada y es capaz de manejar productos de alta viscosidad final.",
         "linea": "evaporadores",
-        "images": ["/products/evaporador.webp"] // Falta esta imagen
+        "images": ["/products/evaporador.webp"]
     },
     {
         "name": "Envasadoras",
         "industry": ["Conservas, Salsas y Aderezos", "Frutas, Pulpa y Bebidas"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son sistemas de llenado de envases, sean estos de tipo rígido o de tipo bolsa (pillow). En estos sistemas se dosifica el líquido en el envase con un sistema de llenado preciso, que puede ser por pistón, o por pesaje.",
         "linea": "envasadoras",
-        "images": ["/products/envasadora.webp"] // Falta esta imagen
+        "images": ["/products/envasadora.webp"]
     },
     {
         "name": "Molinos Coloidales",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son molinos de funcionamiento continuo que permiten la molienda de productos líquidos o pastosos de alta viscosidad con una granulometría muy fina. Para ello, tienen un rotor estriado y un estator de proximidad regulable.",
         "linea": "molinos colidales",
-        "images": ["/products/molino coloidal.webp"] // Falta esta imagen
+        "images": ["/products/molino coloidal.webp"]
     },
     {
         "name": "Sistemas Tubulares de Enfriamiento",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para salsas y aderezos",
+        "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son intercambiadores de temperatura de tipo tubulares para enfriamiento mediante intercambio indirecto de productos viscosos. Pueden ser de tipo Shell and tubes (coraza – tubos) y de tipo scrapped Surface (superficie rascada).",
         "linea": "marmitas de proceso",
-        "images": ["/products/enfriador tubular.webp"] // Falta esta imagen
+        "images": ["/products/enfriador tubular.webp"]
     },
+
+    // Alimentos Varios - Aceites y margarinas
+
     {
         "name": "Sistemas de Agitación",
         "industry": ["Alimentos Varios", "Lacteos y Derivados"],
         "product": ["aceites-y-margarinas", "alimentos-varios"],        
         "subIndustry": "aceites y margarinas",
-        "description": "Son sistemas adaptados a recipientes, con la finalidad de lograr una mezcla o agitación específica. Pueden ser de alta velocidad: cowles, hélices, emulsión; o de baja velocidad: rascados, escudos, etc.",
+        "description": "Son sistemas adaptados a recipientes, con la finalidad de lograr una mezcla o agitación específica. Pueden ser de alta o baja velocidad. Diseñados de acuerdo con el volumen del recipiente y con la potencia requerida en materiales AISI 304L Y 316L.",
         "linea": "agitadores",
-        "images": ["/products/sistemas de agitacion.webp"] // Falta esta imagen
+        "images": ["/products/Sistema de agitación aceite y margarina.webp"]
+    },
+    {
+        "name": "Intercambiador Tubulares Corrugados",
+        "industry": ["Lacteos y Derivados"],
+        "product": ["lacteos-y-derivados"],        
+        "subIndustry": "lineas de mantequilla",
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiador tubular corrugado.webp"]
     },
     {
         "name": "Intercambiadores de Calor",
         "industry": ["Alimentos Varios"],
         "product": ["aceites-y-margarinas", "alimentos-varios"],        
         "subIndustry": "aceites y margarinas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiadoresaplacas.webp"]
     },
     {
         "name": "Envasadoras de Aceite",
         "industry": ["Alimentos Varios"],
         "product": ["aceites-y-margarinas", "alimentos-varios"],        
         "subIndustry": "aceites y margarinas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Nuestros sistemas de llenado para envases plásticos en garrafas, botellas o bidones son diseñados bajo estándares de calidad con sistemas de precisión antigoteo y puede ser provistos automáticos o semi automáticos dependiendo el volumen a llenar.",
+        "linea": "envasadoras",
+        "images": ["/products/envasadora de aceite.webp"]
+    },
+    {
+        "name": "Tanque Deposito",
+        "industry": ["Alimentos Varios"],
+        "product": ["aceites-y-margarinas", "alimentos-varios"],        
+        "subIndustry": "aceites y margarinas",
+        "description": "Nuestros sistemas de llenado para envases plásticos en garrafas, botellas o bidones son diseñados bajo estándares de calidad con sistemas de precisión antigoteo y puede ser provistos automáticos o semi automáticos dependiendo el volumen a llenar.",
+        "linea": "tanques",
+        "images": ["/products/tanque almacenamiento.webp"]
     },
     {
         "name": "Empacadoras de Margarina",
         "industry": ["Alimentos Varios"],
         "product": ["aceites-y-margarinas", "alimentos-varios"],        
         "subIndustry": "aceites y margarinas",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Nuestros sistemas de llenado para envases plásticos en garrafas, botellas o bidones son diseñados bajo estándares de calidad con sistemas de precisión antigoteo y puede ser provistos automáticos o semi automáticos dependiendo el volumen a llenar.",
+        "linea": "empacadoras",
+        "images": ["/products/empacadora de margarina.webp"]
     },
     {
         "name": "Molinos Trituradores",
@@ -645,53 +684,47 @@ export const productos = [
         "subIndustry": "harinas y cereales",
         "description": "Son sistemas de molienda enfocados a fraccionar materiales de dureza media y alta en partículas de menor tamaño mediante la aplicación de una fuerza mecánica de cizallamiento.",
         "linea": "molinos colidales",
-        "images": ["/products/molino triturador.webp"] // Falta esta imagen
+        "images": ["/products/molino triturador.webp"]
     },
     {
         "name": "Molinos Pulverizadores",
         "industry": ["Alimentos Varios"],
         "product": ["granos,-cereales-y-harinas", "alimentos-varios"],        
         "subIndustry": "harinas y cereales",
-        "description": "Son molinos destinados a pulverizar cereales, granos, etc, mediante la combinación de fuerzas mecánica y centrífuga. Pueden ser de tipo dentados, martillos fijos o martillos batientes.",
+        "description": "Son molinos destinados a pulverizar cereales, granos, etc, mediante la combinación de fuerzas mecánica y centrífuga. Pueden ser de tipo dentados, martillos fijos o martillos batientes. Desarrollamos equipos desde 50kg/h hasta 5.000kg/h",
         "linea": "pulverizadores",
-        "images": ["/products/molino pulverizador.webp"] // Falta esta imagen
+        "images": ["/products/molino pulverizador.webp"]
     },
     {
         "name": "Mezcladores de Solido",
         "industry": ["Alimentos Varios"],
         "product": ["granos,-cereales-y-harinas", "alimentos-varios"],        
         "subIndustry": "harinas y cereales",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Desarrollamos equipos de mezcla para solidos de alta y baja humedad con capacidades desde 50 kg hasta 1,000 kg con doble sistema de cinta, según la exigencia de la mezcla construidos en AISI 304 - 316 si se requiere.",
+        "linea": "mezcladores para solidos y polvos",
+        "images": ["/products/Mezclador de Solido - Harinas y Cereales.webp"]
     },
     {
-        "name": "Sistemas de Pesaje y BIG Bag",
+        "name": "Criba Rotativa",
         "industry": ["Alimentos Varios"],
         "product": ["granos,-cereales-y-harinas", "alimentos-varios"],        
         "subIndustry": "harinas y cereales",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "El clasificador rotativo clasifica el producto por distintos tamaños o calibres mediante su paso por una criba cilíndrica con una guía interna, generalmente accionado por motorreductor de giro con velocidad variable. Capacidades de 250 hasta 1.0000 kg/h",
+        "linea": "mezcladores para solidos y polvos",
+        "images": ["/products/Criba Giratoria.webp"]
     },
     {
-        "name": "Transportadores por Vacio",
+        "name": "Criba Vibratoria",
         "industry": ["Alimentos Varios"],
         "product": ["granos,-cereales-y-harinas", "alimentos-varios"],        
         "subIndustry": "harinas y cereales",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "El clasificador vibratorio se utiliza principalmente en polvos. Se acciona mediante sistema vibratorio ultrasónico y permite clasificar los polvos o cereales desde mesh 10 hasta mesh 100. Capacidades desde 50 hasta 5.000 kg/h.",
+        "linea": "mezcladores para solidos y polvos",
+        "images": ["/products/Criba Vibratoria.webp"]
     },
-    {
-        "name": "Empacadoras de Cereales y Harinas",
-        "industry": ["Alimentos Varios"],
-        "product": ["granos,-cereales-y-harinas", "alimentos-varios"],        
-        "subIndustry": "harinas y cereales",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
-    },
+
+    // Carnicos y Embutidos
+
     {
         "name": "Sierras",
         "industry": ["Alimentos Varios"],
@@ -699,16 +732,25 @@ export const productos = [
         "subIndustry": "cárnicos y embutidos",
         "description": "Son máquinas de corte de cárnicos, mediante fuerza mecánica. Pueden ser de tipo circulares y de tipo cinta sinfín.",
         "linea": "equipos para procesar alimentos",
-        "images": ["/products/sierras.webp"] // Falta esta imagen
+        "images": ["/products/sierras.webp"]
     },
     {
-        "name": "Cutter",
+        "name": "Cortador de Carne",
         "industry": ["Alimentos Varios"],
         "product": ["carnes-y-embutidos", "alimentos-varios"],        
         "subIndustry": "cárnicos y embutidos",
         "description": "Estos sistemas están destinados a fraccionar o moler los productos cárnicos, además de generar una mezcla homogénea de tipo pasta fina. Se utilizan para fabricación de salchichas, jamones, mortadelas; entre otros embutidos de pasta fina.",
         "linea": "equipos para procesar alimentos",
-        "images": ["/products/cutter.webp"] // Falta esta imagen
+        "images": ["/products/cutter.webp"]
+    },
+    {
+        "name": "Coccionador Ahumador para Carnicos",
+        "industry": ["Alimentos Varios"],
+        "product": ["carnes-y-embutidos", "alimentos-varios"],        
+        "subIndustry": "cárnicos y embutidos",
+        "description": "Nuestro equipo diseñado para cocciones uniformes y ahumado. Fabricado en AISI 304, con capacidad para entre 150Kg y 300Kg por bache. Alcanza temperaturas de hasta 250 ºC y funciona con un quemador atmosférico y aire forzado. Además, cuenta con un contenedor independiente en donde podrá agregar madera o líquido para ahumar.",
+        "linea": "equipos para procesar alimentos",
+        "images": ["/products/Coccionador Ahumador para Carnicos.webp"]
     },
     {
         "name": "Molinos",
@@ -717,16 +759,16 @@ export const productos = [
         "subIndustry": "cárnicos y embutidos",
         "description": "Son molinos de tipo axiales, con sistemas propios de empuje en cámara, para corte de cárnicos en fracciones de tamaños variables. Se utilizan para la obtención de fragmentos de carne y para la elaboración de productos de pasta o molienda gruesa.",
         "linea": "equipos para procesar alimentos",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "images": ["/products/molino de carne.webp"]
     },
     {
-        "name": "Mesas Refrigeradas",
+        "name": "Ribbon blender",
         "industry": ["Alimentos Varios"],
         "product": ["carnes-y-embutidos", "alimentos-varios"],        
         "subIndustry": "cárnicos y embutidos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/images/Image-not-found.webp"] // Falta esta imagen
+        "description": "Son sistemas de mezcla para carnes y condimentos diseñados de acuerdo al requerimiento del usuario a partir de 50Kg hasta 500 kg, fabricados en AISI 304.",
+        "linea": "equipos para procesar alimentos",
+        "images": ["/products/Ribbon Blender.webp"]
     },
     {
         "name": "Embutidoras",
@@ -735,7 +777,7 @@ export const productos = [
         "subIndustry": "cárnicos y embutidos",
         "description": "Son máquinas para embutición de pastas fina y gruesa, mediante la aplicación de fuerza mecánica o hidráulica en un émbolo.",
         "linea": "equipos para procesar alimentos",
-        "images": ["/products/embutidora.webp"] // Falta esta imagen
+        "images": ["/products/embutidora.webp"]
     },
     {
         "name": "Autoclaves",
@@ -744,7 +786,7 @@ export const productos = [
         "subIndustry": "cárnicos y embutidos",
         "description": "Los autoclaves son recipientes, por lo general cilíndricos, ya sea en disposición horizontal o vertical, utilizados para la cocción y desinfección de productos mediante la exposición de los mismos al contacto con vapor de agua. Pueden ser de tipo vapor directo o también de cascada (en los cuales se tiene una “lluvia” interna permanente para evitar daños en los productos o empaques por exceso de temperatura).",
         "linea": "autoclaves",
-        "images": ["/products/autoclave.webp"] // Falta esta imagen
+        "images": ["/products/autoclave.webp"]
     },
     {
         "name": "Ahumadores",
@@ -753,16 +795,7 @@ export const productos = [
         "subIndustry": "cárnicos y embutidos",
         "description": "Son cámaras de tratamiento, en las cuales se colocan los productos cárnicos y se los expone al contacto del humo de ciertas maderas, como método de conservación.",
         "linea": "equipos para procesar alimentos",
-        "images": ["/products/ahumador.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Mezcaldores de Solidos",
-        "industry": ["Alimentos Varios"],
-        "product": ["carnes-y-embutidos", "alimentos-varios"],        
-        "subIndustry": "cárnicos y embutidos",
-        "description": "Son equipos destinados a obtener mezclas de polvos de granulometrías variables, con una homogeneidad consistente. Son utilizados en la industria de aditivos alimenticios, harinera, química y farmacéutica. Los más comunes son: Tipo V o pantaloncillos, helicoidales y bicónicos.",
-        "linea": "mezcladores para solidos y polvos",
-        "images": ["/products/mezclador solidos.webp"] // Falta esta imagen
+        "images": ["/products/ahumador.webp"]
     },
     {
         "name": "Sistemas de empaque big bag",
@@ -771,15 +804,6 @@ export const productos = [
         "subIndustry": "harinas y cereales",
         "description": "Son sistemas de almacenamiento de polvos y granos, con una tolva de descarga directa hacia el empaque final; que controlan el peso del producto mediante un sistema de pesaje con celdas de carga",
         "linea": "empacadoras",
-        "images": ["/products/big bag.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Sistemas CIP",
-        "industry": ["Alimentos Varios"],
-        "product": ["granos,-cereales-y-harinas", "alimentos-varios"],        
-        "subIndustry": "harinas y cereales",
-        "description": "Los sistemas Clean in place CIP son equipos que permiten el almacenamiento, tratamiento y preparación de fluidos de limpieza; y posterior envío controlado por líneas (tuberías) de proceso hacia los distintos equipos a lavar; evitando tener que intervenir en la limpieza de forma manual. Pueden ser de índole manual o automatizados.",
-        "linea": "equipos para procesar alimentos",
-        "images": ["/products/cip.webp"]
+        "images": ["/products/big bag.webp"]
     },
 ]

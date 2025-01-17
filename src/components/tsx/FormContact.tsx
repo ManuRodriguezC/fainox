@@ -102,7 +102,7 @@ export default function FormContact({ pay }: Props) {
     <form
       id="form"
       onSubmit={handleSubmit}
-      className={`w-full flex flex-col md:mt-0 py-10 justify-center items-center gap-4 md:p-5 seeForm`}>
+      className={`w-full flex flex-col md:mt-0 py-10 justify-center items-center gap-4 md:p-5 noseeForm`}>
       {!pay && <h1 className="text-colorBlue text-3xl font-bold">Estimado Cliente</h1>}
       {
         pay
