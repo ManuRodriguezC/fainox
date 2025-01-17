@@ -46,7 +46,7 @@ export default function ListCotizacion() {
   return (
     <div className="flex flex-col w-full xl:w-[45%]">
       <div className="w-full flex flex-col md:flex-row justify-between items-center">
-        <h4 className="text-colorBlue text-center text-2xl font-semibold">Lista de Productos para Cotización</h4>
+        <h4 className="text-colorBlue text-center text-xl font-semibold">Lista de Productos para Cotización</h4>
         <p className="text-gray-500 font-semibold">Numero de Productos: {listProducts.length}</p>
       </div>
       {listProducts.length > 0 ? (
@@ -80,7 +80,7 @@ export default function ListCotizacion() {
         </table>
 
       ) : (
-        <p>No hay productos en la cotización</p>
+        <p className="text-center p-10 text-colorBlue text-lg">No hay productos en la cotización</p>
       )}
     </div>
   );
