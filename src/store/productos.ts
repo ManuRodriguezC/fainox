@@ -147,15 +147,6 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/26.jpg"]
     },
     {
-        "name": "Bombas Industriales (No Sanitarias)",
-        "industry": ["Lacteos y Derivados"],
-        "product": ["lacteos-y-derivados"],
-        "subIndustry": "equipos para yogurt",
-        "description": "Bombas para el manejo de fluidos de servicios (Agua, Aceite, Combustibles, Ácidos, Químicos, Etc.)",
-        "linea": "bombas",
-        "images": ["/suministros/bombaIndustrial.webp"],
-    },
-    {
         "name": "Envasadoras Automáticas",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
@@ -342,15 +333,6 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/58.jpg"]
     },
     {
-        "name": "Sistema de envasado  y empacado de Mantequilla",
-        "industry": ["Lacteos y Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "lineas de mantequilla",
-        "description": "Nuestras soluciones van desde bloques de 125gr hasta 500gr, con envoltura en papel aluminio de 3 capas y/o dispensación a granel en polietileno y caja; así mismo disponemos de equipos para envasado en tarrinas o sachet desde 30gr hasta 1.000gr con tapa y foil de aluminio.",
-        "linea": "envasadoras",
-        "images": ["https://www.stkmakina.com/resimler/58.jpg"]
-    },
-    {
         "name": "Empacadora al vacio",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
@@ -360,10 +342,10 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/71.jpg"]
     },
     {
-        "name": "Intercambiador Tubulares Corrugados",
+        "name": "Intercambiador Tubular Corrugado",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
-        "subIndustry": "lineas de mantequilla",
+        "subIndustry": "equipos para leche",
         "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
         "linea": "intercambiadores de calor",
         "images": ["/products/intercambiador tubular corrugado.webp"]
@@ -491,6 +473,16 @@ export const productos = [
         "linea": "envasadoras",
         "images": ["/products/envasadorajugos.webp"]
     },
+    
+    {
+        "name": "Intercambiador Tubular Corrugado",
+        "industry": ["Frutas, Pulpa y Bebidas"],
+        "product": ["frutas-pulpas-y-bebidas"],        
+        "subIndustry": "equipos para jugos y bebidas",
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiador tubular corrugado.webp"]
+    },
     {
         "name": "Sistemas de envasado para pulpas",
         "industry": ["Frutas, Pulpa y Bebidas"],
@@ -555,7 +547,16 @@ export const productos = [
         "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son máquinas que separan la pulpa de frutas y vegetales mediante rozamiento del producto sobre un cedazo o tamiz por fuerza centrífuga. Pueden ser de un solo cuerpo con tamices intercambiables y también estar acopladas en dos cuerpos para generar extracción de pulpa y refinado en un solo paso.",
         "linea": "equipos para procesar frutas",
-        "images": ["/products/despulpador.webp"] // Falta esta imagen
+        "images": ["/products/despulpador.webp"]
+    },
+    {
+        "name": "Intercambiador Tubular Corrugado",
+        "industry": ["Conservas, Salsas y Aderezos"],
+        "product": ["conservas,-salsas-y-aderezos"],        
+        "subIndustry": "equipos para conservas, salsas y aderezos",
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiador tubular corrugado.webp"]
     },
     {
         "name": "Marmitas de Cocción y Proceso",
@@ -564,7 +565,7 @@ export const productos = [
         "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son recipientes con sistemas de intercambio térmico y agitación controlados, que permiten la cocción de alimentos. El intercambio térmico por lo general es indirecto, lo que garantiza la uniformidad del producto final.",
         "linea": "marmitas de proceso",
-        "images": ["/products/marmita coccion.webp"] // Falta esta imagen
+        "images": ["/products/marmita coccion.webp"]
     },
     {
         "name": "Pasteurizadores",
@@ -573,16 +574,7 @@ export const productos = [
         "subIndustry": "equipos para conservas, salsas y aderezos",
         "description": "Son máquinas de funcionamiento continuo, que permiten elevar la temperatura de productos líquidos alimenticios o químicos de alta, media o baja viscosidad, con el objetivo de eliminar patógenos. Para esto, transfieren indirectamente la temperatura y la sostienen durante un tiempo adecuado para garantizar la eliminación de agentes dañinos. De la misma manera, tienen un ciclo de enfriamiento para entregar el producto a la temperatura deseada.",
         "linea": "pasteurizadores",
-        "images": ["/products/pasteurizador batch.webp"] // Falta esta imagen
-    },
-    {
-        "name": "Intercambiadores para Enfriamiento",
-        "industry": ["Conservas, Salsas y Aderezos"],
-        "product": ["conservas,-salsas-y-aderezos"],        
-        "subIndustry": "equipos para conservas, salsas y aderezos",
-        "description": "********************",
-        "linea": "********************",
-        "images": ["/products/intercambiadorenfriamiento.webp"]
+        "images": ["/products/pasteurizador batch.webp"]
     },
     {
         "name": "Evaporadores",
@@ -594,13 +586,13 @@ export const productos = [
         "images": ["/products/evaporador.webp"]
     },
     {
-        "name": "Envasadoras",
+        "name": "Sistemas de Envasado",
         "industry": ["Conservas, Salsas y Aderezos", "Frutas, Pulpa y Bebidas"],
         "product": ["conservas,-salsas-y-aderezos"],        
         "subIndustry": "equipos para conservas, salsas y aderezos",
-        "description": "Son sistemas de llenado de envases, sean estos de tipo rígido o de tipo bolsa (pillow). En estos sistemas se dosifica el líquido en el envase con un sistema de llenado preciso, que puede ser por pistón, o por pesaje.",
+        "description": "Las características automáticas de estas máquinas son: colocación de la tapa, termosellado o cierre mediante tapa plástica a presión y son accionadas neumáticamente.  Nuestra máquina puede equiparse con un dosificador automático de producto y la producción puede alcanzar entre 10 y 15 ciclos/min.",
         "linea": "envasadoras",
-        "images": ["/products/envasadora.webp"]
+        "images": ["/products/envasadora para conservas.webp"]
     },
     {
         "name": "Molinos Coloidales",
@@ -633,15 +625,6 @@ export const productos = [
         "images": ["/products/Sistema de agitación aceite y margarina.webp"]
     },
     {
-        "name": "Intercambiador Tubulares Corrugados",
-        "industry": ["Lacteos y Derivados"],
-        "product": ["lacteos-y-derivados"],        
-        "subIndustry": "lineas de mantequilla",
-        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
-        "linea": "intercambiadores de calor",
-        "images": ["/products/intercambiador tubular corrugado.webp"]
-    },
-    {
         "name": "Intercambiadores de Calor",
         "industry": ["Alimentos Varios"],
         "product": ["aceites-y-margarinas", "alimentos-varios"],        
@@ -649,6 +632,15 @@ export const productos = [
         "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
         "linea": "intercambiadores de calor",
         "images": ["/products/intercambiadoresaplacas.webp"]
+    },
+    {
+        "name": "Intercambiador Tubular Corrugado",
+        "industry": ["Alimentos Varios"],
+        "product": ["aceites-y-margarinas"],        
+        "subIndustry": "aceites y margarinas",
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiador tubular corrugado.webp"]
     },
     {
         "name": "Envasadoras de Aceite",
