@@ -30,9 +30,9 @@ export const subIndustrys: SubIndustry = {
             "image": "/industrys/derivados.webp"
         }
     ],
-    "Frutas, Pulpa y Bebidas": [
+    "Frutas, Pulpas y Bebidas": [
         {
-            "name": "equipos para pulpas",
+            "name": "equipos para frutas y pulpas",
             "image": "/industrys/pulpas.webp",
         },
         {
@@ -52,15 +52,15 @@ export const subIndustrys: SubIndustry = {
     ],
     "Alimentos Varios": [
         {
-            "name": "aceites y margarinas",
+            "name": "Aceites y Margarinas",
             "image": "/industrys/aceite.webp",
         },
         {
             "name": "harinas y cereales",
-            "image": "/industrys/cereales.webp",
+            "image": "/industrys/WhatsApp Image 2025-01-18 at 11.24.17 AM.jpeg",
         },
         {
             "name": "cárnicos y embutidos",
-            "image": "/industrys/carnes.webp"
+            "image": "/industrys/WhatsApp Image 2025-01-18 at 11.31.16 AM.jpeg"
         }]
 }

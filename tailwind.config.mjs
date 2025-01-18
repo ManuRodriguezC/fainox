@@ -51,7 +51,10 @@ export default {
       zIndex: {
         'z-100': '100',
         'z-1000': '1000'
-      }
+      },
+      maskImage: {
+        gradient: 'radial-gradient(circle, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+      },
     },
   },
   plugins: [],

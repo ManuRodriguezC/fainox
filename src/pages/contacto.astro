@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import LayoutPage from "../layouts/LayoutPage.astro";
 import Map from "../components/tsx/Map";
+import IconWhatsapp from "../components/iconWhatsapp.astro";
 const offices = [
   {
     classStyle: "absolute top-0 left-0 w-full h-full clip-left flex",
@@ -20,31 +21,95 @@ const offices = [
     image: "/servicios/fabricacion1.webp",
   },
 ];
+
+const messageWhatsApp = "Gracias%20por%20comunicarte%20con%20FAINOX%20GROUP%20SAS.%20Por%20favor,%20háganos%20saber%20cómo%20podemos%20ayudarlo%20,es%20de%20nuestro%20total%20interés%20el%20poder%20dar%20respuesta%20a%20su%20solicitud,%20por%20lo%20que%20requerimos%20que%20nos%20relacione%20la%20siguiente%20información%20para%20crearlos%20en%20nuestra%20base%20de%20datos.Nombre%20de%20la%20Empresa:%20Ciudad:%20Contacto:%20Celular:%20Correo:%20Gracias%20por%20contar%20con%20nuestra%20compañía%20para%20sus%20proyectos,%20cualquier%20inquietud%20o%20ampliación%20de%20información%20será%20atendida%20con%20gusto."
+
 ---
 
 <LayoutPage title="Contacto - Fainox">
   <section class="w-full h-auto"> <!-- py-20 px-10 -->
     <div class="py-20 px-10">
-      <h1 class="text-colorBlue font-bold text-5xl">Contacto</h1>
+      <h1 class="text-colorBlue font-bold text-5xl">Contactos</h1>
       <p class="p-5 text-gray-600 text-lg">
-        Si quieres contartarte con alguno de nuestros asesores pueden hacerlo
-        atravez de uno de nuestros canales:
+        Si quieres comunicarte con alguno de nuestros asesores puedes hacerlo
+        atravez de nuestros canales:
       </p>
       <ul class="flex flex-col gap-3 px-10 text-gray-700 list-disc">
         <li>
           <span class="font-bold">
             División Comercial
           </span>
+          <p class="flex flex-row">
+            Teléfonos
+            <a
+              class="text-colorBlue cursor-pointer underline flex flex-row ml-5"
+              href=`https://api.whatsapp.com/send?phone=573241390907&text=${messageWhatsApp}`
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <span>
+                <IconWhatsapp />
+              </span>
+                (+57) 3241390907
+              </a>,
+              <a 
+                class="text-colorBlue cursor-pointer underline flex flex-row ml-5"
+                href=`https://api.whatsapp.com/send?phone=57223369750&text=${messageWhatsApp}`
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <span>
+                  <IconWhatsapp />
+                </span>
+                (+57) 3223369750
+              </a>
+          </p>
           <p>
-            Teléfonos (+57) 3241390907, (+57) 3223369750, (+57) 3144687182
+            Correo Electronico: comercial@fainoxgroup.com
           </p>
         </li>
-      <li>
+        <li>
+          <span class="font-bold">
+            División Administrativa y Servicio al Cliente
+          </span>
+          <p class="flex flex-row">
+            Teléfono 
+            <a 
+              class="text-colorBlue cursor-pointer underline flex flex-row ml-5" 
+              href=`https://api.whatsapp.com/send?phone=573144687182&text=${messageWhatsApp}`
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <span>
+                <IconWhatsapp />
+              </span>
+              (+57) 3144687182
+            </a>
+          </p>
+          <p>
+            Correo Electronico: administracion@fainoxgroup.com
+          </p>
+        </li>
+        <li>
           <span class="font-bold">
             División Técnica y Desarrollo
           </span>
+          <p class="flex flex-row">
+            Teléfono
+            <a
+              class="text-colorBlue cursor-pointer underline flex flex-row ml-5" 
+              href=`https://api.whatsapp.com/send?phone=573223369750&text=${messageWhatsApp}`
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+              <span>
+                <IconWhatsapp />
+              </span>
+              (+57) 3223369750
+            </a>
+          </p>
           <p>
-            Teléfono (+57) 3223369750
+            Correo Electronico: info@fainoxgroup.com
           </p>
         </li>
 

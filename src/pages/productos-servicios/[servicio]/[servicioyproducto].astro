@@ -41,6 +41,19 @@ if (servicio == "desarrollo-de-equipos-para") {
   serviciosdeingenieria = serviciosingenieria.filter((servicio) => servicio.name.toLowerCase().replaceAll(' ', '-') === servicioyproducto);
 }
 
+var name = ""
+if (servicioyproducto == "sistemas-de-lavado-cip") {
+  name = "Sistemas de lavado CIP"
+} else if (servicioyproducto == "ingeniería-conceptual,-presupuestal-y-de-detalle") {
+  name = "Ingeniería Conceptual, Presupuestal y de Detalle"
+} else if (servicioyproducto == "montajes-industriales") {
+  name = "Montajes Industriales"
+} else if (servicioyproducto == "consultoria-y-asistencia-de-proyectos") {
+  name = "Consultoria y Asistencia de Proyectos"
+} else if (servicioyproducto == "cabinas-y-tuneles-de-lavado") {
+  name = "Cabinas y Tuneles de Lavado"
+}
+
 ---
 
 <LayoutPage
@@ -49,7 +62,13 @@ if (servicio == "desarrollo-de-equipos-para") {
   <section class="px-5 mt-32 md:px-20 xl:px-32 flex flex-col w-full">
     <h1
       class="text-4xl font-bold text-center text-colorBlue py-7">
-      {capitalize(servicio).replaceAll("-", " ")} - {capitalize(servicioyproducto).replaceAll("-", " ")}
+      {
+        name 
+          ? 
+          name
+          :
+          capitalize(servicioyproducto).replaceAll("-", " ")
+      }
     </h1>
     <!-- Productos por servicio -->
     {
@@ -88,7 +107,7 @@ if (servicio == "desarrollo-de-equipos-para") {
                 <img
                   src={image}
                   alt={`${listEquipos[0].name}-${index}`} 
-                  class="h-[300px] w-[300px] object-cover rounded-xl" />
+                  class="h-[400px] w-[400px] object-cover rounded-xl" />
               ))
             }
           </div>

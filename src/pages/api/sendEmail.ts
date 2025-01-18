@@ -34,13 +34,16 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
   const products = body.products.split("+").join(", ");
 
   const emailText = `
-  Nombre: ${body.name}
-  Apellido: ${body.lastname}
-  Correo: ${body.email}
-  Dirección: ${body.address}
-  Teléfono: ${body.phone}
-  Ciudad: ${body.minucipio}
-  Productos: ${products}`
+    Nombre: ${body.name}
+    Apellido: ${body.lastname}
+    Correo: ${body.email}
+    Dirección: ${body.address}
+    Teléfono: ${body.phone}
+    Ciudad: ${body.minucipio}
+    Productos: ${products}
+    ${body.empresa ? `Empresa: ${body.empresa}` : ''}
+    ${body.area ? `Área: ${body.area}` : ''}
+  `;
 
   try {
     const info = await transport.sendMail({

@@ -69,7 +69,7 @@ export default function ListCotizacion() {
                   <h3 className="text-colorBlue text-base font-semibold">{product.name}</h3>
                 </td>
                 <td className="border-b-[1px] border-white px-5 flex justify-center">
-                  <img className="w-24 h-24 object-cover" src={product.images[0]} alt={product.name} />
+                  <img className="w-auto h-24 object-cover" src={product.images[0]} alt={product.name} />
                 </td>
                 <td className="w-[20%] md:w-[10%] border-[1px] border-white px-3 md:px-5">
                   <ButtonCotizacion name={product.name} size="S" control={control} setControl={setControl} />

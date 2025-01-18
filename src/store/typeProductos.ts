@@ -104,7 +104,7 @@ export const productosyservicios = [
                 'name': 'Cabinas y tuneles de Lavado'
             },
             {
-                'name': 'Sistemas de Lavado CIP y COP'
+                'name': 'Sistemas de Lavado CIP'
             }
         ]
     },
@@ -115,7 +115,7 @@ export const productosyservicios = [
                 'name': 'Consultoria y Asistencia de Proyectos',
             },
             {
-                'name': 'Ingeniería Conceptual, Presupuestal y de Destalle',
+                'name': 'Ingeniería Conceptual, Presupuestal y de Detalle',
             },
             {
                 'name': 'Montajes Industriales'

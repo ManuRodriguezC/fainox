@@ -18,7 +18,7 @@ const filterProducts = productos.filter(product => product.industry.includes(lin
 ---
 <LayoutPage title={`Sector ${industry} - Fainox Group`}>
   <section class="flex flex-col w-full h-auto px-0 md:px-10 mt-24">
-    <h1 class="text-center text-colorBlue text-lg md:text-2xl lg:text-3xl xl:text-5xl font-bold">Industria {linkIndustry}</h1>
+    <h1 class="text-center text-colorBlue text-lg md:text-2xl lg:text-3xl xl:text-5xl font-bold">{linkIndustry}</h1>
     <FilterListProduct industry={linkIndustry} filterProducts={filterProducts} client:load/>
 </section>
 

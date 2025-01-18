@@ -8,19 +8,30 @@ import FormContact from "../components/tsx/FormContact";
 
 <LayoutPage title="Oportunidades de compra con Fainox">
   <section class="w-full flex flex-col justify-center py-10 md:py-20">
-    <h1
-      id="button-form"
-      class="text-white text-2xl text-center font-semibold border-2 bg-colorBlue border-white px-6 py-2
-      rounded-lg shadow-box-black transition-all duration-200 cursor-pointer hover:scale-105">
-      Alguien necesita lo que tu ya no usas, da clic para vender tu producto!
-    </h1>
+    <div
+      class="relativ text-center font-semibold px-6 py-6">
+      <p class="text-colorBlue text-4xl">
+        Alguien necesita lo que tu ya no usas.
+      </p>
+      <p class="py-10 text-xl px-2 xl:px-64">
+        Desde este espacio FAINOX GROUP desea aportar para que rotes tu inventario de Equipos usados , Envíanos tus fotografías y comunícanos tu expectativa de venta , Nosotros evaluaremos tu equipo y te asesoramos para la venta de este bien.
+      </p>
+      <p
+        id="button-form"
+        class="lg:absolute lg:w-40 lg:h-40 xl:w-56 xl:h-56 text-xl xl:text-2xl rounded-full flex justify-center
+          items-center p-5 hover:scale-105 transition-all duration-200
+          border-4 lg:top-24 xl:top-36 cursor-pointer border-blue-600 right-10 bg-colorBlue text-white shadow-box-black"
+        >
+        Da clic para vender tu producto!
+      </p>
+    </div>
     <div class="h-full flex flex-col justify-center items-center">
       <FormContact pay={true} client:load/>
     </div>
     {
       productosUsados.length > 0 &&
-      <div class="w-full flex flex-col md:flex-row justify-center items-center md:justify-around">  
-        <p class="text-colorBlue text-center text-xl font-semibold">Productos usados de excelente calidad</p>
+      <div class="w-full flex flex-col md:flex-row justify-center items-center md:justify-around">
+        <h3 class="text-2xl font-semibold text-colorBlue">Equipos disponibles a la fecha</h3>
         <p class="text-gray-500 text-lg">Productos encontrados: {productosUsados.length}</p>
       </div>
       

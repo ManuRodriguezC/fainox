@@ -24,45 +24,69 @@ export default function FormContact({ pay }: Props) {
     };
 
     if (pay) {
-        const fileImage = fields.image as File;
-        if (fileImage instanceof File) {
-            const reader = new FileReader();
-            reader.onload = async (e) => {
-                const base64 = e.target?.result;
-                if (typeof base64 === 'string') {
-                    const imageBase64 = base64.split(',')[1]; // Extrae la parte base64
-
-                    const requestBody = {
-                        ...fields,
-                        image: imageBase64, // Agrega la imagen en base64
-                    };
-
-                    try {
-                        const response = await fetch('/api/sendSellProducto', {
-                            method: 'POST',
-                            body: JSON.stringify(requestBody),
-                            headers: { 'Content-Type': 'application/json' },
-                        });
-
-                        const result = await response.json();
-                        if (result.message === "Correo Enviado") {
-                            setControlSend(true);
-                            setName(`${fields.name} ${fields.lastname}`);
-                        }
-                    } catch (err) {
-                        console.error('Error en el envío del correo:', err);
-                    } finally {
-                        setLoanding(false); // Desactiva el estado de carga
-                    }
-                }
-            };
-
-            // Iniciar la lectura del archivo como Data URL
-            reader.readAsDataURL(fileImage);
-        } else {
-            console.error('No se seleccionó un archivo de imagen válido.');
-            setLoanding(false); // Desactiva el estado de carga
+      const processImage = (fileImage: File): Promise<string> => {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            const base64 = e.target?.result;
+            if (typeof base64 === 'string') {
+              const imageBase64 = base64.split(',')[1]; // Extrae solo la parte Base64
+              resolve(imageBase64);
+            } else {
+              reject('Error al leer la imagen.');
+            }
+          };
+          reader.onerror = () => reject('Error en FileReader.');
+          reader.readAsDataURL(fileImage);
+        });
+      };
+    
+      try {
+        // Procesar todas las imágenes seleccionadas
+        const imagesPromises = [];
+        for (let i = 1; i <= 3; i++) {
+          const fileImage = fields[`image${i}`] as File;
+          if (fileImage instanceof File) {
+            imagesPromises.push(processImage(fileImage));
+          }
         }
+    
+        // Convertir imágenes a Base64
+        Promise.all(imagesPromises)
+          .then(async (imagesBase64) => {
+            const requestBody = {
+              ...fields,
+              image1: imagesBase64[0] || null,
+              image2: imagesBase64[1] || null,
+              image3: imagesBase64[2] || null,
+            };
+    
+            try {
+              const response = await fetch('/api/sendSellProducto', {
+                method: 'POST',
+                body: JSON.stringify(requestBody),
+                headers: { 'Content-Type': 'application/json' },
+              });
+    
+              const result = await response.json();
+              if (result.message === "Correo Enviado") {
+                setControlSend(true);
+                setName(`${fields.name} ${fields.lastname}`);
+              }
+            } catch (err) {
+              console.error('Error en el envío del correo:', err);
+            } finally {
+              setLoanding(false); // Desactiva el estado de carga
+            }
+          })
+          .catch((err) => {
+            console.error('Error al procesar imágenes:', err);
+            setLoanding(false); // Desactiva el estado de carga
+          });
+      } catch (err) {
+        console.error('Error general:', err);
+        setLoanding(false); // Desactiva el estado de carga
+      }
     } else {
         // Si no hay pago, enviar la solicitud sin imagen
         try {
@@ -105,26 +129,22 @@ export default function FormContact({ pay }: Props) {
       className={`w-full flex flex-col md:mt-0 py-10 justify-center items-center gap-4 md:p-5 ${pay ? 'noseeForm' : ''}`}>
       {!pay && <h1 className="text-colorBlue text-3xl font-bold">Estimado Cliente</h1>}
       {
-        pay
-          ?
-          <p className="w-full md:w-[60%] px-4 md:px-0 text-gray-500 text-center">
-            Con Fainox Group SAS, vender tus productos y maquinaria es fácil y seguro. Nos enfocamos en brindarte un proceso transparente y confiable, conectándote con los compradores adecuados. Confía en nuestra experiencia y deja que te ayudemos a obtener el mejor valor.
-          </p>
-          :
+        !pay
+          &&
           <p className="text-md text-gray-500 pb-4 text-center">
             Si requiere ampliar información sobre nuestros productos o tiene algún proyecto de desarrollo en el que necesite asesoría ..CONTACTENOS sin ningún COMPROMISO, Un asesor se comunicara con usted
           </p>
       }
 
-      {pay && <p className="text-colorBlue px-4 md:px-0 my-5 text-center">Por favor llena el siguiente formulario para ponernos en contacto contigo, recuerda tener una foto de tu producto o maquinaria</p>}
+      {pay && <p className="text-colorBlue text-xl font-bold px-4 md:px-0 my-5 text-center">Por favor llena el siguiente formulario para ponernos en contacto contigo, recuerda tener una foto de tu producto o maquinaria</p>}
 
       <div className="flex flex-col md:flex-row gap-5 md:gap-10">
         <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-xl font-bold" htmlFor="input">Nombre</label>
+          <label className="text-gray-700 text-xl font-bold" htmlFor="input">Nombre *</label>
           <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Nombre" type="text" name="name" id="name" required />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Apellido</label>
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Apellido *</label>
           <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Apellido" type="text" name="lastname" id="lastname" required />
         </div>
       </div>
@@ -132,40 +152,63 @@ export default function FormContact({ pay }: Props) {
       <div className="flex flex-col md:flex-row gap-5 md:gap-10">
 
         <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Correo Electronico</label>
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Correo Electronico *</label>
           <input className="p-2 w-[250px] md:w-[300px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Correo Electronico" type="email" name="email" id="email" required />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Celular</label>
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Celular *</label>
           <input className="p-2 w-[250px] md:w-[200px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Numero de Celular" type="phone" name="phone" id="phone" required />
         </div>
       </div>
 
       <div className="flex flex-col gap-2">
-        <label className="text-gray-700 text-lg font-bold" htmlFor="input">Dirección</label>
+        <label className="text-gray-700 text-lg font-bold" htmlFor="input">Dirección *</label>
         <input className="p-2 w-[250px] md:w-[540px] border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Dirreción" type="text" name="address" id="address" required />
       </div>
 
       <div className="h-full flex flex-col md:flex-row gap-5 md:gap-10">
         <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Municipio</label>
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Empresas <span className="text-xs text-gray-500">- Opcional</span></label>
+          <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Empresa" name="empresa" id="empresa" />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Área <span className="text-xs text-gray-500">- Opcional</span></label>
+          <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Área" name="area" id="area" />
+        </div>
+      </div>
+
+      <div className="h-full flex flex-col md:flex-row gap-5 md:gap-10">
+        <div className="flex flex-col gap-2">
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Municipio *</label>
           <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Municipio" name="minucipio" id="minucipio" required />
         </div>
         <div className="flex flex-col gap-2">
-          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Ciudad</label>
+          <label className="text-gray-700 text-lg font-bold" htmlFor="input">Ciudad *</label>
           <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="text" placeholder="Ciudad" name="city" id="city" required />
         </div>
       </div>
       {
         pay &&
-        <div className="flex flex-col md:flex-row gap-5 md:gap-10">
-          <div className="flex flex-col gap-2">
-            <label className="text-gray-700 text-xl font-bold" htmlFor="input">Equipo</label>
-            <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Nombre del Equipo" type="text" name="product" id="product" required />
+        <div className="flex flex-col gap-5">
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
+            <div className="flex flex-col gap-2">
+              <label className="text-gray-700 text-xl font-bold" htmlFor="input">Equipo *</label>
+              <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" placeholder="Nombre del Equipo" type="text" name="product" id="product" required />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="text-gray-700 text-lg font-bold" htmlFor="input">Imagen *</label>
+              <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="file" accept="image/*" name="image1" id="image1" required />
+            </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <label className="text-gray-700 text-lg font-bold" htmlFor="input">Imagen</label>
-            <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="file" accept="image/*" name="image" id="image" required />
+          <div className="flex flex-col md:flex-row gap-5 md:gap-10">
+            <div className="flex flex-col gap-2">
+              <label className="text-gray-700 text-lg font-bold" htmlFor="input">Imagen <span className="text-xs text-gray-500">- Opcional</span></label>
+              <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="file" accept="image/*" name="image2" id="image2" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label className="text-gray-700 text-lg font-bold" htmlFor="input">Imagen <span className="text-xs text-gray-500">- Opcional</span></label>
+              <input className="w-[250px] p-2 border-[1px] border-gray-400 rounded-lg shadow-box-black" type="file" accept="image/*" name="image3" id="image3" />
+            </div>
           </div>
         </div>
       }
