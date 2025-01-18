@@ -72,7 +72,7 @@ export const productos = [
         "images": ["/products/intercambiadoresaplacas.webp"]
     },
     {
-        "name": "Sistemas de Agitación",
+        "name": "Sistemas de Agitacion",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para leche",
@@ -147,7 +147,7 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/26.jpg"]
     },
     {
-        "name": "Envasadoras Automáticas",
+        "name": "Envasadoras Automaticas",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para yogurt",
@@ -156,7 +156,7 @@ export const productos = [
         "images": ["/products/llenadora automatica.webp"]
     },
     {
-        "name": "Envasadora Manual y Semiautomática",
+        "name": "Envasadora Manual y Semiautomatica",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "equipos para yogurt",
@@ -381,7 +381,7 @@ export const productos = [
         "images": ["https://www.stkmakina.com/resimler/100.jpg"]
     },
     {
-        "name": "Torres de Evaporación para Leche Condensada",
+        "name": "Torres de Evaporacion para Leche Condensada",
         "industry": ["Lacteos y Derivados"],
         "product": ["lacteos-y-derivados"],        
         "subIndustry": "derivados varios",
@@ -420,7 +420,7 @@ export const productos = [
     // Frutas jugos y bebidas
 
     {
-        "name": "Túneles de Lavado de Fruta", //  Frutas jugos y bebidas
+        "name": "Tuneles de Lavado de Fruta", //  Frutas jugos y bebidas
         "industry": ["Frutas, Pulpa y Bebidas"],
         "product": ["frutas-pulpas-y-bebidas"],        
         "subIndustry": "equipos para pulpas",
@@ -502,7 +502,7 @@ export const productos = [
         "images": ["/products/pasteurizador tubular.webp"]
     },
     {
-        "name": "Tanques de Preparación y Mezcla",
+        "name": "Tanques de Preparacion y Mezcla",
         "industry": ["Frutas, Pulpa y Bebidas"],
         "product": ["frutas-pulpas-y-bebidas"],        
         "subIndustry": "equipos para jugos y bebidas",
@@ -511,7 +511,7 @@ export const productos = [
         "images": ["/products/Sistema Premezcla.webp"]
     },
     {
-        "name": "Sistemas de Homogenización - Mixer",
+        "name": "Sistemas de Homogenizacion - Mixer",
         "industry": ["Frutas, Pulpa y Bebidas"],
         "product": ["frutas-pulpas-y-bebidas"],        
         "subIndustry": "equipos para jugos y bebidas",
@@ -559,7 +559,7 @@ export const productos = [
         "images": ["/products/intercambiador tubular corrugado.webp"]
     },
     {
-        "name": "Marmitas de Cocción y Proceso",
+        "name": "Marmitas de Coccion y Proceso",
         "industry": ["Conservas, Salsas y Aderezos"],
         "product": ["conservas,-salsas-y-aderezos"],        
         "subIndustry": "equipos para conservas, salsas y aderezos",
@@ -616,7 +616,7 @@ export const productos = [
     // Alimentos Varios - Aceites y margarinas
 
     {
-        "name": "Sistemas de Agitación",
+        "name": "Sistemas de Agitacion",
         "industry": ["Alimentos Varios", "Lacteos y Derivados"],
         "product": ["aceites-y-margarinas", "alimentos-varios"],        
         "subIndustry": "aceites y margarinas",
