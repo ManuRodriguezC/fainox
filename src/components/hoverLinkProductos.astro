@@ -25,7 +25,7 @@ import { capitalize } from "../utils/capitalize";
         id={`list-${index}`}
         class="hidden bg-gray-100 flex-col list-disc px-10 py-5"
       >
-        {producto.services.map((service, idx) => (
+        {producto.services.map((service: any) => (
           <a
             href={`/productos-servicios/${producto.name.toLowerCase().replaceAll(" ", "-")}/${service.name.toLowerCase().replaceAll(" ", "-")}`}>
             <li
