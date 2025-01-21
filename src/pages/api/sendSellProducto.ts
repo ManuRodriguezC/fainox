@@ -74,8 +74,8 @@ export async function POST({ request }: { request: Request }): Promise<Response>
   try {
     const info = await transport.sendMail({
       from: 'estebanclimb@gmail.com',
-      // to: ['manu.rodriguezc.dev@gmail.com', 'comercial@fainoxgroup.com'],
-      to: ['manu.rodriguezc.dev@gmail.com'],
+      to: ['comercial@fainoxgroup.com'],
+      // to: ['manu.rodriguezc.dev@gmail.com'],
       subject: 'Solicitud Venta de Equipo',
       text: emailText,
       attachments: attachments
