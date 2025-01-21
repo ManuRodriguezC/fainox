@@ -46,7 +46,7 @@ export const sectores = [
     title: "Frutas, Pulpas y Bebidas",
     description:
       "Un sector de tan amplia cobertura y de tanto crecimiento requiere contar con procesos de producción eficientes en los que se aprovechen al máximo las materias primas y que estas conserven sus características naturales de cada producto. Esto solo es posible mediante procesamientos multifase seguros desde la extracción hasta el envasado de Bebidas, Pulpas u Otros en FAINOX GROUP garantizamos la inocuidad de los procesos mediante el desarrollo de equipos certificados .",
-    link: "/sectores-industriales/frutas-pulpa-y-bebidas",
+    link: "/sectores-industriales/frutas-pulpas-y-bebidas",
     image: "/industrys/WhatsApp Image 2025-01-18 at 9.24.24 AM.jpeg",
     backgraund: "bg-custom-blue-gradient",
     lines: ["Equipos para Pulpas", "Equipos para Jugos y Bebidas"],
