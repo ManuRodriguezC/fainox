@@ -40,39 +40,6 @@ export const productos = [
 
 export const productosyservicios = [
     {
-        'name': 'Desarrollo de Equipos para',
-        'services': [
-            {
-                'name':'Lacteos y Derivados',
-                'link': ''
-            },
-            {
-                'name': 'Frutas Pulpas y Bebidas',
-                'link': ''
-            },
-            {
-                'name': 'Conservas, Salsas y Aderezos',
-                'link': ''
-            },
-            {
-                'name': 'Alimentos Varios',
-                'link': ''
-            },
-            {
-                'name': 'Carnes y Embutidos',
-                'link': ''
-            },
-            {
-                'name': 'Granos, Cereales y Harinas',
-                'link': ''
-            },
-            {
-                'name': 'Aceites y Margarinas',
-                'link': ''
-            }
-        ]
-    },
-    {
         'name': 'Suministros y Componentes',
         'services': [
             {

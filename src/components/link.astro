@@ -20,7 +20,7 @@ const { link, name, typeLink } = Astro.props;
         {name}
       </p>
       {
-        (link === "sectores-industriales" || link === "productos-servicios")
+        (link === "nuestras-soluciones")
         &&
         <div class="transition-all duration-300 group-hover:rotate-180">
           <ArrowDown />
@@ -35,7 +35,7 @@ const { link, name, typeLink } = Astro.props;
         {name}
       </p>
       {
-        (link === "sectores-industriales" || link === "productos-servicios")
+        (link === "nuestras-soluciones")
         &&
         <div class="transition-all duration-300 group-hover:rotate-180">
           <ArrowDown />
@@ -44,7 +44,7 @@ const { link, name, typeLink } = Astro.props;
     </button>
   }
   {
-    link === "sectores-industriales"
+    link === "nuestras-soluciones"
     &&
     <HoverLinkIndustrias />
   }

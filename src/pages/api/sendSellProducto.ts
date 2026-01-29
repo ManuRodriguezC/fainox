@@ -34,42 +34,41 @@ export async function POST({ request }: { request: Request }): Promise<Response>
 
   const emailText = `
         Nombre: ${body.name}
-        Apellido: ${body.lastname}
-        Correo: ${body.email}
-        Dirección: ${body.address}
         Teléfono: ${body.phone}
-        Ciudad: ${body.minucipio}
-        ${body.empresa ? `Empresa: ${body.empresa}` : ''}
-        ${body.area ? `Área: ${body.area}` : ''}
+        Correo: ${body.email}
+        Ciudad: ${body.city}
+        País: ${body.country}
+        Actividad: ${body.activity}
+        Comentarios: ${body.comments}
     `
 
-    const attachments = [];
+    // const attachments = [];
 
     // Agregar la primera imagen
-    if (body.image1) {
-      attachments.push({
-        filename: 'image1.jpg',
-        content: Buffer.from(body.image1, 'base64'),
-        cid: 'image1.jpg'
-      });
-    }
+    // if (body.image1) {
+    //   attachments.push({
+    //     filename: 'image1.jpg',
+    //     content: Buffer.from(body.image1, 'base64'),
+    //     cid: 'image1.jpg'
+    //   });
+    // }
     
-    // Verificar y agregar otras imágenes
-    if (body.image2) {
-      attachments.push({
-        filename: 'image2.jpg',
-        content: Buffer.from(body.image2, 'base64'),
-        cid: 'image2.jpg'
-      });
-    }
+    // // Verificar y agregar otras imágenes
+    // if (body.image2) {
+    //   attachments.push({
+    //     filename: 'image2.jpg',
+    //     content: Buffer.from(body.image2, 'base64'),
+    //     cid: 'image2.jpg'
+    //   });
+    // }
     
-    if (body.image3) {
-      attachments.push({
-        filename: 'image3.jpg',
-        content: Buffer.from(body.image3, 'base64'),
-        cid: 'image3.jpg'
-      });
-    }
+    // if (body.image3) {
+    //   attachments.push({
+    //     filename: 'image3.jpg',
+    //     content: Buffer.from(body.image3, 'base64'),
+    //     cid: 'image3.jpg'
+    //   });
+    // }
 
   try {
     const info = await transport.sendMail({
@@ -78,7 +77,7 @@ export async function POST({ request }: { request: Request }): Promise<Response>
       // to: ['manu.rodriguezc.dev@gmail.com'],
       subject: 'Solicitud Venta de Equipo',
       text: emailText,
-      attachments: attachments
+      // attachments: attachments
     })
     return new Response(
       JSON.stringify({ message: 'Correo Enviado', messageId: info.messageId }),

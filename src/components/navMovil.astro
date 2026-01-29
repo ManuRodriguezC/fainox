@@ -1,5 +1,6 @@
 ---
 import ArrowDown from "../icons/arrowDown.astro"
+import { industrias } from "../store/industrias"
 import { productosyservicios } from "../store/typeProductos"
 
     const styleLink = "cursor-pointer bg-white hover:border-[1px] transition-all duration-200 border-blue-200 hover:bg-slate-200 text-xl text-colorBlue font-semibold rounded-lg"
@@ -12,26 +13,31 @@ import { productosyservicios } from "../store/typeProductos"
         </a>
     </li>
     <li class={styleLink}>
-        <a class="block w-full px-5 py-2" href="/sectores-industriales">
-            Sectores Industriales
-        </a>
-    </li>
-    <li class={styleLink}>
         <button id="button-list" class="flex w-full flex-row px-5 py-2 justify-between items-center">
-            Productos & Servicios
+            Nuestras Soluciones
             <ArrowDown />
         </button>
+          
         <ul class="hidden flex-col gap-2 transition-all duration-300" id="list-service">
             {
+                industrias.map((industria) => (
+                    <li class={`${styleLink} px-6`}>
+                        <a class="block w-full px-2 py-2" href={`/nuestras-soluciones/${industria.link}`}>
+                            - {industria.name}
+                        </a>
+                    </li>
+                ))
+            }
+            {
                 productosyservicios.map((producto, indexx) => (
-                    <li class={styleLink}>
+                    <li class={`${styleLink} `}>
                         <button
                             id={`nav-movil-${indexx}`}        
                             class="flex w-full flex-row px-8 py-2 text-lg justify-between items-center">
                             - {producto.name}
                             <ArrowDown />
                         </button>
-                        <ul id={`list-movil-${indexx}`} class="hidden flex-col gap-2 list-disc mx-10 text-base">
+                        <ul id={`list-movil-${indexx}`} class="hidden flex-col gap-2 list-disc mx-10 text-base px-6">
                             {
                                 producto.services.map((service) => (
                                     <li>
@@ -51,8 +57,13 @@ import { productosyservicios } from "../store/typeProductos"
         </ul>
     </li>
     <li class={styleLink}>
-        <a class="block w-full px-5 py-2" href="/equiposusados">
-            Equipos Usados
+        <a class="block w-full px-5 py-2" href="/servicios-industriales">
+            Servicios Industriales
+        </a>
+    </li>
+    <li class={styleLink}>
+        <a class="block w-full px-5 py-2" href="/trabaje-con-nosotros">
+            Trabaje con Nosotros
         </a>
     </li>
     <li class={styleLink}>

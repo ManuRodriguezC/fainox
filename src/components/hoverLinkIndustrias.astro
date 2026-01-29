@@ -1,5 +1,8 @@
 ---
+import ArrowDown from "../icons/arrowDown.astro";
 import { industrias } from "../store/industrias";
+import { productosyservicios } from "../store/typeProductos";
+import { capitalize } from "../utils/capitalize";
 ---
 
 <div
@@ -11,7 +14,7 @@ import { industrias } from "../store/industrias";
       if (industria.type === "link") {
         return (
           <a
-            href={`/sectores-industriales/${industria.link}`}
+            href={`/nuestras-soluciones/${industria.link}`}
             class="cursor-pointer flex flex-row items-center gap-6 my-2 px-6 py-2 hover:bg-gray-100 rounded-lg"
           >
             <p>{industria.name}</p>
@@ -41,4 +44,66 @@ import { industrias } from "../store/industrias";
     }
     )
   }
+    {productosyservicios.map((producto, index) => (
+    <div
+      id={`nav-${index}`}
+      >
+      <div
+        class="flex flex-row justify-between pr-10 items-center decoration-slice hover:bg-gray-100 px-6 py-2 mt-2 rounded-lg cursor-pointer"
+      >
+        <p>{capitalize(producto.name)}</p>
+        <div id={`row-down-${index}`} class="transition-all duration-300">
+          <ArrowDown />
+        </div>
+      </div>
+
+      <ul
+        id={`list-${index}`}
+        class="hidden bg-gray-100 flex-col list-disc px-10 py-5"
+      >
+        {producto.services.map((service: any) => (
+          <a
+            href={`/soluciones/${producto.name.toLowerCase().replaceAll(" ", "-")}/${service.name.toLowerCase().replaceAll(" ", "-")}`}>
+            <li
+                class="p-1 px-4 hover:bg-white rounded-xl cursor-pointer"
+                >
+                  {service.name}
+            </li>
+          </a>
+        ))}
+      </ul>
+    </div>
+  ))}
 </div>
+
+<script>
+  // Seleccionar todos los párrafos y listas correspondientes
+  document.addEventListener("DOMContentLoaded", () => {
+    const navButtons = document.querySelectorAll("[id^='nav-']");
+
+    navButtons.forEach((navLink, index) => {
+      const list = document.getElementById(`list-${index}`);
+      const row = document.getElementById(`row-down-${index}`);
+
+      navLink.addEventListener("click", () => {
+        // Cerrar todos los demás
+        navButtons.forEach((_, i) => {
+          if (i !== index) {
+            const otherList = document.getElementById(`list-${i}`);
+            const otherRow = document.getElementById(`row-down-${i}`);
+
+            otherList?.classList.add("hidden");
+            otherList?.classList.remove("flex");
+            otherRow?.classList.remove("rotate");
+          }
+        });
+
+        // Toggle solo del clickeado
+        list?.classList.toggle("hidden");
+        list?.classList.toggle("flex");
+        row?.classList.toggle("rotate");
+      });
+    });
+  });
+
+</script>
