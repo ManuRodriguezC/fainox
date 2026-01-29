@@ -9,7 +9,7 @@ export default function Offices() {
       <div className="flex w-full flex-col xl:flex-row justify-around items-center">
         <ListCotizacion />
         <div className={`h-auto w-full flex justify-center items-center xl:w-[40%]`}>
-          <FormContact pay={false} />
+          <FormContact work={false} />
         </div>
       </div>
     </section>
