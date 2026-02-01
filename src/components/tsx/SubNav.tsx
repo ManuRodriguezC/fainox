@@ -12,11 +12,6 @@ export default function SubNav({ indus, setFilter, filter }: Props) {
     return(
         <nav className="w-full h-auto mt-10">
             <ul className="flex flex-row bg-colorBlue rounded-none md:rounded-lg pt-2 justify-center items-center md:gap-6">
-                {/* <li className="flex justify-center items-center"> /// Filtro de todos
-                    <button
-                        className={`text-xs md:text-base xl:text-xl py-2 px-1 transition-all duration-150 ${filter === "" ? "bg-white text-black rounded-md" : "text-white font-semibold"}`}
-                        onClick={() => setFilter("")}>Todos</button>
-                </li> */}
                 {
                     subIndustrys[indus].map((sub: DatesIndustrys) => {
                         const size = subIndustrys[indus].length == 5 ? 0 : 4

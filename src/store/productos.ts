@@ -840,4 +840,212 @@ export const productos = [
         "linea": "empacadoras",
         "images": ["/products/big bag.webp"]
     },
+    {
+        "name": "Emulsificadores y Dispensores para laboratorio",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/EQUIPOS FARMA - Emulsificadores y Dispersores de Laboratorio.webp"]
+    },
+    {
+        "name": "Agitadores moviles",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/AGIRADORES MOVILES.webp"]
+    },
+    {
+        "name": "Autoclaves para concentrados",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/AUTOCLAVE PARA CONCENTRADOS.webp"]
+    },
+    {
+        "name": "Autoclaves para envases",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/AUTOCLAVES PARA ENVASES.webp"]
+    },
+        {
+        "name": "Bombones para recubrir",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/Bombones para recubrir.webp"]
+    },
+        {
+        "name": "Envasadoras jeringas",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/ENVASADORAS - JERINGAS.webp"]
+    },
+        {
+        "name": "Envasador para polvos",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/ELEVADOR PARA POLVOS.webp"]
+    },
+        {
+        "name": "Envasadoras de frascos",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/ENVASADORAS DE FRASCOS.webp"]
+    },
+        {
+        "name": "Filtros prensa",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/FILTROS PRENSA.webp"]
+    },
+        {
+        "name": "Granulador de malla",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/Granulador de malla.webp"]
+    },
+        {
+        "name": "Mezcladores biconicos",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MEZCLADORES BICONICOS.webp"]
+    },
+        {
+        "name": "Mezcladores helicoidales",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MEZCLADORES HELICOIDALES.webp"]
+    },
+        {
+        "name": "Mezcladores tipo pantalon",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MEZCLADORES DE PANTALON.webp"]
+    },
+        {
+        "name": "Molino regranulador",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MOLINO REGRANULADOR.webp"]
+    },
+        {
+        "name": "Molino ultra pulverizador",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MOLINO ULTRA PULVERIZADOR.webp"]
+    },
+        {
+        "name": "Molino refinador de pastas",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MOLINO REFINADOR DE PASTAS.webp"]
+    },
+        {
+        "name": "Prensa para extraccion de aceite",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/PRENSA DE TORNILLO PARA EXTRACCION DE ACEITES.webp"]
+    },
+        {
+        "name": "Prensa tornillo - secado polvos",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/PRENSA DE TORNILLO PARA SECADO DE POLVOS.webp"]
+    },
+        {
+        "name": "Reactores con vacio - pequeños tamaños",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/REACTORES CON VACIO.webp"]
+    },
+        {
+        "name": "Reactores para proceso",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/RACTORES PARA PROCESO.webp"]
+    },
+        {
+        "name": "Tamizadores para polvos",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/TAMIZADOR PARA POLVOS.webp"]
+    },
+        {
+        "name": "Tamizadores con vibracion",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/TAMIZADORES CON VIBRACION.webp"]
+    },
+        {
+        "name": "Instalacion y puesta en marcha de equipos en planta",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/MONTAJE E INSTALACION DE EQUIPOS EN PLANTA.webp"]
+    },
+
 ]

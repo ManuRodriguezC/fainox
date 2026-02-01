@@ -62,5 +62,10 @@ export const subIndustrys: SubIndustry = {
         {
             "name": "cárnicos y embutidos",
             "image": "/industrys/WhatsApp Image 2025-01-18 at 11.31.16 AM.jpeg"
-        }]
+        }],
+    "Industria Farmaceutica y Afines": [
+        {
+            "name": "equipos para la industria farmacéutica",
+            "image": "/industrys/farmaceutica.jpg",}
+    ]
 }
