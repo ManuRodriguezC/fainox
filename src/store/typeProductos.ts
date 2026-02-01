@@ -87,6 +87,9 @@ export const productosyservicios = [
             {
                 'name': 'Montajes Industriales'
             },
+            {
+                'name': 'Ingeniería y Montaje de LOOP de Agua Farmacéutica y Cosmética'
+            }
         ]
     }
 ]

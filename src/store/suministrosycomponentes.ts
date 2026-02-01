@@ -102,5 +102,22 @@ export const serviciosingenieria = [
         'name': 'montajes industriales',
         'image': '/servicios/montajes.webp',
         'description': 'Nuestro Equipo técnico y humano esta calificado para realizar montajes de tipo Industrial como instalación de tuberías para Agua,Vapor,Aire, Etc. Siendo nuestra especialidad y con gran experiencia lo relacionado con montajes en Tubería Sanitaria Tipo AISI-304/316/BPE con purga de gas inerte STAWG y/o soldadura ORBITAL.'
+    },
+    {
+        "name": "Ingeniería y Montaje de LOOP de Agua Farmacéutica y Cosmética",
+        "image": "/servicios/LOOP DE AGUA WFI.webp",
+        "description": "Desarrollamos ingeniería, suministro, instalación y puesta en marcha de sistemas LOOP de agua para uso farmacéutico y cosmético, diseñados conforme a Buenas Prácticas de Manufactura (BPM) y lineamientos aplicables del INVIMA. Nuestros sistemas aseguran la recirculación continua, control microbiológico y estabilidad fisicoquímica del agua, cumpliendo con los requisitos para agua purificada y agua desmineralizada en procesos productivos regulados.",
+        "alcance": [
+            "Ingeniería básica y de detalle conforme a BPM / INVIMA",
+            "Diseño sanitario sin puntos muertos (dead legs)",
+            "Tubería sanitaria en acero inoxidable AISI 316L",
+            "Soldadura orbital y documentación técnica",
+            "Integración con sistemas de tratamiento (RO, EDI, UV, ozono o calor)",
+            "Pruebas hidráulicas, sanitización y soporte en calificación IQ / OQ"
+        ],
+        "aplicaciones": [
+            "Industria farmacéutica",
+            "Industria cosmética y dermocosmética",
+        ]
     }
 ]
