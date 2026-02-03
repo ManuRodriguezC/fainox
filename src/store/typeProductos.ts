@@ -75,21 +75,21 @@ export const productosyservicios = [
             }
         ]
     },
-    {
-        'name': 'Servicios de Ingenieria',
-        'services': [
-            {
-                'name': 'Consultoria y Asistencia de Proyectos',
-            },
-            {
-                'name': 'Ingeniería Conceptual, Presupuestal y de Detalle',
-            },
-            {
-                'name': 'Montajes Industriales'
-            },
-            {
-                'name': 'Ingeniería y Montaje de LOOP de Agua Farmacéutica y Cosmética'
-            }
-        ]
-    }
+    // {
+    //     'name': 'Servicios de Ingenieria',
+    //     'services': [
+    //         {
+    //             'name': 'Consultoria y Asistencia de Proyectos',
+    //         },
+    //         {
+    //             'name': 'Ingeniería Conceptual, Presupuestal y de Detalle',
+    //         },
+    //         {
+    //             'name': 'Montajes Industriales'
+    //         },
+    //         {
+    //             'name': 'Ingeniería y Montaje de LOOP de Agua Farmacéutica y Cosmética'
+    //         }
+    //     ]
+    // }
 ]

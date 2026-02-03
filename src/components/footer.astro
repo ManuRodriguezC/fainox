@@ -1,7 +1,5 @@
 ---
 import { sectores } from "../store/industrias";
-import { capitalize } from "../utils/capitalize";
-import { serviciosingenieria } from "../store/suministrosycomponentes";
 
 const aliados = [
   "/alianz/stk.webp",
@@ -13,6 +11,25 @@ const aliados = [
   "/alianz/logo velox.webp",
   "/alianz/logo watson.webp",
   "/alianz/inoxidables.webp",
+]
+
+const servicios_industriales = [
+  {
+    name: "Servicios Integrales de Ingenieria",
+    link: "/servicios-industriales/#servicios-integrales"
+  },
+  {
+    name: "Ingenieria y Consultoria Industrial",
+    link: "/servicios-industriales/#ingenieria-consultoria"
+  },
+  {
+    name: "Instrumentación Industrial",
+    link: "/servicios-industriales/#instrumentacion-industrial"
+  },
+  {
+    name: "Mantenimiento Industrial",
+    link: "/servicios-industriales/#mantenimiento-industrial"
+  }
 ]
 
 ---
@@ -54,15 +71,15 @@ const aliados = [
       <div class="block md:hidden h-[1px] w-[90%] bg-blue-900"></div>
 
       <div class="flex flex-col gap-4">
-        <h2 class="font-bold text-colorBlue text-2xl">Servicios</h2>
+        <h2 class="font-bold text-colorBlue text-2xl">Servicios Industriales</h2>
         <div class="grid grid-cols-1 gap-x-10">
           {
-            serviciosingenieria.map((sector) => (
+            servicios_industriales.map((servicio) => (
               <a
-                class="text-sm text-gray-400 hover:text-gray-600 font-semibold my-2  transition-all duration-200"
-                href={`/soluciones/servicios-de-ingenieria/${sector.name.toLowerCase().replaceAll(" ", "-")}`}
+                class="text-sm text-gray-400 hover:text-gray-600 font-semibold my-2 transition-all duration-200"
+                href={servicio.link}
               >
-                {capitalize(sector.name)}
+                {servicio.name}
               </a>
             ))
           }

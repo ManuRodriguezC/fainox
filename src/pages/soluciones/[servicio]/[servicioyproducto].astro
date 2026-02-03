@@ -37,9 +37,10 @@ if (servicio == "desarrollo-de-equipos-para") {
   listService = suministrosycomponentes.filter((suministro) => suministro.name === servicioyproducto);
 } else if (servicio == "equipos-y-sistemas-de-lavado") {
   listEquipos = equiposdelavado.filter((equipo) => equipo.name.toLowerCase().replaceAll(' ', '-') === servicioyproducto);
-} else if (servicio == "servicios-de-ingenieria") {
-  serviciosdeingenieria = serviciosingenieria.filter((servicio) => servicio.name.toLowerCase().replaceAll(' ', '-') === servicioyproducto);
 }
+// } else if (servicio == "servicios-de-ingenieria") {
+//   serviciosdeingenieria = serviciosingenieria.filter((servicio) => servicio.name.toLowerCase().replaceAll(' ', '-') === servicioyproducto);
+// }
 
 var name = ""
 if (servicioyproducto == "sistemas-de-lavado-cip") {

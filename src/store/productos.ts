@@ -1020,7 +1020,7 @@ export const productos = [
         "linea": "",
         "images": ["/products/RACTORES PARA PROCESO.webp"]
     },
-        {
+    {
         "name": "Tamizadores para polvos",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
@@ -1029,7 +1029,7 @@ export const productos = [
         "linea": "",
         "images": ["/products/TAMIZADOR PARA POLVOS.webp"]
     },
-        {
+    {
         "name": "Tamizadores con vibracion",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
@@ -1046,6 +1046,96 @@ export const productos = [
         "description": "",
         "linea": "",
         "images": ["/products/MONTAJE E INSTALACION DE EQUIPOS EN PLANTA.webp"]
+    },
+            {
+        "name": "Tanque para proceso con camisa y agitación",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/Tanque para proceso con camisa y agitación.png"]
+    },
+            {
+        "name": "Tanque Automatico para Proceso",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/Tanque Automatico para Proceso.png"]
+    },
+    {
+        "name": "Tanque de mezlca con doble sistema de agitación",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "",
+        "linea": "",
+        "images": ["/products/Tanque de mezlca con doble sistema de agitación.png"]
+    },
+    {
+        "name": "Intercambiador Tubular Corrugado",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],        
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiador tubular corrugado.webp"]
+    },
+    {
+        "name": "Sistemas de envasado para pulpas",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],        
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "Diseñada para dosificar y sellar productos viscosos y líquidos como leche, jugos, pulpas de frutas, cremas, salsas, yogurt, etc. Está fabricada en acero inoxidable. Dosificado por pistón tipo jeringa y sellado neumático con pulso electrónico, válvula antigoteo velocidad por temporizada calibración por sensor electrónico.",
+        "linea": "envasadoras",
+        "images": ["/products/Sistemas de Envasado Pulpas.webp"]
+    },
+    {
+        "name": "Bombas Sanitarias Positivas Cerficadas",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "Bombas para aplicación y manejo de Producto Viscosos en proceso o terminado (Lobulares, Doble Tornillo, Cavidad Progresiva, Sinusoidales, Accionamiento Neumático, Etc.",
+        "linea": "bombas",
+        "images": ["/suministros/bombasSanitariasPositovas.webp"],
+    },
+    {
+        "name": "Sistemas de Agitacion",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],        
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "Desarrollamos y suministramos sistemas de agitación de alta y baja velocidad para procesos de mantenimiento, mezcla o emulsificación en tanques de proceso o estacionarios. Diseño horizontal o vertical;  hélices tipo turbina, marina o palas inclinadas según el requerimiento. Materiales AISI 304 - 316, potencia 0,5 hasta 10hp.",
+        "linea": "agitadores",
+        "images": ["/products/sistemasdeagitacion.webp"]
+    },
+    {
+        "name": "Intercambiadores de Calor",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],        
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "Sistema de intercambiador a placas para enfriamiento o calentamiento desde 1.000 lt/h hasta 30.000lts/h con bastidores en acero inoxidable y/o forrados. Junta tipo click. Materiales AISI 304 - 316.",
+        "linea": "intercambiadores de calor",
+        "images": ["/products/intercambiadoresaplacas.webp"]
+    },
+    {
+        "name": "Tanque Deposito",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],        
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "Deposito para almacenamiento, proceso y mezcla de aceites y materias primas. Fabricados en AISI 304L y A316L, con paredes simples, aislamiento térmico o chaqueta de transferencia térmica para modulación de la temperatura interna. Capacidad: 1.000Lts hasta 100.000 Lts.",
+        "linea": "tanques",
+        "images": ["/products/tanque almacenamiento.webp"]
+    },
+    {
+        "name": "Sistemas de Premezcla",
+        "industry": ["Industria Farmaceutica y Afines"],
+        "product": [""],        
+        "subIndustry": "equipos para la industria farmacéutica",
+        "description": "Estos sistemas, mejor conocidos como Batch Mixer, son tanques a medida de la necesidad del cliente, con sistemas de control de temperatura y sistemas de mezcla personalizados de acuerdo con la necesidad. Pueden tener sistemas de agitación lenta, rápida, emulsión y sistemas de homogeneización recirculativos centrífugos.",
+        "linea": "mezcladores para solidos y polvos",
+        "images": ["/products/Sistema Premezcla.webp"]
     },
 
 ]
