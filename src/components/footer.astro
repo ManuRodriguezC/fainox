@@ -56,7 +56,7 @@ const servicios_industriales = [
         <h2 class="font-bold text-colorBlue text-2xl">Industrias</h2>
         <div class="flex flex-col">
           {
-            sectores.map((sector) => (
+            sectores.filter((sector) => sector.title !== "Conservas, Salsas y Aderezos").map((sector) => (
               <a
                 class="text-sm text-gray-400 hover:text-gray-600 transition-all duration-200 font-semibold my-2"
                 href={sector.link}
@@ -65,6 +65,12 @@ const servicios_industriales = [
               </a>
             ))
           }
+          <a
+            class="text-sm text-gray-400 hover:text-gray-600 transition-all duration-200 font-semibold my-2"
+            href="/nuestras-soluciones/industria-farmaceutica-y-afines"
+          >
+            Farmaceutica & Cosmética
+          </a>
         </div>
       </div>
 
