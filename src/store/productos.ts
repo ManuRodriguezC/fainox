@@ -844,7 +844,7 @@ export const productos = [
         "name": "Emulsificadores y Dispensores para laboratorio",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/EQUIPOS FARMA - Emulsificadores y Dispersores de Laboratorio.webp"]
@@ -853,7 +853,7 @@ export const productos = [
         "name": "Agitadores moviles",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/AGIRADORES MOVILES.webp"]
@@ -862,7 +862,7 @@ export const productos = [
         "name": "Autoclaves para concentrados",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/AUTOCLAVE PARA CONCENTRADOS.webp"]
@@ -871,7 +871,7 @@ export const productos = [
         "name": "Autoclaves para envases",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/AUTOCLAVES PARA ENVASES.webp"]
@@ -880,7 +880,7 @@ export const productos = [
         "name": "Bombones para recubrir",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/Bombones para recubrir.webp"]
@@ -889,7 +889,7 @@ export const productos = [
         "name": "Envasadoras jeringas",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/ENVASADORAS - JERINGAS.webp"]
@@ -898,7 +898,7 @@ export const productos = [
         "name": "Envasador para polvos",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/ELEVADOR PARA POLVOS.webp"]
@@ -907,7 +907,7 @@ export const productos = [
         "name": "Envasadoras de frascos",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/ENVASADORAS DE FRASCOS.webp"]
@@ -916,7 +916,7 @@ export const productos = [
         "name": "Filtros prensa",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/FILTROS PRENSA.webp"]
@@ -925,7 +925,7 @@ export const productos = [
         "name": "Granulador de malla",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/Granulador de malla.webp"]
@@ -934,7 +934,7 @@ export const productos = [
         "name": "Mezcladores biconicos",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MEZCLADORES BICONICOS.webp"]
@@ -943,7 +943,7 @@ export const productos = [
         "name": "Mezcladores helicoidales",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MEZCLADORES HELICOIDALES.webp"]
@@ -952,7 +952,7 @@ export const productos = [
         "name": "Mezcladores tipo pantalon",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MEZCLADORES DE PANTALON.webp"]
@@ -961,7 +961,7 @@ export const productos = [
         "name": "Molino regranulador",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MOLINO REGRANULADOR.webp"]
@@ -970,7 +970,7 @@ export const productos = [
         "name": "Molino ultra pulverizador",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MOLINO ULTRA PULVERIZADOR.webp"]
@@ -979,7 +979,7 @@ export const productos = [
         "name": "Molino refinador de pastas",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MOLINO REFINADOR DE PASTAS.webp"]
@@ -988,7 +988,7 @@ export const productos = [
         "name": "Prensa para extraccion de aceite",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/PRENSA DE TORNILLO PARA EXTRACCION DE ACEITES.webp"]
@@ -997,7 +997,7 @@ export const productos = [
         "name": "Prensa tornillo - secado polvos",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/PRENSA DE TORNILLO PARA SECADO DE POLVOS.webp"]
@@ -1006,7 +1006,7 @@ export const productos = [
         "name": "Reactores con vacio - pequeños tamaños",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/REACTORES CON VACIO.webp"]
@@ -1015,7 +1015,7 @@ export const productos = [
         "name": "Reactores para proceso",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/RACTORES PARA PROCESO.webp"]
@@ -1024,7 +1024,7 @@ export const productos = [
         "name": "Tamizadores para polvos",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/TAMIZADOR PARA POLVOS.webp"]
@@ -1033,7 +1033,7 @@ export const productos = [
         "name": "Tamizadores con vibracion",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/TAMIZADORES CON VIBRACION.webp"]
@@ -1042,7 +1042,7 @@ export const productos = [
         "name": "Instalacion y puesta en marcha de equipos en planta",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/MONTAJE E INSTALACION DE EQUIPOS EN PLANTA.webp"]
@@ -1051,7 +1051,7 @@ export const productos = [
         "name": "Tanque para proceso con camisa y agitación",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/Tanque para proceso con camisa y agitación.png"]
@@ -1060,7 +1060,7 @@ export const productos = [
         "name": "Tanque Automatico para Proceso",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/Tanque Automatico para Proceso.png"]
@@ -1069,7 +1069,7 @@ export const productos = [
         "name": "Tanque de mezlca con doble sistema de agitación",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "",
         "linea": "",
         "images": ["/products/Tanque de mezlca con doble sistema de agitación.png"]
@@ -1078,7 +1078,7 @@ export const productos = [
         "name": "Intercambiador Tubular Corrugado",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],        
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "El diseño de nuestros equipos mediante el uso de tubería sanitaria corrugada permite garantizar flujos turbulentos que mejoran la transferencia térmica del producto a enfriar o calentar, máxime si son de alta viscosidad. Desarrollamos equipos desde 500lt/h hasta 30.000 lt /h en tubería sanitaria AISI 316, conexiones sanitarias CLAMP o SMS; estos incluyen sistemas de control automático mediante PLC -HDMI  para verificación y estandarización de temperaturas finales deseadas.",
         "linea": "intercambiadores de calor",
         "images": ["/products/intercambiador tubular corrugado.webp"]
@@ -1087,7 +1087,7 @@ export const productos = [
         "name": "Sistemas de envasado para pulpas",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],        
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "Diseñada para dosificar y sellar productos viscosos y líquidos como leche, jugos, pulpas de frutas, cremas, salsas, yogurt, etc. Está fabricada en acero inoxidable. Dosificado por pistón tipo jeringa y sellado neumático con pulso electrónico, válvula antigoteo velocidad por temporizada calibración por sensor electrónico.",
         "linea": "envasadoras",
         "images": ["/products/Sistemas de Envasado Pulpas.webp"]
@@ -1096,7 +1096,7 @@ export const productos = [
         "name": "Bombas Sanitarias Positivas Cerficadas",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "Bombas para aplicación y manejo de Producto Viscosos en proceso o terminado (Lobulares, Doble Tornillo, Cavidad Progresiva, Sinusoidales, Accionamiento Neumático, Etc.",
         "linea": "bombas",
         "images": ["/suministros/bombasSanitariasPositovas.webp"],
@@ -1105,7 +1105,7 @@ export const productos = [
         "name": "Sistemas de Agitacion",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],        
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "Desarrollamos y suministramos sistemas de agitación de alta y baja velocidad para procesos de mantenimiento, mezcla o emulsificación en tanques de proceso o estacionarios. Diseño horizontal o vertical;  hélices tipo turbina, marina o palas inclinadas según el requerimiento. Materiales AISI 304 - 316, potencia 0,5 hasta 10hp.",
         "linea": "agitadores",
         "images": ["/products/sistemasdeagitacion.webp"]
@@ -1114,7 +1114,7 @@ export const productos = [
         "name": "Intercambiadores de Calor",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],        
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "Sistema de intercambiador a placas para enfriamiento o calentamiento desde 1.000 lt/h hasta 30.000lts/h con bastidores en acero inoxidable y/o forrados. Junta tipo click. Materiales AISI 304 - 316.",
         "linea": "intercambiadores de calor",
         "images": ["/products/intercambiadoresaplacas.webp"]
@@ -1123,7 +1123,7 @@ export const productos = [
         "name": "Tanque Deposito",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],        
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "Deposito para almacenamiento, proceso y mezcla de aceites y materias primas. Fabricados en AISI 304L y A316L, con paredes simples, aislamiento térmico o chaqueta de transferencia térmica para modulación de la temperatura interna. Capacidad: 1.000Lts hasta 100.000 Lts.",
         "linea": "tanques",
         "images": ["/products/tanque almacenamiento.webp"]
@@ -1132,7 +1132,7 @@ export const productos = [
         "name": "Sistemas de Premezcla",
         "industry": ["Industria Farmaceutica y Afines"],
         "product": [""],        
-        "subIndustry": "equipos para la industria farmacéutica",
+        "subIndustry": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
         "description": "Estos sistemas, mejor conocidos como Batch Mixer, son tanques a medida de la necesidad del cliente, con sistemas de control de temperatura y sistemas de mezcla personalizados de acuerdo con la necesidad. Pueden tener sistemas de agitación lenta, rápida, emulsión y sistemas de homogeneización recirculativos centrífugos.",
         "linea": "mezcladores para solidos y polvos",
         "images": ["/products/Sistema Premezcla.webp"]

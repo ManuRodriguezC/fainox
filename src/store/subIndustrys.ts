@@ -65,7 +65,7 @@ export const subIndustrys: SubIndustry = {
         }],
     "Industria Farmaceutica y Afines": [
         {
-            "name": "equipos para la industria farmacéutica",
-            "image": "/industrys/farmaceutica.jpg",}
+            "name": "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana",
+            "image": "/industrys/farmaceutica2.png",}
     ]
 }
