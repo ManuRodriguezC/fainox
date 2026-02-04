@@ -18,7 +18,7 @@ export default function SubNav({ indus, setFilter, filter }: Props) {
                         return (
                             <li key={sub.name}>
                                 <button
-                                    className={`text-sss md:text-base xl:text-xl py-3 md:p-4 transition-all duration-150 mx-${size} px-2
+                                    className={`text-xs md:text-base xl:text-xl py-3 md:p-4 transition-all duration-150 mx-${size} px-2
                                         ${filter === sub.name ? "bg-white text-black rounded-md" : "text-white font-semibold hover:backdrop-contrast-75 rounded-md"}`}
                                     onClick={() => setFilter(sub.name)}>
                                     {capitalize(sub.name)}

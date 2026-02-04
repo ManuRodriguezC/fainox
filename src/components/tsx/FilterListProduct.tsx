@@ -19,13 +19,16 @@ export default function     FilterListProduct({ industry, filterProducts }: Prop
 
     return (
         <div className="w-full">
-            <SubNav indus={industry} setFilter={setFilter} filter={filter} />
+            {
+                filter !== "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana" &&
+                <SubNav indus={industry} setFilter={setFilter} filter={filter} />
+            }
             <p className="text-center md:text-right md:mr-10 mt-5 text-base md:text-lg text-gray-600">Productos encontrados: {filteredList.length}</p>
             <div className="w-full h-auto flex flex-row justify-center md:gap-5 xl:m-5">
                 {subIndustrys[industry].some(indus => filter === "" || indus.name === filter) ? (
                     subIndustrys[industry].map((indus, index) => {
                         const size = 100 / subIndustrys[industry].length
-                        if (filter === "" || indus.name === filter) {
+                        if ((filter === "" || indus.name === filter) && filter !== "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana") {
                             return (
                                 <img
                                     key={index}
@@ -35,6 +38,23 @@ export default function     FilterListProduct({ industry, filterProducts }: Prop
                                     alt={indus.name}
                                 />
                             );
+                        } else if (filter === "Equipos y soluciones para la Industria Farmaceutica, Cosmética y Quimica liviana") {
+                            return (
+                                <div className="max-w-[1200px] w-full">
+                                    <img
+                                        key={index}
+                                        className={`flex w-full h-56 object-cover rounded-none md:rounded-t-md shadow-box-black transition-all duration-200`}
+                                        src="/industrys/farma.png"
+                                        alt={indus.name}
+                                    />
+                                    <div className="flex flex-row w-full justify-around bg-colorBlue text-white text-xs md:text-lg font-semibold py-4 rounded-b-md">
+                                        <p>Farmaceuticos</p>
+                                        <p>Suplementos Dietarios</p>
+                                        <p>Quimica Liviana</p>
+                                        <p>Cosmetica</p>
+                                    </div>
+                                </div>
+                            )
                         }
                         return null;
                     })
