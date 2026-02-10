@@ -12,8 +12,8 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
 
   try {
     body = await request.json();
-    console.log(body)
   } catch (error) {
+    console.log(error)
     return new Response(
       JSON.stringify({ message: 'Error: Cuerpo de la solicitud vacío o no es JSON válido' }),
       { status: 400, headers: { 'Content-Type': 'application/json' } }
@@ -21,11 +21,10 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
   }
 
   const transport = nodemailer.createTransport({
-    service: 'fainoxgroup',
+    service: 'gmail',
     auth: {
-        user: 'gfainox@fainoxgroup.com',
-        pass: 'tnhp noxf ykia vfcc',
-        // pass: 'site mown gkdv dqmt',
+        user: import.meta.env.GMAIL_USER,
+        pass: import.meta.env.GMAIL_PASS,
     },
     tls: {
         rejectUnauthorized: false
@@ -48,9 +47,9 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
 
   try {
     const info = await transport.sendMail({
-      from: 'gfainox@fainoxgroup.com',
-      // from: 'estebanclimb@gmail.com',
-      to: ['comercial@fainoxgroup.com'],
+      from: import.meta.env.GMAIL_USER,
+      // to: [import.meta.env.GMAIL_TO],
+      to: ['manu.rodriguezc.dev@gmail.com'],
       subject: 'Solicitud de Cotizacion',
       text: emailText
     })
