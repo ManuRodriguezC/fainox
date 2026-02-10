@@ -21,10 +21,11 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
   }
 
   const transport = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'fainoxgroup',
     auth: {
-        user: 'estebanclimb@gmail.com',
-        pass: 'site mown gkdv dqmt',
+        user: 'gfainox@fainoxgroup.com',
+        pass: 'tnhp noxf ykia vfcc',
+        // pass: 'site mown gkdv dqmt',
     },
     tls: {
         rejectUnauthorized: false
@@ -47,7 +48,8 @@ export async function POST({ request }: { request: Request}): Promise<Response> 
 
   try {
     const info = await transport.sendMail({
-      from: 'estebanclimb@gmail.com',
+      from: 'gfainox@fainoxgroup.com',
+      // from: 'estebanclimb@gmail.com',
       to: ['comercial@fainoxgroup.com'],
       subject: 'Solicitud de Cotizacion',
       text: emailText

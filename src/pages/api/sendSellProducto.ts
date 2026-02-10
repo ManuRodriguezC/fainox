@@ -20,17 +20,29 @@ export async function POST({ request }: { request: Request }): Promise<Response>
   }
 
   const transport = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
+    service: 'fainoxgroup',
     auth: {
-      user: 'estebanclimb@gmail.com',
-      pass: 'site mown gkdv dqmt',
+        user: 'gfainox@fainoxgroup.com',
+        pass: 'tnhp noxf ykia vfcc',
+        // pass: 'site mown gkdv dqmt',
     },
     tls: {
-      rejectUnauthorized: false
+        rejectUnauthorized: false
     }
-  })
+  });
+
+  // const transport = nodemailer.createTransport({
+  //   host: 'smtp.gmail.com',
+  //   port: 587,
+  //   secure: false,
+  //   auth: {
+  //     user: 'estebanclimb@gmail.com',
+  //     pass: 'site mown gkdv dqmt',
+  //   },
+  //   tls: {
+  //     rejectUnauthorized: false
+  //   }
+  // })
 
   const emailText = `
         Nombre: ${body.name}
@@ -72,7 +84,7 @@ export async function POST({ request }: { request: Request }): Promise<Response>
 
   try {
     const info = await transport.sendMail({
-      from: 'estebanclimb@gmail.com',
+      from: 'gfainox@fainoxgroup.com',
       to: ['comercial@fainoxgroup.com'],
       // to: ['manu.rodriguezc.dev@gmail.com'],
       subject: 'Solicitud Venta de Equipo',
