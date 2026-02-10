@@ -72,7 +72,7 @@ export async function POST({ request }: { request: Request }): Promise<Response>
     const info = await transport.sendMail({
       from: import.meta.env.GMAIL_USER,
       to: ['comercial@fainoxgroup.com'],
-      subject: 'Solicitud Venta de Equipo',
+      subject: 'Trabaje con nosotros',
       text: emailText,
       // attachments: attachments
     })
